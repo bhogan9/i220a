@@ -1,0 +1,1399 @@
+Script started on 2020-08-27 13:16:00-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="49"]
+bash: /home/umrigar/cs240/bin/student.rc: No such file or directory
+bhogan9@remote06:~/tmp/lab0$ ls ~/.ssh
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+bhogan9@remote06:~/tmp/lab0$ ssh-copy-id user@remote[1P@remote[1P@remote[1P@remote[1P@remoteb@remoteh@remoteo@remotea@remoten@remote[1P@remote[1P@remote[1P@remoteo@remoteg@remotea@remoten@remote9@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/bhogan9/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: /home/bhogan9/.bashrc: line 1: /home/umrigar/cs240/bin/student.rc: No such file or directory
+
+bhogan9@remote06:~/tmp/lab0$ rm /home/bhogan9/.bashrc
+bhogan9@remote06:~/tmp/lab0$ rm /home/bhogan9/.bashrcssh-copy-id bhogan9@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/bhogan9/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+bhogan9@remote06:~/tmp/lab0$ mkdir -p ~/project[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krm -r ~/projects/
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-2420daf969e75135e9fe901ffbd888afbf354217.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-2420daf969e75135e9fe901ffbd888afbf354217.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-72ca660607fe6c740a9c96e2090e5adc7dd347c5.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-72ca660607fe6c740a9c96e2090e5adc7dd347c5.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-eb6e294ba5cc4c514bd923e8b1525001ce930818.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-eb6e294ba5cc4c514bd923e8b1525001ce930818.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-bd8cfa383f67fe97bf13718db6235de7d2991e02.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-bd8cfa383f67fe97bf13718db6235de7d2991e02.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-9471753af663575d9ab72cfae2860b75fbc9bd55.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-9471753af663575d9ab72cfae2860b75fbc9bd55.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-f6ebaf733eabbbb5b29cb055298a1b91367a3bac.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-f6ebaf733eabbbb5b29cb055298a1b91367a3bac.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-2a48ccf745377f187884f2a7add63458f124597a.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-2a48ccf745377f187884f2a7add63458f124597a.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-a29f74f6ee54af6b012781387a789a1e816aa09e.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-a29f74f6ee54af6b012781387a789a1e816aa09e.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-fa12b7a5d993004edb6b3f246f128f7301751e78.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-fa12b7a5d993004edb6b3f246f128f7301751e78.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-7b2b16f5ff6dbbb3ff7a201a86a9d1bb038e2476.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-7b2b16f5ff6dbbb3ff7a201a86a9d1bb038e2476.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-459c4e0749b54becb2245a612e7a1edecddf7ed1.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-459c4e0749b54becb2245a612e7a1edecddf7ed1.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-be7767f2def24baaebc668f0b0cdf55c7be2dc87.pack'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/pack/pack-be7767f2def24baaebc668f0b0cdf55c7be2dc87.idx'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0b/7b862f7fa8cc9108e65233996ee79d19c065df'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0b/a7f670e5e292163248c3a5afc7a8f4343ada9a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0b/514eea00f2aa3aedd200ca944f51a249d52187'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0a/9fe1783cf069478423b31dc26280fd683ecfc3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/17/127511e931e249e446fc66f8dbbad26c392050'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/26/83c68e86d8b3c7136050b7c6f198759a196d71'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/26/460872fd4b89e3a06be125ffc4218bc49c7bab'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/67/dd136aa7d9aed8139a5bc2e4129fa21a906c1a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4b/a0e376ebde642182b348dd1c097723387c845c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/89/656d273a83e5ddd4afca24490273d5a3ad9933'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/89/def11d2900fca05b6d309d8d0d471a43f95cda'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/87/8ae33aed2db5f96955a8c7a89e54750a66b168'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/87/e18461666a74fb0be500d3ea4cca0c2f317271'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/87/9ff189881a977653b52bff0a4d53ac73e2eba8'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ca/467f60311c0c51752e87decacff8d07cbcd484'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ca/e1237995fb80bc735fe0e4be8aa962ecf4d4f4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/82/e9daaa5f9ee080d12d57e8909b9914f11c1250'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/82/49996146b1298428fdceb28abf7626e20a3d7a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/82/d615e21c96e83394bd559704353704b2fce189'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/15/2c04073be70507d3e6aa2fe466a24431efdc87'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/15/2440a2f49cde142102b4381d5814a564c4101f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/15/880245cf19ff285f7d5cff450a17ba5074a15a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2f/a4cb050a782a7c7b46857f94aa63e2eb4dd4ba'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2f/fa18eca64e37afbc0207a4d522e35fffb6b590'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2f/48661544950a4a80f88cb41ece7733b1b395ba'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5a/6cadcbd7bf9eab50200894e667e927812a5607'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5a/3ee2310a45b254209fbf19d8aa5f8822d77643'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/68/b6a174976f35a99ac5e46cfe375bdf43d7a909'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/68/c72811175e418213181def6d4a97be9e79d3ba'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/68/77b04376cc0a0cfb98c2ffd1c2a89d2e89061d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/68/9844febf24f06d39e22e1a1d07e10448db318b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/be/e36a4935e9f1686b069c713bb34c20fc9fb7f8'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/be/2a3d7012b521ca4ff16bbeca2296ecc29f716f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/be/43e420013ac56acbd244a82a87fee876e659ab'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/20/38b934377261ca8d6280be06364b97faf379a9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2d/eadf8733649528c18964807c56966c120e2a1f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3e/d1a02c80b6909f8277a935a23949de8ca79913'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3e/f21df6eaa64d144859396b1c8430ed09874d69'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d5/d9dfb2c7ba3bba19ec6a6eaadb43be366dac20'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d5/b4e0b0a316438bf9f44e8fd4ea5c0dff38285d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d5/2b864e4f787bb3c0a7519abc6da7535ff11b16'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d5/41d0d859a9e0ed6af52d502f1d065b91f355ad'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f6/ec71d1df53642f1ba95469ea9143c9c68f8f46'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f6/7a4987ef83d45317dda217ba20f079bad8f32d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f6/95b2e7c8d8aec0d1d0da628557475034004dfe'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f6/f3cad258e215ce116d8080bb6d9879aece6e2a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d6/7abb77676f4228932ff355abb54f821893fed3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d6/75a783615f8657e37273d599ef53120d648426'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d6/4c5db4840812be0e5e3a87427c80d26314ab73'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ed/0adec06cf0817127b1e2a801e7cdd1d4f0e9be'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ed/947852897682b35d437d2d4d3d9f29184ca4da'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ed/b9190012e54dddc7991be63f42a68c40e67221'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cb/fe3f465c4d2351bd84e52128ab46b2f82fe03b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cb/ecc44c54145728d18c0b4acf7736d0d21e93c0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cb/ddb4b4579948351e7bcf9aab52804e76daa657'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/92/3a77709c3d406986cf9609001439a8d7dadca7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/92/0538a927692a4c8a4b537797e36ba852b68366'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/92/8d638078a0cba5f9b79e61c415bbc0becc9ca5'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/92/6239918c589a13ca8c115ad7eef2be567cab96'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/af/15915a5f7c44e36da5051222658463fcba9a25'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f2/9ef7d8b15a7e91e10be78f70c5dc1f54d8aa28'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f2/a517f6646b245d319dbf6bdba54a8ba4729f43'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f2/441225ee0e4f255d9cbbc1d44c06ba0e319fc2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f2/25b6f8b4377f394067462472d8a5316df26188'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f2/c4d44e312545e94799c711ba160a873fb89157'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b5/12a1e6e65b2519f7b6c243e766cefbea51be43'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b5/3c3ef8733bb79e193761bc52c625950e758d90'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b5/054edd2ff7df0037c7490cf2166babcc07dbf3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b5/7d1a7478bc8ab6a7ffcf660abc018a16388288'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/7f/945cd01d919023a869076e78fb5d153158cbc6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/7f/213a85751a02ce807f9b59812a733ea6f6f84d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d7/b2f013450972122be9636ee2271df0bec56eb3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d7/98b89de32a44c4a43e7618ee0d17cbd1a047c3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d7/2d2006a9da6999824680631c38e576cdbb9162'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/05/ee0410f2c8a89bc8b756500dba8ff5aa6bf7c0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/05/6d403a7306d37e88fa7b19c0d4a4fc89b9cbf0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/05/c54a1311c177ec287f9b0f0be4e2a2aad13acf'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/05/0b515a75537a29eececeab1c0425e74197ed12'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0d/2e71a2ba425d3ae2afa0fa13ced1efce840235'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0d/3d51f807d584499f0f22b0f3ab103717dc1ca7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0d/56b02cd25eeb880a479d8b051eba2650da5126'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0d/cad9f13561ad966a2af88dd4f4f01c4d2976ef'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ee/724b944e536ec0953931836a433ee61f64873e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ee/6cb07790c86d812a7b20a17e708e64970e8c3c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ee/6e9139f7544f6ecf5677937f21de8aace7e392'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/49/6aae1d9616b793d8f553ffddf6182d98d1993c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/49/c75c5eac2558bcc86e6b4470b5002638a7aec9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/49/665d23c5d48d4c15b93cb85edb2abb3f51334d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3f/f29c46e63ece2f0b7aa342c39f915e61b7bc52'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3f/51ab028a9b67890af209b6c725b2c275d80080'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e1/4470328b8dc670762f67c164e15c2ce479f9d4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fc/1e273e56136325cce830609880751f49b0669d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fc/e29be65e2afac40b1d9727896083f6eb1f6951'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fc/b7e1c79dab8470b1ef756c29da99a5e13e2378'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c0/8d54dedd8c148f5568c92a5d78edcedf6409ae'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c0/376e5d9af9701dc5ee4a8457d933ab9e0d9b76'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2e/315154e98131fa891d86b94c59b147400db505'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2e/cc39f2ec8bfdb7dac6df7694fbd11118371688'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2e/47c975f75aa8d4a2f613f1a19e0e4ebc6b8e5e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2e/97f804b1bb74b20af7116e82bfd189a5420c4a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9c/2f4b5f72469b9fabfc29b4ad5501511f77c1f6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1f/1c31b629371ce5f4c2b736d68d2f84b60d3d1c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1f/57275fe663ef9a5288fc0b90ab7aa662101694'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1f/d9a06926e89200e6707188892abbda4464d7c3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1f/94b575940189b986137273b00f95fb1a39439c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fb/ad91d149fb6fecc350789d58a99d1221bf1397'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fb/f968b3f884b0ab533f5a7de0b7a57aae8c01b0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fb/4519d998db413dc5789591055c0037a8989e74'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/02/2ab53951a1c3c84e4334f9c2f9dca1867e4a71'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/02/132f08280a3bcfc7b79a2e2e9431d0e6f1269e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/02/559cf36ea9d4e475e7ef83fe3625591ca7a2e6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/02/7f42fad5dd0dd835a93a61f65f8451c4e16cb3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e3/2b967d8fae52bf16e46774a2ebe05eb7b185d4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1b/6de9e7f1dba8d06d013d5ce2740ca93ea7fed9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1b/3dcd94170fb25357b6c3f0abe3f41d74e23e13'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c9/d0360a1683b2ba06156662ac42d35fb3f07cc1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c9/fdaf2e277a10c8192c4e168f0f79e9339b4c53'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/09/cd40769592462a0fdb168e8d8c8cdefee26696'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/09/066cae38630e5bcbe4720f3b9ed233ea65fa20'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/31/2d689788256ee4cc6f2e2fe3e8de1fa3d5a7f0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/76/edf11f9ba82ff4a97fa2255a15b512ecff861d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bf/0cc4b8fc9572e6cead453e0a591fc5fcf11dff'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bf/39ce39ef59d98261063b54500214dcf319784b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bf/082c649acef4934c0840f9a2a9264f21817256'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bf/4608b9148e1a8f5e58270c901711a8463ffcda'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/e82e645948922111bdaa44f6c73099c199aee1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/39ffc0b58ca104b27e927c223a4456cde86d48'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/99c44f4e14b51e096354f3a0925d8367113364'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/5f7ffb2efd61c0ebdbd549c8b91dd1cea5f23d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/831432a3764ad75d847a58950dc38dfe69dfd1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c6/2789362bd6b940fa03d5a6215acb30139534d2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4a/6a3d3e5dc2fce7ff254e24a03e8d03be18eea4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4a/aaeaa53efead08f55426a72392752265b357fd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/64/82534a9903434ab6a27aab489852c68e14d2ef'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/64/58bf5d4a875d0be3c0b425b5ce014bdc633a5e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/64/79cb6265980e5b6c85df4c47b3e5d973d29ec4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/64/9a93f98d81c7c3f1624fca5de52dc0b08da7ab'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a9/73c905b0890f996418e0bc7f7dfc19a94162f2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/08/d6ca795cda8627f8402d06604b605565808623'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/08/e3a03c91072dde54f2d0d2b0078ee80582409b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/08/67d3efe7c6048d4707df325bb739747c03f72b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5c/6294d628806d3b8435dd66d06d20ce2dc29901'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5c/16b562f8793e1199d46030b95a142f2cd68b95'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/61/637898e8549a95a3013443a20a6eef62ef0c6a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/61/2da24dd0facaf37356f1ab08b3e3d58be99770'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/73/6525918dc26ecd653c61eb2ac87af2c05ed181'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/73/84d74aeb4e440df995e1dc88a517d537e80c98'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/98/7248e29740d735e610cdca8ce555b4fe760ce6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/98/609f566cec8043452020524084c9dda8f7a6fb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5d/d82539a8602af509cf65c7824818a565fa4920'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5d/9011857480e0fa218a38abffb0afedc3105a9a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/5d/c0a874503ec4c30ffd933421d5e20fb717f49e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ac/aff4acf340cb11b4a502a1873f9d38d90dbda8'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9a/00854f9cabec1a2372184ad0532bf2fdbc45fa'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d9/b2593eef39e417bf233565894b3a8c59fd8488'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d9/0105f23b141c7c07952df6be74b17efa63778a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/30/08c354e310d73d77437766d340e9e43b090bcc'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/30/d7097fcd388966f470d5a02448c33d96eaebe7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/45/fba003d81d7641715bde1e2c33ab3f99b0c224'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/45/d2321d1b4d56d1e4b8097ff88dad670f250e4c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/72/23297fcc6af8d1e193cf3d38629605d965922a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/72/4e66716b2a9f604c916e26dcac6454564f6cad'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/72/9ab79343713da048ccb43e35e91b118a6b4c6e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1a/aca519bbfbaa07f721f99ba7d3070beedc37ce'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cf/caa1159ee26040ddec29b93eaac7ff5a92804a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cf/fdaa157f75b40b4ef1636ff14e30b769c0affb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cf/20c73e63361b90b67126fe1839e10cdd51a497'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cf/ab8941684836c00d70ec6044981d630866fe50'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c1/7beb0f61786fa4e1884ace9792458334efca78'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c1/1c7f01f91aa0c08e8bfe231c233a6bf96de8c1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c1/0143e27b41ea0542730a53b59caa121b3e92a1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b6/fc4c620b67d95f953a5c1c1230aaab5db5a1b0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b6/7e14082ef48981f19f0d3ad606b048e92ea885'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b6/ddf550c5810150392069ba82e89d7fa06818eb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8d/7cc95f5f6ecfee553a6b102367141cb365b64f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8d/840ecbae6b23b88da9434edeb29a14b5117ee1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8d/a02a09d4771b582661e29c779e94c663442c8d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8d/aad03dfe8ec0ac7813f542dfbbcbb34841802b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8d/a96e20ec6a2831345e25a9e9f9805cd9139078'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2b/f3b43313bc8b4e0a7b55e9fd7d4debe61ada83'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d0/a5c85e69855c1adce5d244610bec7895f4983d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d0/93f09499727d46fc233111810379760abb39dc'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d0/3acd65310b04a55eab4a28694261b74fb1d898'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/29/1fc5c1797c1d7b2754cf33a92889b39e2e7f17'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/29/a95bdcaeb92ce9c250961d52d2ebc93b447cd5'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/97/cd4795867f4a6833eda855d39103868d077633'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/97/a07948be4f1a0f75dcd0097cabc8a83608194d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/97/918c2c96233a2d2e22965e61c19a2e34f51466'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/63/8375c6340797b911865138eb6fc665f206f070'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/63/e19c83dd092bbc7b6855f6189ba314f5df7ad1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/63/688645ca3a0e0f131c1001f3c27fb24b736908'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c7/3d741b06255e3b3a29f354d21a500501de73aa'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c7/c39147e206b93ee32ada18ec623e4a7cd25c99'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c7/7263ae015ebc72d5cef90f9fe43acc36a4833d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c7/fb46a3a11bfa5929f62f580b359b2d48d0553c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c7/40f915df2d0bad386ca6d48aead005ca2faa14'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8e/c64afcb2697e1a0edad71bc8ef85b650bc6442'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8e/5d7845bc8cd12d0bdf4ee910ad8052cfc2a2df'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b1/b8921633f1b8669a678ed4870129488c9224fa'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b1/249347444b13defbbe916da97a66d51c96bdde'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e7/ff2301b5f1a3230b3fb2f2d3417ed01353929d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e7/516e99882f68982fe216d073177aac52b740bb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e7/496986ec1865612547bbdf71280ed2ca6c27af'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/da/59c9a23f68ece9364212f9a8aca0dea0b8119b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c3/d4563843ea52282e2fc9c66b184f50638097da'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c3/28fff6779ddf1d27aa7e905942c910758cc6ea'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c3/42879ddd907c29d83f4c9686f4a8d260f63185'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/51/7052ebd86bdfa2ff7248d01d63f21c1a808cee'? 
+rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/51': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1d/ca717a18d083809ff315a2d5e65057393181c1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/32/606195bb979ec0512eae44f3459220133afae4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/32/12da097a5b87479d90607f088eded247a6bf0c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a2/701c7ed7b78a61ababb8b29efef004ad6f9d1a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a2/34caaec234dc1dc32e45ceddcce2319bb13756'? 
+rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/a2': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/13/958d6da6c50bfa2b19457664c74bcd22123c5c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/13/69321688f9861066019e91dcac7f4fb6b3746e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a6/c72a5c6e26996c5f98ed7c4ac5c483b0fe97f2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a6/84f1af849b6d384b8e4b803bd657736b59af56'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/74/79018518b59e989d15414753fa97c226bccc16'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/86/721a3563de0ed36427f22cc2ba510da8b00bb2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/86/bfff6ec80c754215c64837a2eee8bb31cb1762'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/86/1b9cbb8724a346a94feead287fe085bd038bae'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/86/5f72a3bd45358d2d841fdf243e3fdc15f8c031'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/62/0dba0e209210f149c37d802c5245ba2cb8d02f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/62/3e534c6d74ee6a876dbbdb1607ef97cd8e7521'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f4/283ddb190c89ec07c4515565d20c42f6411a7b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f4/343f32bd978df6df727ab6e58b5b9f10806b82'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a8/bace655329d0807a167ae39479b8b2a809e806'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a8/fc5ff416fd46bc904620238a3de49d70530701'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a8/a570b4148d0c215256f81935110482d58cba22'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4e/4e680db48166fc40f368120adec124f3c1f9d6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4e/682e807a0b706bfe3cb05d104e95050c53d2d8'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e5/8bc86e338db59fdc0a28b3497b416e4d1bc767'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e5/5a7d19445331ccb6f612ff6677395689b7d0a6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d4/bf32b8c359e1c6ea7e45d6d86e2576e7379a2a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/36/84c354fdae23c5248d449cb38d1bda4a4f7db6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a0/13f5f861f4d3f40dde2110aaf9c8ce82f5764e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a0/3274fafdd8a402930f7a3fb5fb7b2621335ee3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a0/8ddeee29cdbea52e31455bceaf7993a16295f5'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e2/f9e896fed350c940009502a04655e37a136bc2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e2/5305235d02f5c59975d64e746e552832408b85'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e2/0b3dfa81459bde8c4c0fe9e51b7712ce04acf4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e2/1d5ee9eddf2150588a29d3a0c445f51a831cb1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/69/d0dc49ffb233e54921bb6d8eee1a99e89da6f1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9b/f719a06a7217242fb38e6084881aa558677975'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9b/1a5b938564748f3edc62ef32c9b373f138ae3f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/35/9a5a08999ff78eae65cd988f5dac47d8c0c6ef'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/35/32e3718cd32142e7d5379b127956b8bc788022'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9f/f8ef69ded9440db3e4ba8123b9b8c7b109ec88'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8f/3cc752563bccb77b7c3ca344d24ad4b6bb04a4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8f/552f28aa0c973dadb664db285143e3c2a4cfcd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8f/4d9d8fa061cf2f0608efb55f570aa913f7e488'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8f/aa9ab728101c6a14711631ddee8acbd8234e25'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ff/20d4147054aa20048366a8e369c75992d81619'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ff/a091f5f7de9f637f3023b376a6bc67b48b8e23'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ff/cd79f45d2388f1777bbf1a9d8acf0de0db8f38'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/80/f1108198e8f3bc0b81474f63434b51ffa8007a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/18/7eb57bcec872e15d27dc3297f018a893ef361e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/18/ea11ae24feb791d9d14aec951cb55ab013269b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ce/5c3802f0128d8ddaf54eec5c3389553fcedf4c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fe/9cec8dc0144cfd3dc0dff4971da102cd63bdab'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fe/2b88c52a85cdc1710ba092babb7f2ec8fb151f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/6d/be0506769c69b06b5e45826016fe1a57a5e67a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/42/4796a7c80013b167cbabe22cb821c7fa3057e0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/42/a11f447fe7af94babb8c54d96e7dba27ec404b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/42/f9e487a02d1e527adcaffe55baefb3d91858b5'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/42/748313c2583d8144ac0bfb60df9cef07886db0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/23/c8a0fac295aeb13f339c1cbf34a068d757e2d1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e4/4ae80209261087cb282b6217850222cf0a17da'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e4/8204ff75cb08941763a18cc310bb699da8e253'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e4/2f9d0d8ef67fd88b534f78d9a4986770b32832'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/34/b5c755c51bea910e43a13844cfa711c914a257'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f8/27c2d3545d5d5a8889afb673814daa059c87a8'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/54/d6be4a438945521d0fb9d78e897471b1774dd7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/54/62f1ffb3f3a2f46fb83e53f74965316268f7f9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/54/a297e849510f12a219df9b51822192093fe6b2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9d/d3a975b4e718932ac6415f4b858b7675f5dcc2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9d/0932c94e9a1faaf611a8bd1173c2a0d465d046'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/59/c1abbefe92c75586d34b7d0be0b4d89b81cbe3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/59/e7708f3cd26203f96ab39410f73c2989eec7b2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ae/9f67470c7487224da0d0b3c899a2b0233056eb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f7/cb48eaf71132d338047073484c08f7d6cd1a2b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f7/36d449c474df4591a27b4ef1039f24fd554d56'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d1/21f60314e9ff47f7b3e99683b89db056ed4996'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d1/950c062e4e7e4250e605b7b693ba4a94c7afea'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d1/3664c9aee85723bb4de12f800d168182c45905'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bc/5387266eee9780ef3277e862425d2d15ab3abd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/77/77c5eb38f6d96c5e55ca0cd33b4ec2692e6f9d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/77/7a82f292c32ff81d1b002888580f35d2dd4509'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/77/807e402f19bb5c5468964f2389a7e4bc0fe6b9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b9/dfec77c7b63d122f440c6da53e3f012f9f80a3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b9/2dbe8f741be64d0cfe620370581d4f0c6216bd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/52/2c3463b954bcb80580928577081a4c44365e09'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/6e/3f97827ba75ca0e0765b47ecb4905c42327054'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4d/54c7449135e1d7f88e920ba2cea49d31ec6b10'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4d/39b9a9b45a4998177aba6450254ea75825f206'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ad/fb65a70aded1f39928497a517160c70e698805'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ea/d7708b705210589ad3cdf4cbec5ae369b29e99'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ea/9ad4542ae09b0ea61e6b3882984393b7483b72'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b0/51003c38662d105b1e3f4b66ab73b62165474f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b8/ac341610d422c20beb052c3d8ebcd019e18e4b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/46/cc46025f937ad5b20777e32dfdcba2ebc8f1cb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8b/40aed85e041b37c41dbf9dfd51fd7d60328c39'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8b/caa64e8327fb327498745daa4a24b6b96a82ab'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/8b/4e61a7bd45f56d340f0a1452ef7f758f4b804e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ab/bab8a4b4b3847b17aab69f8d0c3bcf623a4a49'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ab/1aa37880b3010879417d198853f4a85613271b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ab/b9bc2e02c92dde4acb7fb4ceb933d2a6304318'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3d/3ad5cf2e25651de098f2383f0309a4ec1ec773'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3d/12445f5c7a704bb6c53d9ad5c2a3fb03178484'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3d/912e0dc1f725305fa6fd1e626615dd66a07a74'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b7/59c415a2945e82f94409a4e4927d84f2c7dc4e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b7/be7888834b4ca2fea740f475a2929682638245'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/91/837067a582b1bdd4f9dadb0897b15b9e875b7a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/91/7811259e7fb4f9d170aa44c5aa429e0e2f11fd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/91/d7dd78e02cfba06135a6d830059472bd2dc112'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e0/e8d1b621ce4859d0cb126900320065e2dffcc7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/78/2551f63b8b0607808b8031bbb817bf88e78e6d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/eb/35ad10e33df6efe7a0544988266c419df3ee41'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/eb/fd5ccb21f2fff4eb458df1b6ed92d02d735ccd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/eb/56c8d246ddc8b9ca29237358086b709a914487'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/53/463c654a63c93d0d39bbf52e549b552ca035cd'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0f/18e561820efabafa416eecd1ff5fdcfb5130b3'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0f/7da1971fb1651da30dc6822f1e8173c6beac1c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a3/1ec5c2072db9d744338454d116c0a159f614bb'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/07/535fc4b5431812db8ba58ebcfcc09aa1ce3ac7'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/85/c076026efe247d73ee8a8c8778dc2fb334b69b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/85/33bd870b90805b31c76caff1889963173cadc6'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9e/cacfb44c3fb86a8276cb8506bf0e1384dbcd71'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9e/97d3d06d4b4a38f9f9e0d5c58b9e53fede54a0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/9e/5c11c8096a7392811fa5b47c1155a14168fd27'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/6f/8180d7124f273080511d549e3fb9b9fb35d9a9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/6f/bc0df810d7a503fa5d19bdc6c7576ff16d7201'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ec/e760998369253d30fad15127610d0d27decf7c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ec/d8328f56900fec73d2f9425d8209ecd3d629b0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ec/2c42dd71532a7b4819a20b639268d045e2a7f9'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ec/135084c4a436d3c7fb1b8fb8305aee16aae7a4'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f5/851039937179e8a53e0cd438d1ab83df4b1595'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e6/83ce42c3f60ffaaa865d97ba936a3d0e33c543'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e6/24416288853428871c95c3dbfd3d476cebfdc2'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e6/704c82f0b23d4759fabf411f57397a4caab75d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/43/511cf8d809952c3284828400b941e6a71563c5'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/71/270111843f6f0b2cf87a8ccdbadc1377adba7c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/71/4389a3c312f39e0b1107f921bacf7a20cc378c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/81/d79fc029adf597d0caf21827edc053b8501759'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2a/adf83c181b9fbde35e8b37a8e61c6a7eac5c3c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2a/e0f3ed39a823fabf1c63c022e4f7d1d04ec439'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2a/245e137d2f2502a01b09c95a62ef556a55ff1d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/dd/f39b8a7ae034e6bd7dcf27966a2dca8988d44b'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/dd/7cd599fcae5d10ef40124114f2a86a3e15598e'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/dd/f90da5facedfb8b776a884df77780c9630e55d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/dd/db8c9662c4c33f765dad6ccb5a068ca9307ee0'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/10/72adc3bce67f48dcbfc49e204d7837ff7e2e17'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/88/2237465f81ae9dcd9478e1477dbf3b1be0114f'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/88/a5a7c190dd92a9d7cc8bbbf2a2192e0a5f312c'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/47/c52f6f02e83c29051832f528ceebfb9e3a7084'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/47/b2c9982afdc2969661c0510ea20dcfd0772f7a'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/27/54e7ad744ee6d212b8d089e48086f2c79047c1'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/27/129c4d89e37700754e5ee4a8a962f4f20eadee'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f9/6215c2b4f6637b00251a3743d0fd2946ee8b91'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3c/f38c30565465c4f28b59242e93dd53f9f564af'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3c/69df3b7cd4fccb3f327a8f6fa8c95854a4ed8d'? y
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/3c/4375192f2b104d3eba5f9581a34250592ae316'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/3c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c8/b31154991dadf062e15cdfa91e26f69320976e'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c8/6300040198a35008fb02902a3d478d6a40fe80'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/c8': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/84/a3e1aebc880173faa30c7c284772bd9f53548f'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/84/95b0f8829ffde2fd9f54e1f7526a2bb7fb5298'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/84/02c9a3ebbbec83f973d031c3c839a40276e815'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/84': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ef/7552d56c0c91a65e7f0e6f6dc1c8f4a8a12871'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ef/d397fd840d64a7794ee18cca291a834358445e'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/ef': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/38/1fddd9a3dfcbbf91bc0d9efd9de27c493ab295'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/38/6487319629c980f3855598a03a29ad6628e000'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/38': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/93/3ef59adec9cb7e33f154745a75b3b8e36bdd4b'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/93/2737ab4be668961d7dc7ee8a5d288b8cc35c1c'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/93': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a7/a6697411c2f71b2297e135583fd93345737298'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a7/1b9fdc77e671a1e9aa1f5afbad1b7b5b9ff917'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/a7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bd/2bc3a167edaf5d4544e0d99e159c903ed1d536'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bd/8d546f872075e99192aaa728d0b9391479226d'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/bd/116f13c94b767b095c0a9f3c19c6e6db2fe632'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/bd': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4f/1cfcdea774fe53245205ca299cda683ebabe84'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/4f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1c/940f98f324c289a0473b10cff521de2db0a955'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1c/bb655baa72e2cef24ccee898dae07c395eede9'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/1c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0c/b5382d3d9a0bd6571c4ca26bf36e155e9cfd51'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/0c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/b3/fd5a86c81b49b585a919e5744012a018aad2bc'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/b3': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/60/2d5709402cbd5f1c21f5e64ee34a9cb5c08073'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/60': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/37/1a2ff1445166bd025fd41a3f9fbf30d1f34a2a'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/37/8d27ca37facae6ca083f814f5d822e5117f765'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/37/1ce8f9a7c8e2363b3384714f1bacad6b526121'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/37': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/44/12c2098568e3ea489e9feace326314b7e22cf1'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/44': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d2/49771d1dca783fa25861d4248ad78629f3d915'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d2/c1d28a85fbc8c8298cc19976c116af71c3ac5a'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/d2': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/96/77730948d369c1bf3c871159fbf634c0b4218f'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/96/6e1798e7c2376fcbb2e67047b57e35012ab82d'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/96': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/0e/9a5753271373a097562d020a50128b7014922d'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/0e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c4/ead4908308c83d28852f8085ff14df17cba64a'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c4/aa9c6dcda36aac5e8a4c134bb79403fad5c489'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/c4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/39/f3fd0255c0ddfa357b8eb91e25179336c53ea2'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/39': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/19/76790c9980c76674324a2b3f4b70a21bcb8415'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/19': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c2/7b6eaeb4c672f5087aae091e58317bb639d982'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/c2/02a8dc1f2ee9931674dcc385365820ef7e669d'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/c2': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/24/ad3671b9c7411b92eebdb6af59c72091b09a0f'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/24': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cc/9a4df697eb7b263beb256a9d12c7fdf5ea9095'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/cc/32aeb0fb81979002da45ba379d0d79363eb0b9'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/cc': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a5/6f187b35d5fb39cc1f8eb99bef2197ef6a3b28'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/a5/151a66c3a360f7ff9097764bd49a52cb3aad23'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/a5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fa/578fabf3adb5250a1a55ae4c212ed0081786ed'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/fa/047dcb9326e6480e6303f825556571be473c58'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/fa': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4c/a61250ac6d1925cabbe57d987a5aeffa08f20f'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/4c/7971a62db3669c64ae75a67feb425c56230bad'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/4c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/01/4445ef4d7d0ee152de48a49824abd9be90ba06'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/01': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/e9/c519f8517430f678ef49dd1e2cfc818e97df84'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/e9': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/70/21d8268af2b92b0c5e2dd4ea81c14ebe470a71'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/70': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/94/1414e2041f3c2c48faa2b68859c69caee857e9'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/94': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/ba/a7529b635c05419f282d7b8afe4805c68680ab'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/ba': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/de/f40f556471a849028720b61dc79f034d42aef4'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/de': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/14/52f4df391856f382849b555e1b2d18326d5dc2'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/14/a330a2b5f97234b747101c8d64e5a6ed0e1063'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/14': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/f0/0f3445b33972c303f8698e430c935e78bda0c4'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/f0': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/11/2af2ae722e5b77c90524dde2f190732a821324'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/11': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/21/0bad176778c9ae40245e6d9acbe1a730caaba1'? rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/21/4dd755a74ae3709932a983467ea2ea040a1c5e'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/21': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/41/b5d21cdebcf2367d2a3549ea340c9e80a66cef'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/41': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/7d/15d680e48b45d7cadf0cc847aa1912eae9d269'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/7d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/83/760be3441554afbad95790a73bea53381ebf3f'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/83': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/40/90e7aff9c288524c4d15c3e81d27f5d157e008'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/40': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/aa/fecc3005b38e0179f4287371f48c9aceff1e61'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/aa': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/d3/c39a14cca175fbe02b8204d3adc1f11a54d2a1'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/d3': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/56/4c6314aaf9cc0ef77aca1b5821e7d3300b86f3'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/56': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/75/4c4c99707d7649ac56b6f57f4d05101a62f266'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/75': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/2c/256c4898587255dfaf75e76a89b8b043a67732'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/2c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/00/9d8ba1d1aff6410b9db5e071a00c63376b208a'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/00': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/1e/69b3008409bfdf87b978c098b2b199415f4af3'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/1e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/22/0f6976b5889157d20297311add7f0ff5ed7a4a'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/22': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/cs240/.git/objects/12/cb0f4473c78753e619d751eba831111382a9e0'? rm: cannot remove '/home/bhogan9/projects/cs240/.git/objects/12': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/pack/pack-05ea1aa2176e465276a52891dd25287ed7d7815a.pack'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/pack/pack-05ea1aa2176e465276a52891dd25287ed7d7815a.idx'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/pack': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fa/13d09e84a7d30cbe4841358eb9e4fa4d278107'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/fa': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/40/16d54b6c6e2018f126dcdae92d9dc1f6a03e53'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/40/289a67b188ff3087bc6935e9860557d8ad2af6'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/40': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1f/d5f2950f50f1850d9f0ec0b8ba7ca684f87c2c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1f/b380f11815edf862f4981e6c2fa15a65636d78'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1f/373493d412532801de07773938c6af34c71468'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/1f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5b/c5f80db0c26331baddc5b9792707fe8510b791'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/5b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/11/a4bff9659cbe685c213428b96354f0ef8f7e42'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/11': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9e/26a0c7c0cf88f7edce3ee24726a0c58bf1e4db'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9e/f766c998426552bf3f24336ef7281bc4a7c83d'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9e/f8010e210976d616264e4dae1d6a077943caa4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1c/249e4ceb1cef0bd1a37c637b986c2a2d66ede1'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1c/fcf83f2f65231fe1c51707b698f73962cefe95'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/1c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ce/013625030ba8dba906f756967f9e9ca394464a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ce/eccd3ea46fa1f192293eb43777ac77427ac84f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ce': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/35/fd3e35238917192cea98e819c68dd425922617'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/35': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7e/00d4ed3d1d1f7bd730d513b4c47c8c59569e32'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7e/903736a28c9bfdc9c74d569141fe223e50eb18'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7e/378b473fc7389fe1b81e10963bedd30e80eece'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/7e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8f/5de5996b137b6314d506eeff15d2eb199b631a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8f/cd2575ae670cd56a7c1cd06eeb3a0e3dc42f32'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c6/51eac4e9da4b2349c43f9ea3cc93e36486c9d8'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c6': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/10/db60022aed81108dfb64c63729bbef28c9cdec'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/10/a1af9e050c6742bccd67aa3cea035fc584f40a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/10/560aae924f33e72af7a38299332e4daa3293fb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/10': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e2/f8c9d8cca09cf7a6d1613c489ede332358c3da'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e2/0b3dfa81459bde8c4c0fe9e51b7712ce04acf4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e2': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a9/8c32d8c79a2c0dca5dd44888eceb01c1ec6d60'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a9/1b1e7b1f33e1c1f41a1ec19385fca1e46d8a5b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/a9': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2b/2676bf87d52b8179f46dc1e8615c6136de4ab7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/2b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4d/60259f3bebd7ffce80b3022cfb0e5fd31fc970'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4d/3f835d3189509937f61b50cd65594cc37195ba'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/4d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/27/5ea13d7c4b71a3d58cf3fbf3c9683b62690977'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/27/5cb18a81e1c8a0b49acffd6a7065fed5c9c07f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/27': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/65/b4cbdbbb84a9bd5dee790a0de306dd7f680d7c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/65/e59346cf97499a7780feeb59dbbd3b8663b0c9'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/65/b40a217b2d618e071d947ea99f337f68ef0cd0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/65': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/93/72f97381ef4280a65cba49d8d46fb9187dd80a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/93/89aaf2498f2ba552a8f627bf5dccb02cb77606'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/93': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/09/197625ac5079c5b7fecc2b7d65dcb3a0dc4f28'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/09/cc6bb39a2291e0703544ef96fba02b429cf5fb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/09': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ec/70adfae35eb6d701e71f4875dc659e28c57b72'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ec/53089945063f1f73b4a706607eb575d8d14a55'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ec/63eb9ba21499aa095da8ce2fb5a4b7b907ffd2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ec': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/84/4df645df3b02c0b2a216317c187ea0471377d8'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/84/3de94530a029ee5da5e011ec624648236696e0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/84': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4b/f94f40ef169a1d17ef280297179b184ab956a7'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4b/75589065564d73b505f1c3e240870db0097936'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/4b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2c/901ad439464da0a13290703a31cf43f15a87ea'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2c/6fb1c78cadb6b9bbe2844d14cadf92ca99bb8d'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2c/fb66870b9e2f7ca559bd1400e88f4722b89b15'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/2c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/97/bf7f1a4e64c2798e7f384ff8544652532058bd'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/97/cd4795867f4a6833eda855d39103868d077633'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/97': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7a/0a3bf15760471db4b9321e071cf75824d43fb5'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7a/9d46a84d906c7b9662698865cadc833c526d9d'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7a/43a3158c5f466804c5d2c1b8e6d4aeb6d251ca'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7a/a19a56109e6c1711839aa6e38b934e01a3007f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/7a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/08/65d65abfdd1ec6a241cc453d8420e68a99d0f7'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/08/3aa03d7c18dfe1498d8000216b84eb249dba0f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/08/fd3f4a579b72aa8705a7fd5c0f4d47cb4415e7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/08': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/db/6d92f2fd99212e3e89a6212eaad97e92f2a394'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/db': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/59/4233cb5c92b15b9d284eceacf49c19f0c9c388'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/59/490436c3ca6460b8a77ff4ddb8e508b01b6090'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/59/2c46ef0b4fe217d1d79586c5e1149a512db395'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/59': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ad/50f4db7aa031b40b79a96492ad6e83477c2299'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ad': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/dc/7d298318cb33f2cb20f686b6ae41ef1e404304'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/dc/7f46bf55eaa852b5c1da18c9982701cfbac68a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/dc': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/89/45db9cfc2ccc4638ff6471c8ea10596881ef5a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/89/d21265492e12a817616ae3a263f6b77c9d7d4e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/89/877f32d3ab26a0dd4ffbb670d0310833dc232f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/89/1717e1dbe3e5e8475ea41505f7b57e0a033a0e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/89/71351a9bf2e7892adbc6842ba55cfa0005f282'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/89': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/eb/0964f25c8ffd24acac3d1f02c02b17c0bf85a1'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/eb/f4a8356fcf75cf7d4fc5a99cabc17e754f9618'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/eb/3a32ba76f1544db94bc3dfce2bd1462aad1567'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/eb/a3607880c7e3a73045db5b406386a085865144'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/eb': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/26/2f57733433536209bb74396a172e7ed19d3bdc'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/26/311ab5d6c8ec9b867c598f16d1b361520373e6'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/26/fd7a37b3bb430e636415e949326e5c27db9359'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/26': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a7/ec5b6ab8d30c2c552206ecdbb2daab631d36eb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/a7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2a/10fc4f0ca984a58f2f52168d324b2037943544'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/2a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d4/7e2485a8d4ba2e79aecbc1967e3ca02d6c0ac1'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d4/a2975e04f598160becd281c5f33fdaded2b6ba'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d4/81ecf65f7186ee8bc25593651fcc5793a72510'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b9/cf4a79ff8eac6abb2e59a1d8b80671d54637d0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b9': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e8/7a443a1b456cfc80d5ba9e841e581fd65c999c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e8/696d8ca71eeb40d0ad4c44e68ca8455fecd227'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e8/3d276713b3df0aa20a1d6aff3c721cce97d8d4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e8': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8b/9783f37985ef6c9d8c10653aa5ef34dadf9d3a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8b/62409a5f8ba22ceaa7eafe65ae9d45bb9c5fe7'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8b/083dcb51337b6a4b4da962d83006551a30dc8a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/69/b6cdfc7c51f51b4cb57eeec448e591fa987184'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/69/6a9c69a9c090d6f53ae1a4cc6ced038e0ca3c8'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/69/a652a35d0694aef83e7924db32d7c99f445eef'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/69': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/13/f2fe4f5c12e7c4082b5df04d0028622b9c5f15'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/13/3dc1367f98615f62756fb48620c95d66e7498f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/13': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/6f/ff341730f1c9b6e6530ca3d68a97e89ff01260'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/6f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ac/182e305823e79e3f8464be82bde8630a4d03e9'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ac/aa2b5adb1d4efd74ce1cbb8c9fb6d32f9b8412'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ac/babc999411bd423f9ccca77487a3b1b56357e7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ac': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/70/d83f55b67ec70268fffceb7e140c45a7a43ca0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/70': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/88/4ffcdcd8f29c6a3030f9a639b6f6a005a2990c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/88/aca414f99c9a41746ab8e04f8bb4011291e6ac'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/88': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b6/fc4c620b67d95f953a5c1c1230aaab5db5a1b0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b6': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8d/7cc95f5f6ecfee553a6b102367141cb365b64f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8d/6d884ac1f4071983afb2d3d5bc301fb1b0295e'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/02/132f08280a3bcfc7b79a2e2e9431d0e6f1269e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/02/84369b2b196fd13fa85863fa81154f5b036394'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/02': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3a/98efc7deea206b44367563fd39dd67a6420f53'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3a/f1652e656473ae16c40143440c7e9d3a1d6b33'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/3a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d7/98b89de32a44c4a43e7618ee0d17cbd1a047c3'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7d/b71a9f9b489053ea49e7b1267b776c4322003c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7d/71051b61ee8f12d47ca2571ebe4793942b83c5'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/7d/4b1a6707cdf68841eadb566b33edd4668c5748'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/7d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/63/8375c6340797b911865138eb6fc665f206f070'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/63/20cd248dd8aeaab759d5871f8781b5c0505172'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/63': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c7/3d741b06255e3b3a29f354d21a500501de73aa'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c7/d27db79b29372fa70d6576249b29c028231a2a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8e/c64afcb2697e1a0edad71bc8ef85b650bc6442'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ee/2e5d437cf0813d6b2bf771b018686ce6978823'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ee/a84da090a2f8da7b462012b7545f92b19ef53b'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ee/3943435d479c4d8018df17c9909a7594bc3b3e'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ee': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/06/b493f36da8c8fe75ea290a747ea33bc55d2638'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/06/0dae624f0be25ea74eea71eee6682db7d332b1'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/06': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c3/5a5570f857afdb814974bca5e5057a83f36a4f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c3': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/29/1fc5c1797c1d7b2754cf33a92889b39e2e7f17'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/29': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/df/4abba2fae5693831a969973404179816bd9959'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/df/8d1217a374fb45addb31b6b691a5960d796149'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/df': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a5/df0bd531f015428a3c277cf312c0e42437e77d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/a5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4a/2b9e1082b74ed90e1ba387cba460657b957982'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4a/f1267dca85a6f75983908ce7d9929c5fd84553'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/4a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e6/2fa0ebd345182c92c99075d10a1c641aa154f9'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e6': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2f/e9e3993bed513f3ed7156d0a37e327335eee71'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/2f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4f/3feb60bb402fd1c91b97fcf5da4629f9b2d8cd'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4f/414a35a68ec5a6e7e231eed8aedd552222a4c9'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/4f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/2e/f69c8924fe258298bf9998def1d63237d06d21'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/2e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ff/82188719b9559be40f579ed87947bd6a8ff14a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ff': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8c/4a3fa261fea33ee98da549e40b662778f3c4a0'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8c/770d138970fcd2518ebe5c03ca9ca55f96c4f2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/6d/701a983fc807d549b4a2049ce4d3e97c491242'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/6d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/44/a3509cc2e03e21c19b9d156050dca2e2ae8a54'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/44/0c0a4782c02affc07af1c0a98ff43ca8c5691a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/44/bceb4d2645f8a96bf22c05cd8f0d4f18487887'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/44/2596b0f430e2f8f635f4dffd263fe0503c33d5'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/44': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fb/d1905bee4cd90d648584c8f778641b08a6b2ff'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fb/d0de1c7e7f0ad6374574f1bad58220f4d8e510'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fb/872c1772f2e71b325976833d2392480bb8a540'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fb/b62337e2c260e62939b92bdf1753b5a5af3634'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/fb': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a0/c17f08d91fff76c7180260735a0c8905941fb7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/a0': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/85/02ccfe457174b793b19f22858e45f0112e3f0f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/85/787864585991f4c52ffa514894e9cf74579227'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/85': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/96/056837d619a308d6131076f131b3a15ed9947a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/96/eb9297aba4002ccef8f700e100fd92aea079e8'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/96': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/5cc8b3d3218769e7166f5af838f6d04ce47713'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/3b41bfedb511e158a7515326411cc24692202c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/8f2e7e2ed0e7e4784b8bfd518f854812beca44'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/5c1db270b9019ebbdb2982dea0fc4d7c677057'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/219922546ec8ad50fa96f83146433291701666'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/8a/948234962c0600f3e7de09463edb40e08e5f0d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/8a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3e/c685fed3fd1a695e36108e99ea24a05f1ec6d2'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3e/e891764885fbe618dd885d6160c38b23efb238'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/3e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5a/2946cec8ae06d29c48d6ad9c8bb40dd46c55ea'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/5a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f5/9ea2f6bcef2604e98e96014267741867f094eb'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f5/1b5fedd06633e29c420cbd64ee37c1140059b6'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f5/7e7889dd5dcd102e5cdcd68fee19fdddd11d5d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/f5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/43/d3d7607e4a0b4c51575d3646d0e251af356d3f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/43/977c83462543f8fd34154268bc0d5c3772ba65'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/43': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c0/00c1f567e45f8981e7b4584aa71e74e8c6a23c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c0/8a36be5a8b213b2d0378e0c6ea2a01addb97b0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c0': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/92/1566f5c8b7af92083a7f73d617c1628e7a490e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/92/800deb0929b1b52fcd4ffd874e4197bd421207'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/92/1f3ad6cc9e9aeab75edeb91008455f539260cf'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/92': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/01/f9172a46dc82e6184e51cbbb1ca83425661f48'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/01/4be8f400a97a0b9527bee0db49afe0288c0a22'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/01': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/39/33e426da8ecc0579288b88dee157be177aea61'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/39': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/af/ec6b5abf0ed47f917ec7a69da262e7cf328d23'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/af': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0f/5d11d7909dea94fc8324f2ac4e8231d37ad53c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0f/63875f8a94cee4b8603d02c33368483b405462'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/0f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/07/08037cca452fac32cc021635ff93a31f3256da'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/07': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/23/9702fc5052af2cd4018c9ce3adfa25f3b6a0ae'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/23/88a1fb9e15e5d53e9c4e29c4da2bcb29bc883b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/23': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ab/7db6a23e9b91dab5c830e1d11aedf3c42039fb'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ab/07f290c9cbe140f14974b26401f6151fd72005'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ab': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/71/4a8539fe6b7ff65b7eeac1c554b5d1e5da7984'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/71': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/aa/0cedbd7c9b9ce45c9be3b2092fbf00128edf46'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/aa/0b2fbd057a045db07b94a459fd5a70a8f7a11a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/aa': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/55/7f3f56a52839680b1df5f0c997a2b71544f5b4'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/55/d7af67c68a5cfa0f3abea2a2239cf6596eddb5'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/55': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f6/315f618b117f474992ade21290058e91fefb0d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/f6': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/86/0f06dd2f4cd1106c1c9471925e148a65c4591e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/86/c694e24040e3e10fd304796ef19b7c97dfa350'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/86/ccabd6f982f9c6aa13339d82c105eedadd723a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/86': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/46/ebb2fe101352fca3aabc7ecb83d4943705ee10'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/46/e096091d491c29423ebff886f31fafb81f20af'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/46': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/05/ee0410f2c8a89bc8b756500dba8ff5aa6bf7c0'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/05/e4d77247794d0f4b7ded39858d1ee5e2d5b15f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/05': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/00/49995318472a903df0a4fc9f27fa54cc4ca1c9'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/00': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0e/522c667bba0273792779e2c4df65a7365505ad'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0e/de050372c4992f69232d4c10b3b72470cc99cf'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/0e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/cb/3ac7215ce89b088d443f6eeeff5059164bd261'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/cb': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/38/e382af0642310cf2f62230b33c358f8302ace6'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/38/eebe18bc6620c7b1b00c596d218935b8f64c61'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/38/1cdeb21be6efb2d87fc78da44d638e99a644bd'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/38': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f7/9bea7620c76a410ac75b4975d024ab46180319'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f7/8d7915c6ebfe396001921d99e543ff3a958ed2'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f7/ea4d36465d88809fe690308a151aad8551e9f3'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/f7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5f/06b04a692ff2be79998954e859493739696068'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5f/a595d01c16e3dfe798923d8e43365ad71b5fb4'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5f/6f7d1cdab672a3ccfb42b81f58ca6a0d7aa4ad'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5f/aa45ffcd52b6155d36377bd3ea5ff4056b3c7f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/5f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/6a/5aeef16fced44280e91fad45539e6b72178968'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/6a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3d/e9f433ef927ae95aa5c9507a629cc186252f7e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3d/db24fed8ff2263cd8b331b4040823b4d1d9976'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3d/c8990d516dfd0e46f3587918952f69d453bcd1'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/3d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/04/7893f8816d7a23dbb64ff96473f6bced6dbaef'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/04/2ccaf4a748482fc74890c50848c4c902f51663'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/04/441553bdb4cc953827eeadb25e5f9dfa3f0cc0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/04': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9a/c63e1b6bf674993cb903e75f5ad5d2b03117e3'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9a': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/79/455729b717508bc230643bbafd93d0f3a6487a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/79': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d0/540e882307c3e614acc11bfb077c2a4e7a1578'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d0/2f721367140d006f9b53f3bbfebb4e252d49da'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d0/03f05dfb47f5895892a0843fc2a94a002d7e5f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d0': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9c/eb4f332a4747669a8d1d9a1bb4a2800d308fa3'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9c/2742427f23a54ede28b7df4f192641f6d92e17'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9c/64852c8ee84cc88979eca761c776c4f476ff53'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9c/f549e7ae4ccf5df7b25466215f067ec1aee6d3'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9c/0277051bb9f966b077b3827697bf8156857943'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/58/a6f16eba2d066de4a49e2b5ea40a5f5cb43122'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/58/0e4d056065a4246e127498d7f1a56d64e460f8'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/58': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3f/f6901ab760e4035a14678a3c9ee047c9efb833'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/3f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c4/393bbab22c0329549822d8571b3523949c646e'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1e/18277ba324d265f1d99d01e91e8f6c54adfb8e'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1e/efaf17b1ceb2f301347353a23de7d6f13b519d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/1e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/95/632e5534a46db5affbe7c755d80c44b60bfb62'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/95/d823901b33054a3610ffaa50346162cb6d7244'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/95': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/22/b4f2deb525d09dd7ef2d37506a051f7aeeacb9'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/22': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/bd/cd832e0987c3b416c0be9869cc9417d4d3e92a'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/bd/956b60a9a1ee29540e545c541abbae9c814ade'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/bd': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/21/c98888b8d387be2bbed5940f4a03872e26b866'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/21': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/de/0c037f14b62f52d0e02cedbe0fe2c5d06370ea'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/de/5282bb91bfd37f39f2174a700938eb7ab80a37'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/de/8b621f1a4d7c0958ec7080aab6bb5a25c027cb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/de': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/94/53ed17ad127668ef48afebf9193674723efd1c'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/94': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/32/28f944a803f78ae3801045d70d3617f8801236'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/32': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3b/5274b906660d7cb4b349b1909b704753782d17'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/3b/584a6b8ef158a1445572e9156a425dfd8955a6'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/3b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/50/fad92a15e2206fbf91a05711a44d9a87a3b682'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/50': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/cd/3e4ac26de1c61d46d40415f4b3028d89f23908'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/cd': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fd/41f054a78727a786a05945c0766f84dc06e4b4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/fd': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/48/f8ce3cc4393daa60c0cfff4a9c34a99cbac9cc'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/48/b5dc15db94823aab3525d7992261dae54b7591'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/48': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/54/73ae94d73fda2e64e97e7de8e68c540b9916a2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/54': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d5/bbc268b4e42eb97e59a019bcb735a39b75324d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e5/7d1895adee28752041aa45efd90c104ec62316'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d9/b7eb8f39f8cc7e3c216579c8ca8856912cdffe'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d9/d6951173c1600a4e3e604d67ff7e3b69f11d71'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d9': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/cf/0f71c525a06717f40bdac6a19847aa0591005b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/cf': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ea/c4c3d2654fbc8c36631643b154ce2396468270'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ea': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ef/7790735d3881b7dac35617fb098fe5180d15c5'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ef/279f29acd62cdd3cdda12acd895ac84cf74da2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ef': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/1b/8d2006899e43c3293c261ea7b74d4a57c2e6e7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/1b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b5/23a04e0ba5cb46b6e100d7e80eb38c500597f1'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9f/74140c92cb710c3b94de68d65150e85d02242b'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9f/17b65577f858b7a10dfa8a3ec3a79ecf8dda38'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9f/cb877834f89578c08cdaeb104b4a91e00c2cce'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9f': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/82/ac5ce6f74393101249190946674026bb7ea98e'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/82': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9d/3f0da8bd3fd7329987833a9b36e45e469452cb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/83/b2a162e3e93a01b8adb026ef1a856ca1dd5278'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/83': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b4/14108e81e5091fe0974a1858b4d0d22b107f70'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/6e/35945d4f9608c26e18bb8ec4f5bd7936eb7885'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/6e/3cb4393e97f720790da8e5c403916ad231181f'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/6e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/14/c9cd3e96905fdf48b859c1791e3d59cc41e123'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/14/593e2ae1b0e425d3c354c58ffe6d174cdbee00'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/14': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/c5/6dbb67556a9d8e618ce5f9c6a6567049889411'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/c5': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/99/164c19787358f6b2bb3f4c610694483926b3e7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/99': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/72/c53af2731fc60ba35dabb7d0d26049f90809ad'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/72': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e7/39809eb2bb4cf23cdda5c21facf5d77c178e53'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e7/652bf2c7252a6949b8bb6f2ac1fc74fb5b7f72'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/67/53e87259399582f9df904c9f5e10b44a1925f2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/67': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/33/564857c43fa950f45d5baf6c0f44d12d312480'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/33': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ba/720ef503f3dda79b1a0f3ac2669e45e5cec4f1'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ba/185ee3da325fb64fcf25f744410ca5321365af'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ba': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b3/85db206f9922e30ea1077d23bdd40dc50845c4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b3': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e4/cf775fd91dc3c93eaed7808e4afc46ca3ff4dc'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e4/9f3f0f03d6ff8ac4b76a73af5f15525e5e4c5c'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e4/b879993c2a2019f777cece010230c64df8a7e7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5d/9011857480e0fa218a38abffb0afedc3105a9a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/5d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/61/5ccc16637be0ac7bd4f438d9931f7aa3b9cd0a'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/61': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/31/47a0cf7640c347b47e7e6e3aa9e8d899b5ba5b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/31': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0b/ff2d9c0c1b3772f23f4916ef5d29c08d2ea067'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/0b': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/20/46528f693739f43576d086d575f32004083ad6'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/20/4792b8a30c5c31139365f6e1ce80988e1714d8'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/20': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/80/5b53aa32187838d9c2efb4f94ec4f26e4dda1d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/80': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/30/5f88d16099ff69bf98e5fc5280a027a5a0dd2b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/30': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d2/b7a69c176eb74002ec99de0f480a54f7d37f8b'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d2/d486e6d7e06bd189a73d878c53d745864e5611'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d2': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b1/a2383089710dba6962c63e6cd4ce2215e31c42'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b1': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/19/b0dc5b6c105be1bd99e4b5e294dd53872c083c'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/19': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/4e/9e2d90bf87a668384a872e127175cadeca3905'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/4e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/36/52c6b5080fcc0a7f5ae045d157583a1c7bacee'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/36/3bd9efcd71c2e2288b9943fd8d4d29b7ec3adf'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/36': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/52/72c24d1ed51e942e9623980f4592ac6859a7f2'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/52': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0c/3a3ecbfa49ce644ff57b11385e8aa9d09e7aed'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/0c': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/dd/e674962e6ac12e936a1001f2858c929cf4d070'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/dd': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/ed/45a709be5e98c8f15dc33a8d31cfc1ed40f2e5'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/ed': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f1/a97adca0ef7671ddb742f78d5663ee13490f0f'? rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/f1/b22869b1dbb717354e44aeb4b65624ef8d0164'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/f1': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/fe/98332aef90c8ab13e8f1ab2925c02614c6ee12'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/fe': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/53/44efb70eebd0f01d970e28c58353c93be41c01'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/53': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/75/0e8b6d1ee5db68c7f3aba125e42051115679a4'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/75': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/5e/0a6756411889eee1c0ddfa10ba6adffa5387d3'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/5e': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/0d/2c94312dc14e8568daa1ff208a3af51af1ac8b'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/0d': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/bc/3118f52dbb959c2800844ee540d2ed99f32a9e'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/bc': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/b7/fa0815fa4158fd9984a36cf44388f1ae246a6d'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/b7': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/e1/f980d2ce48c972b9c2b8294a743205febc84a0'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/e1': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/78/ecd6df531e3be8fb375e0e3d196340dc3d2625'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/78': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/d3/abac343a934501997e913ce115b14b95c424f7'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/d3': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/a4/79ca6d3970c094eaa17833fe81d513c15d70fb'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/a4': Directory not empty
+rm: remove write-protected regular file '/home/bhogan9/projects/i240b/.git/objects/9b/ddd6a0238f3494d78c767f9903f1d41be954fc'? rm: cannot remove '/home/bhogan9/projects/i240b/.git/objects/9b': Directory not empty
+bhogan9@remote06:~/tmp/lab0$ ls
+lab0.LOG
+bhogan9@remote06:~/tmp/lab0$ cd ..[K[K~/projects/
+bhogan9@remote06:~/projects$ ls
+cs240  i240b
+bhogan9@remote06:~/projects$ cd ..
+bhogan9@remote06:~$ mkdir -p ~/pr[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~/projects/
+bhogan9@remote06:~/projects$ ls
+cs240  i240b
+bhogan9@remote06:~/projects$ cd cs240/
+bhogan9@remote06:~/projects/cs240$ ls
+bhogan9@remote06:~/projects/cs240$ cd ..
+bhogan9@remote06:~/projects$ rm cs240/
+rm: cannot remove 'cs240/': Is a directory
+bhogan9@remote06:~/projects$ rm cs240/-cs240/rcs240/ cs240/
+rm: remove write-protected regular file 'cs240/.git/objects/51/7052ebd86bdfa2ff7248d01d63f21c1a808cee'? rm: cannot remove 'cs240/.git/objects/51': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/a2/34caaec234dc1dc32e45ceddcce2319bb13756'? rm: cannot remove 'cs240/.git/objects/a2': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/3c/4375192f2b104d3eba5f9581a34250592ae316'? rm: cannot remove 'cs240/.git/objects/3c': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/c8/b31154991dadf062e15cdfa91e26f69320976e'? rm: remove write-protected regular file 'cs240/.git/objects/c8/6300040198a35008fb02902a3d478d6a40fe80'? rm: cannot remove 'cs240/.git/objects/c8': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/84/a3e1aebc880173faa30c7c284772bd9f53548f'? rm: remove write-protected regular file 'cs240/.git/objects/84/95b0f8829ffde2fd9f54e1f7526a2bb7fb5298'? rm: remove write-protected regular file 'cs240/.git/objects/84/02c9a3ebbbec83f973d031c3c839a40276e815'? rm: cannot remove 'cs240/.git/objects/84': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/ef/7552d56c0c91a65e7f0e6f6dc1c8f4a8a12871'? rm: remove write-protected regular file 'cs240/.git/objects/ef/d397fd840d64a7794ee18cca291a834358445e'? rm: cannot remove 'cs240/.git/objects/ef': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/38/1fddd9a3dfcbbf91bc0d9efd9de27c493ab295'? rm: remove write-protected regular file 'cs240/.git/objects/38/6487319629c980f3855598a03a29ad6628e000'? rm: cannot remove 'cs240/.git/objects/38': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/93/3ef59adec9cb7e33f154745a75b3b8e36bdd4b'? rm: remove write-protected regular file 'cs240/.git/objects/93/2737ab4be668961d7dc7ee8a5d288b8cc35c1c'? rm: cannot remove 'cs240/.git/objects/93': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/a7/a6697411c2f71b2297e135583fd93345737298'? rm: remove write-protected regular file 'cs240/.git/objects/a7/1b9fdc77e671a1e9aa1f5afbad1b7b5b9ff917'? rm: cannot remove 'cs240/.git/objects/a7': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/bd/2bc3a167edaf5d4544e0d99e159c903ed1d536'? rm: remove write-protected regular file 'cs240/.git/objects/bd/8d546f872075e99192aaa728d0b9391479226d'? rm: remove write-protected regular file 'cs240/.git/objects/bd/116f13c94b767b095c0a9f3c19c6e6db2fe632'? rm: cannot remove 'cs240/.git/objects/bd': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/4f/1cfcdea774fe53245205ca299cda683ebabe84'? rm: cannot remove 'cs240/.git/objects/4f': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/1c/940f98f324c289a0473b10cff521de2db0a955'? rm: remove write-protected regular file 'cs240/.git/objects/1c/bb655baa72e2cef24ccee898dae07c395eede9'? rm: cannot remove 'cs240/.git/objects/1c': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/0c/b5382d3d9a0bd6571c4ca26bf36e155e9cfd51'? rm: cannot remove 'cs240/.git/objects/0c': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/b3/fd5a86c81b49b585a919e5744012a018aad2bc'? rm: cannot remove 'cs240/.git/objects/b3': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/60/2d5709402cbd5f1c21f5e64ee34a9cb5c08073'? rm: cannot remove 'cs240/.git/objects/60': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/37/1a2ff1445166bd025fd41a3f9fbf30d1f34a2a'? rm: remove write-protected regular file 'cs240/.git/objects/37/8d27ca37facae6ca083f814f5d822e5117f765'? rm: remove write-protected regular file 'cs240/.git/objects/37/1ce8f9a7c8e2363b3384714f1bacad6b526121'? rm: cannot remove 'cs240/.git/objects/37': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/44/12c2098568e3ea489e9feace326314b7e22cf1'? rm: cannot remove 'cs240/.git/objects/44': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/d2/49771d1dca783fa25861d4248ad78629f3d915'? rm: remove write-protected regular file 'cs240/.git/objects/d2/c1d28a85fbc8c8298cc19976c116af71c3ac5a'? rm: cannot remove 'cs240/.git/objects/d2': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/96/77730948d369c1bf3c871159fbf634c0b4218f'? rm: remove write-protected regular file 'cs240/.git/objects/96/6e1798e7c2376fcbb2e67047b57e35012ab82d'? rm: cannot remove 'cs240/.git/objects/96': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/0e/9a5753271373a097562d020a50128b7014922d'? rm: cannot remove 'cs240/.git/objects/0e': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/c4/ead4908308c83d28852f8085ff14df17cba64a'? rm: remove write-protected regular file 'cs240/.git/objects/c4/aa9c6dcda36aac5e8a4c134bb79403fad5c489'? rm: cannot remove 'cs240/.git/objects/c4': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/39/f3fd0255c0ddfa357b8eb91e25179336c53ea2'? rm: cannot remove 'cs240/.git/objects/39': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/19/76790c9980c76674324a2b3f4b70a21bcb8415'? rm: cannot remove 'cs240/.git/objects/19': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/c2/7b6eaeb4c672f5087aae091e58317bb639d982'? rm: remove write-protected regular file 'cs240/.git/objects/c2/02a8dc1f2ee9931674dcc385365820ef7e669d'? rm: cannot remove 'cs240/.git/objects/c2': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/24/ad3671b9c7411b92eebdb6af59c72091b09a0f'? rm: cannot remove 'cs240/.git/objects/24': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/cc/9a4df697eb7b263beb256a9d12c7fdf5ea9095'? rm: remove write-protected regular file 'cs240/.git/objects/cc/32aeb0fb81979002da45ba379d0d79363eb0b9'? rm: cannot remove 'cs240/.git/objects/cc': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/a5/6f187b35d5fb39cc1f8eb99bef2197ef6a3b28'? rm: remove write-protected regular file 'cs240/.git/objects/a5/151a66c3a360f7ff9097764bd49a52cb3aad23'? rm: cannot remove 'cs240/.git/objects/a5': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/fa/578fabf3adb5250a1a55ae4c212ed0081786ed'? rm: remove write-protected regular file 'cs240/.git/objects/fa/047dcb9326e6480e6303f825556571be473c58'? rm: cannot remove 'cs240/.git/objects/fa': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/4c/a61250ac6d1925cabbe57d987a5aeffa08f20f'? rm: remove write-protected regular file 'cs240/.git/objects/4c/7971a62db3669c64ae75a67feb425c56230bad'? rm: cannot remove 'cs240/.git/objects/4c': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/01/4445ef4d7d0ee152de48a49824abd9be90ba06'? rm: cannot remove 'cs240/.git/objects/01': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/e9/c519f8517430f678ef49dd1e2cfc818e97df84'? rm: cannot remove 'cs240/.git/objects/e9': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/70/21d8268af2b92b0c5e2dd4ea81c14ebe470a71'? rm: cannot remove 'cs240/.git/objects/70': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/94/1414e2041f3c2c48faa2b68859c69caee857e9'? rm: cannot remove 'cs240/.git/objects/94': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/ba/a7529b635c05419f282d7b8afe4805c68680ab'? rm: cannot remove 'cs240/.git/objects/ba': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/de/f40f556471a849028720b61dc79f034d42aef4'? rm: cannot remove 'cs240/.git/objects/de': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/14/52f4df391856f382849b555e1b2d18326d5dc2'? rm: remove write-protected regular file 'cs240/.git/objects/14/a330a2b5f97234b747101c8d64e5a6ed0e1063'? rm: cannot remove 'cs240/.git/objects/14': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/f0/0f3445b33972c303f8698e430c935e78bda0c4'? rm: cannot remove 'cs240/.git/objects/f0': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/11/2af2ae722e5b77c90524dde2f190732a821324'? rm: cannot remove 'cs240/.git/objects/11': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/21/0bad176778c9ae40245e6d9acbe1a730caaba1'? rm: remove write-protected regular file 'cs240/.git/objects/21/4dd755a74ae3709932a983467ea2ea040a1c5e'? rm: cannot remove 'cs240/.git/objects/21': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/41/b5d21cdebcf2367d2a3549ea340c9e80a66cef'? rm: cannot remove 'cs240/.git/objects/41': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/7d/15d680e48b45d7cadf0cc847aa1912eae9d269'? rm: cannot remove 'cs240/.git/objects/7d': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/83/760be3441554afbad95790a73bea53381ebf3f'? rm: cannot remove 'cs240/.git/objects/83': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/40/90e7aff9c288524c4d15c3e81d27f5d157e008'? rm: cannot remove 'cs240/.git/objects/40': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/aa/fecc3005b38e0179f4287371f48c9aceff1e61'? rm: cannot remove 'cs240/.git/objects/aa': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/d3/c39a14cca175fbe02b8204d3adc1f11a54d2a1'? rm: cannot remove 'cs240/.git/objects/d3': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/56/4c6314aaf9cc0ef77aca1b5821e7d3300b86f3'? rm: cannot remove 'cs240/.git/objects/56': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/75/4c4c99707d7649ac56b6f57f4d05101a62f266'? rm: cannot remove 'cs240/.git/objects/75': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/2c/256c4898587255dfaf75e76a89b8b043a67732'? rm: cannot remove 'cs240/.git/objects/2c': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/00/9d8ba1d1aff6410b9db5e071a00c63376b208a'? rm: cannot remove 'cs240/.git/objects/00': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/1e/69b3008409bfdf87b978c098b2b199415f4af3'? rm: cannot remove 'cs240/.git/objects/1e': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/22/0f6976b5889157d20297311add7f0ff5ed7a4a'? rm: cannot remove 'cs240/.git/objects/22': Directory not empty
+rm: remove write-protected regular file 'cs240/.git/objects/12/cb0f4473c78753e619d751eba831111382a9e0'? rm: cannot remove 'cs240/.git/objects/12': Directory not empty
+bhogan9@remote06:~/projects$ git colone[K[K[Kne[K[K[K[Klone bhogan9@b[Kremote.cs.binghamton.edu/~umrigar/git-repos/cs220.git
+fatal: repository 'bhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git' does not exist
+bhogan9@remote06:~/projects$ ssh://bhogan9@bu[Kinghamton,edu[K[K[K[K,[K.edu/~umrigar/git-repos/cs220.git
+bash: ssh://bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git: No such file or directory
+bhogan9@remote06:~/projects$ ssh://bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git[1P//bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C //bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ssh: Could not resolve hostname binghamton.edu/~umrigar/git-repos/cs220.git: Name or service not known
+bhogan9@remote06:~/projects$ cd[K[Kgit clone  ^V[K[K^V[K[K ssh //bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C://bhogan9@binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone bhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[Csbhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chbhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:bhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bhogan9@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'cs220'...
+remote: Enumerating objects: 261, done.[K
+remote: Counting objects:   0% (1/261)   [Kremote: Counting objects:   1% (3/261)   [Kremote: Counting objects:   2% (6/261)   [Kremote: Counting objects:   3% (8/261)   [Kremote: Counting objects:   4% (11/261)   [Kremote: Counting objects:   5% (14/261)   [Kremote: Counting objects:   6% (16/261)   [Kremote: Counting objects:   7% (19/261)   [Kremote: Counting objects:   8% (21/261)   [Kremote: Counting objects:   9% (24/261)   [Kremote: Counting objects:  10% (27/261)   [Kremote: Counting objects:  11% (29/261)   [Kremote: Counting objects:  12% (32/261)   [Kremote: Counting objects:  13% (34/261)   [Kremote: Counting objects:  14% (37/261)   [Kremote: Counting objects:  15% (40/261)   [Kremote: Counting objects:  16% (42/261)   [Kremote: Counting objects:  17% (45/261)   [Kremote: Counting objects:  18% (47/261)   [Kremote: Counting objects:  19% (50/261)   [Kremote: Counting objects:  20% (53/261)   [Kremote: Counting objects:  21% (55/261)   [Kremote: Counting objects:  22% (58/261)   [Kremote: Counting objects:  23% (61/261)   [Kremote: Counting objects:  24% (63/261)   [Kremote: Counting objects:  25% (66/261)   [Kremote: Counting objects:  26% (68/261)   [Kremote: Counting objects:  27% (71/261)   [Kremote: Counting objects:  28% (74/261)   [Kremote: Counting objects:  29% (76/261)   [Kremote: Counting objects:  30% (79/261)   [Kremote: Counting objects:  31% (81/261)   [Kremote: Counting objects:  32% (84/261)   [Kremote: Counting objects:  33% (87/261)   [Kremote: Counting objects:  34% (89/261)   [Kremote: Counting objects:  35% (92/261)   [Kremote: Counting objects:  36% (94/261)   [Kremote: Counting objects:  37% (97/261)   [Kremote: Counting objects:  38% (100/261)   [Kremote: Counting objects:  39% (102/261)   [Kremote: Counting objects:  40% (105/261)   [Kremote: Counting objects:  41% (108/261)   [Kremote: Counting objects:  42% (110/261)   [Kremote: Counting objects:  43% (113/261)   [Kremote: Counting objects:  44% (115/261)   [Kremote: Counting objects:  45% (118/261)   [Kremote: Counting objects:  46% (121/261)   [Kremote: Counting objects:  47% (123/261)   [Kremote: Counting objects:  48% (126/261)   [Kremote: Counting objects:  49% (128/261)   [Kremote: Counting objects:  50% (131/261)   [Kremote: Counting objects:  51% (134/261)   [Kremote: Counting objects:  52% (136/261)   [Kremote: Counting objects:  53% (139/261)   [Kremote: Counting objects:  54% (141/261)   [Kremote: Counting objects:  55% (144/261)   [Kremote: Counting objects:  56% (147/261)   [Kremote: Counting objects:  57% (149/261)   [Kremote: Counting objects:  58% (152/261)   [Kremote: Counting objects:  59% (154/261)   [Kremote: Counting objects:  60% (157/261)   [Kremote: Counting objects:  61% (160/261)   [Kremote: Counting objects:  62% (162/261)   [Kremote: Counting objects:  63% (165/261)   [Kremote: Counting objects:  64% (168/261)   [Kremote: Counting objects:  65% (170/261)   [Kremote: Counting objects:  66% (173/261)   [Kremote: Counting objects:  67% (175/261)   [Kremote: Counting objects:  68% (178/261)   [Kremote: Counting objects:  69% (181/261)   [Kremote: Counting objects:  70% (183/261)   [Kremote: Counting objects:  71% (186/261)   [Kremote: Counting objects:  72% (188/261)   [Kremote: Counting objects:  73% (191/261)   [Kremote: Counting objects:  74% (194/261)   [Kremote: Counting objects:  75% (196/261)   [Kremote: Counting objects:  76% (199/261)   [Kremote: Counting objects:  77% (201/261)   [Kremote: Counting objects:  78% (204/261)   [Kremote: Counting objects:  79% (207/261)   [Kremote: Counting objects:  80% (209/261)   [Kremote: Counting objects:  81% (212/261)   [Kremote: Counting objects:  82% (215/261)   [Kremote: Counting objects:  83% (217/261)   [Kremote: Counting objects:  84% (220/261)   [Kremote: Counting objects:  85% (222/261)   [Kremote: Counting objects:  86% (225/261)   [Kremote: Counting objects:  87% (228/261)   [Kremote: Counting objects:  88% (230/261)   [Kremote: Counting objects:  89% (233/261)   [Kremote: Counting objects:  90% (235/261)   [Kremote: Counting objects:  91% (238/261)   [Kremote: Counting objects:  92% (241/261)   [Kremote: Counting objects:  93% (243/261)   [Kremote: Counting objects:  94% (246/261)   [Kremote: Counting objects:  95% (248/261)   [Kremote: Counting objects:  96% (251/261)   [Kremote: Counting objects:  97% (254/261)   [Kremote: Counting objects:  98% (256/261)   [Kremote: Counting objects:  99% (259/261)   [Kremote: Counting objects: 100% (261/261)   [Kremote: Counting objects: 100% (261/261), done.[K
+remote: Compressing objects:   0% (1/224)   [Kremote: Compressing objects:   1% (3/224)   [Kremote: Compressing objects:   2% (5/224)   [Kremote: Compressing objects:   3% (7/224)   [Kremote: Compressing objects:   4% (9/224)   [Kremote: Compressing objects:   5% (12/224)   [Kremote: Compressing objects:   6% (14/224)   [Kremote: Compressing objects:   7% (16/224)   [Kremote: Compressing objects:   8% (18/224)   [Kremote: Compressing objects:   9% (21/224)   [Kremote: Compressing objects:  10% (23/224)   [Kremote: Compressing objects:  11% (25/224)   [Kremote: Compressing objects:  12% (27/224)   [Kremote: Compressing objects:  13% (30/224)   [Kremote: Compressing objects:  14% (32/224)   [Kremote: Compressing objects:  15% (34/224)   [Kremote: Compressing objects:  16% (36/224)   [Kremote: Compressing objects:  17% (39/224)   [Kremote: Compressing objects:  18% (41/224)   [Kremote: Compressing objects:  19% (43/224)   [Kremote: Compressing objects:  20% (45/224)   [Kremote: Compressing objects:  21% (48/224)   [Kremote: Compressing objects:  22% (50/224)   [Kremote: Compressing objects:  23% (52/224)   [Kremote: Compressing objects:  24% (54/224)   [Kremote: Compressing objects:  25% (56/224)   [Kremote: Compressing objects:  26% (59/224)   [Kremote: Compressing objects:  27% (61/224)   [Kremote: Compressing objects:  28% (63/224)   [Kremote: Compressing objects:  29% (65/224)   [Kremote: Compressing objects:  30% (68/224)   [Kremote: Compressing objects:  31% (70/224)   [Kremote: Compressing objects:  32% (72/224)   [Kremote: Compressing objects:  33% (74/224)   [Kremote: Compressing objects:  34% (77/224)   [Kremote: Compressing objects:  35% (79/224)   [Kremote: Compressing objects:  36% (81/224)   [Kremote: Compressing objects:  37% (83/224)   [Kremote: Compressing objects:  38% (86/224)   [Kremote: Compressing objects:  39% (88/224)   [Kremote: Compressing objects:  40% (90/224)   [Kremote: Compressing objects:  41% (92/224)   [Kremote: Compressing objects:  42% (95/224)   [Kremote: Compressing objects:  43% (97/224)   [Kremote: Compressing objects:  44% (99/224)   [Kremote: Compressing objects:  45% (101/224)   [Kremote: Compressing objects:  46% (104/224)   [Kremote: Compressing objects:  47% (106/224)   [Kremote: Compressing objects:  48% (108/224)   [Kremote: Compressing objects:  49% (110/224)   [Kremote: Compressing objects:  50% (112/224)   [Kremote: Compressing objects:  51% (115/224)   [Kremote: Compressing objects:  52% (117/224)   [Kremote: Compressing objects:  53% (119/224)   [Kremote: Compressing objects:  54% (121/224)   [Kremote: Compressing objects:  55% (124/224)   [Kremote: Compressing objects:  56% (126/224)   [Kremote: Compressing objects:  57% (128/224)   [Kremote: Compressing objects:  58% (130/224)   [Kremote: Compressing objects:  59% (133/224)   [Kremote: Compressing objects:  60% (135/224)   [Kremote: Compressing objects:  61% (137/224)   [Kremote: Compressing objects:  62% (139/224)   [Kremote: Compressing objects:  63% (142/224)   [Kremote: Compressing objects:  64% (144/224)   [Kremote: Compressing objects:  65% (146/224)   [Kremote: Compressing objects:  66% (148/224)   [Kremote: Compressing objects:  67% (151/224)   [Kremote: Compressing objects:  68% (153/224)   [Kremote: Compressing objects:  69% (155/224)   [Kremote: Compressing objects:  70% (157/224)   [Kremote: Compressing objects:  71% (160/224)   [Kremote: Compressing objects:  72% (162/224)   [Kremote: Compressing objects:  73% (164/224)   [Kremote: Compressing objects:  74% (166/224)   [Kremote: Compressing objects:  75% (168/224)   [Kremote: Compressing objects:  76% (171/224)   [Kremote: Compressing objects:  77% (173/224)   [Kremote: Compressing objects:  78% (175/224)   [Kremote: Compressing objects:  79% (177/224)   [Kremote: Compressing objects:  80% (180/224)   [Kremote: Compressing objects:  81% (182/224)   [Kremote: Compressing objects:  82% (184/224)   [Kremote: Compressing objects:  83% (186/224)   [Kremote: Compressing objects:  84% (189/224)   [Kremote: Compressing objects:  85% (191/224)   [Kremote: Compressing objects:  86% (193/224)   [Kremote: Compressing objects:  87% (195/224)   [Kremote: Compressing objects:  88% (198/224)   [Kremote: Compressing objects:  89% (200/224)   [Kremote: Compressing objects:  90% (202/224)   [Kremote: Compressing objects:  91% (204/224)   [Kremote: Compressing objects:  92% (207/224)   [Kremote: Compressing objects:  93% (209/224)   [Kremote: Compressing objects:  94% (211/224)   [Kremote: Compressing objects:  95% (213/224)   [Kremote: Compressing objects:  96% (216/224)   [Kremote: Compressing objects:  97% (218/224)   [Kremote: Compressing objects:  98% (220/224)   [Kremote: Compressing objects:  99% (222/224)   [Kremote: Compressing objects: 100% (224/224)   [Kremote: Compressing objects: 100% (224/224), done.[K
+Receiving objects:   0% (1/261)   Receiving objects:   1% (3/261)   Receiving objects:   2% (6/261)   Receiving objects:   3% (8/261)   Receiving objects:   4% (11/261)   Receiving objects:   5% (14/261)   Receiving objects:   6% (16/261)   Receiving objects:   7% (19/261)   Receiving objects:   8% (21/261)   Receiving objects:   9% (24/261)   Receiving objects:  10% (27/261)   Receiving objects:  11% (29/261)   Receiving objects:  12% (32/261)   Receiving objects:  13% (34/261)   Receiving objects:  14% (37/261)   Receiving objects:  15% (40/261)   Receiving objects:  16% (42/261)   Receiving objects:  17% (45/261)   Receiving objects:  18% (47/261)   Receiving objects:  19% (50/261)   Receiving objects:  20% (53/261)   Receiving objects:  21% (55/261)   Receiving objects:  22% (58/261)   Receiving objects:  23% (61/261)   Receiving objects:  24% (63/261)   Receiving objects:  25% (66/261)   Receiving objects:  26% (68/261)   Receiving objects:  27% (71/261)   Receiving objects:  28% (74/261)   Receiving objects:  29% (76/261)   Receiving objects:  30% (79/261)   Receiving objects:  31% (81/261)   Receiving objects:  32% (84/261)   Receiving objects:  33% (87/261)   Receiving objects:  34% (89/261)   Receiving objects:  35% (92/261)   Receiving objects:  36% (94/261)   Receiving objects:  37% (97/261)   Receiving objects:  38% (100/261)   Receiving objects:  39% (102/261)   Receiving objects:  40% (105/261)   Receiving objects:  41% (108/261)   Receiving objects:  42% (110/261)   Receiving objects:  43% (113/261)   Receiving objects:  44% (115/261)   Receiving objects:  45% (118/261)   Receiving objects:  46% (121/261)   Receiving objects:  47% (123/261)   Receiving objects:  48% (126/261)   Receiving objects:  49% (128/261)   Receiving objects:  50% (131/261)   Receiving objects:  51% (134/261)   Receiving objects:  52% (136/261)   Receiving objects:  53% (139/261)   Receiving objects:  54% (141/261)   Receiving objects:  55% (144/261)   Receiving objects:  56% (147/261)   Receiving objects:  57% (149/261)   Receiving objects:  58% (152/261)   Receiving objects:  59% (154/261)   Receiving objects:  60% (157/261)   Receiving objects:  61% (160/261)   Receiving objects:  62% (162/261)   Receiving objects:  63% (165/261)   Receiving objects:  64% (168/261)   Receiving objects:  65% (170/261)   Receiving objects:  66% (173/261)   Receiving objects:  67% (175/261)   Receiving objects:  68% (178/261)   Receiving objects:  69% (181/261)   Receiving objects:  70% (183/261)   Receiving objects:  71% (186/261)   Receiving objects:  72% (188/261)   Receiving objects:  73% (191/261)   Receiving objects:  74% (194/261)   Receiving objects:  75% (196/261)   Receiving objects:  76% (199/261)   Receiving objects:  77% (201/261)   Receiving objects:  78% (204/261)   Receiving objects:  79% (207/261)   Receiving objects:  80% (209/261)   Receiving objects:  81% (212/261)   Receiving objects:  82% (215/261)   Receiving objects:  83% (217/261)   Receiving objects:  84% (220/261)   Receiving objects:  85% (222/261)   Receiving objects:  86% (225/261)   Receiving objects:  87% (228/261)   Receiving objects:  88% (230/261)   Receiving objects:  89% (233/261)   Receiving objects:  90% (235/261)   Receiving objects:  91% (238/261)   Receiving objects:  92% (241/261)   Receiving objects:  93% (243/261)   Receiving objects:  94% (246/261)   Receiving objects:  95% (248/261)   Receiving objects:  96% (251/261)   remote: Total 261 (delta 70), reused 153 (delta 25)[K
+Receiving objects:  97% (254/261)   Receiving objects:  98% (256/261)   Receiving objects:  99% (259/261)   Receiving objects: 100% (261/261)   Receiving objects: 100% (261/261), 1.62 MiB | 25.95 MiB/s, done.
+Resolving deltas:   0% (0/70)   Resolving deltas:   8% (6/70)   Resolving deltas:  10% (7/70)   Resolving deltas:  11% (8/70)   Resolving deltas:  14% (10/70)   Resolving deltas:  15% (11/70)   Resolving deltas:  18% (13/70)   Resolving deltas:  22% (16/70)   Resolving deltas:  24% (17/70)   Resolving deltas:  30% (21/70)   Resolving deltas:  31% (22/70)   Resolving deltas:  34% (24/70)   Resolving deltas:  37% (26/70)   Resolving deltas:  38% (27/70)   Resolving deltas:  41% (29/70)   Resolving deltas:  42% (30/70)   Resolving deltas:  44% (31/70)   Resolving deltas:  45% (32/70)   Resolving deltas:  47% (33/70)   Resolving deltas:  51% (36/70)   Resolving deltas:  52% (37/70)   Resolving deltas:  54% (38/70)   Resolving deltas:  57% (40/70)   Resolving deltas:  62% (44/70)   Resolving deltas:  64% (45/70)   Resolving deltas:  72% (51/70)   Resolving deltas:  77% (54/70)   Resolving deltas:  80% (56/70)   Resolving deltas:  81% (57/70)   Resolving deltas:  84% (59/70)   Resolving deltas:  85% (60/70)   Resolving deltas:  90% (63/70)   Resolving deltas:  95% (67/70)   Resolving deltas: 100% (70/70)   Resolving deltas: 100% (70/70), done.
+bhogan9@remote06:~/projects$ cd ~
+bhogan9@remote06:~$ ln -s projects/s[Kcs220/[K .
+bhogan9@remote06:~$ cd ~/git-repos/cs220
+bhogan9@remote06:~/git-repos/cs220$ git pull
+fatal: not a git repository (or any parent up to mount point /import)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+bhogan9@remote06:~/git-repos/cs220$ ls
+bhogan9@remote06:~/git-repos/cs220$ cd ..
+bhogan9@remote06:~/git-repos$ ls
+cs220  cs240  i220a  i240b
+bhogan9@remote06:~/git-repos$ cd [K cs220
+bhogan9@remote06:~/git-repos/cs220$ ls
+bhogan9@remote06:~/git-repos/cs220$ cd ..
+bhogan9@remote06:~/git-repos$ ls
+cs220  cs240  i220a  i240b
+bhogan9@remote06:~/git-repos$ cd [K[K[Kls
+cs220  cs240  i220a  i240b
+bhogan9@remote06:~/git-repos$ rm -r cs220
+rm: remove write-protected regular file 'cs220/.git/objects/ff/77eaef9778a5226454e39e8238a3da69a4f5bc'? y
+rm: remove write-protected regular file 'cs220/.git/objects/3b/5e230b4b2b96f8445200d7ab37242eaa814da4'? y
+rm: remove write-protected regular file 'cs220/.git/objects/af/c5f7f6a96347cc9c6152b6a1498039b02e8bf1'? y
+rm: remove write-protected regular file 'cs220/.git/objects/32/39f9590c0b31905613a30e4fcb0d6da0a73199'? y
+rm: remove write-protected regular file 'cs220/.git/objects/8c/578f7e8482f78e4857e9dafdb13941ed79ba00'? y
+rm: remove write-protected regular file 'cs220/.git/objects/0c/db2d424d1922ba0863ca7c44c5bbecef135e7a'? y
+rm: remove write-protected regular file 'cs220/.git/objects/6f/8ad3aed1a04223d634a99a081831030a1eb9c4'? y
+rm: remove write-protected regular file 'cs220/.git/objects/a8/e441170a7643fe6c08febd59cd4cf02dce322b'? y
+rm: remove write-protected regular file 'cs220/.git/objects/2e/9c0056585718403358fb8c93f2e667144aa316'? y
+rm: remove write-protected regular file 'cs220/.git/objects/9f/baec485a3bda98c97338669f684d6cdf4259f8'? y
+rm: remove write-protected regular file 'cs220/.git/objects/9f/b7a576c5166d53775dddd010bb93d5991f0226'? y
+rm: remove write-protected regular file 'cs220/.git/objects/56/45dff6e942f826eaabb63e7c7fc65ddffd37f0'? y
+rm: remove write-protected regular file 'cs220/.git/objects/84/43fba21f39f5a46fb1577380220b6d398de156'? y
+rm: remove write-protected regular file 'cs220/.git/objects/b7/abbd103aff78a71c38ad8da6de3158567323e2'? y
+rm: remove write-protected regular file 'cs220/.git/objects/05/397a86fafcb24761c43c5244a082a77b449b3f'? yy
+rm: remove write-protected regular file 'cs220/.git/objects/ed/e72328972d4e6c50845ac0bd392a95cb7d41d2'? 
+rm: cannot remove 'cs220/.git/objects/ed': Directory not empty
+rm: remove write-protected regular file 'cs220/.git/objects/83/bc4b38f1a1dec00ba424519564b77b06dcf564'? y
+rm: remove write-protected regular file 'cs220/.git/objects/40/5ad3474553b054ba061010ee95d572c35bad68'? y
+rm: remove write-protected regular file 'cs220/.git/objects/e7/7fb0199f5ed9805fc53de40a52e97d8d7575fa'? y
+rm: remove write-protected regular file 'cs220/.git/objects/a6/975d3f48183acc4a7ac7c05c2f976dc48ef0c6'? y
+rm: remove write-protected regular file 'cs220/.git/objects/da/f1248762ba64be5eda4bd8b5638b565880355c'? y
+rm: remove write-protected regular file 'cs220/.git/objects/50/8bb74926156a384bc29565c7c90de6b6f90e02'? y
+rm: remove write-protected regular file 'cs220/.git/objects/3c/c66b8053314991be64498ec3eca06890356e2c'? y
+rm: remove write-protected regular file 'cs220/.git/objects/9b/5560c3b34a5b02ef0249a7a49df5b207e06156'? y
+rm: remove write-protected regular file 'cs220/.git/objects/75/11d9c1e2ff0b84107a60714134b0f03efe9009'? y
+rm: remove write-protected regular file 'cs220/.git/objects/8d/94d4b56bcd3cb48d9deb61226cf370938244ec'? y
+rm: remove write-protected regular file 'cs220/.git/objects/53/3bf0e03b2982fdc74d150a40495db52c709661'? y
+rm: remove write-protected regular file 'cs220/.git/objects/72/45a4e017ee4fd85ee049393b5b040a49a3ff6c'? y
+rm: remove write-protected regular file 'cs220/.git/objects/18/888229572970557548fcb6e51e58c976746c0a'? y
+rm: remove write-protected regular file 'cs220/.git/objects/19/f69cd9028e4b59284836516c508aa2197caa16'? y
+rm: remove write-protected regular file 'cs220/.git/objects/f0/999c983a88bc8638e77269f1d03558ef621a0a'? y
+bhogan9@remote06:~/git-repos$ y
+bash: y: command not found
+bhogan9@remote06:~/git-repos$ y[Kls\[K
+cs220  cs240  i220a  i240b
+bhogan9@remote06:~/git-repos$ l[Kcd cs220\[K
+bhogan9@remote06:~/git-repos/cs220$ ls
+bhogan9@remote06:~/git-repos/cs220$ cd ..
+bhogan9@remote06:~/git-repos$ cd ..
+bhogan9@remote06:~$ ls
+Arduino  CS-240-Team-Project  Documents  git-repos  Pictures  Public	 testing  Videos
+cs220	 Desktop	      Downloads  Music	    projects  Templates  tmp
+bhogan9@remote06:~$ cd projects/
+bhogan9@remote06:~/projects$ la
+bash: la: command not found
+bhogan9@remote06:~/projects$ ls
+cs220  cs240  i240b
+bhogan9@remote06:~/projects$ cd cs2
+cs220/ cs240/ 
+bhogan9@remote06:~/projects$ cd cs220/
+bhogan9@remote06:~/projects/cs220$ ls
+announce.html  assets  docs	  hws	      index.umt  misc	   README.md  umt.make
+announce.umt   bin     exercises  index.html  labs	 projects  slides
+bhogan9@remote06:~/projects/cs220$ git pull
+Already up to date.
+bhogan9@remote06:~/projects/cs220$ emacs .profile~.profile/.profile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lSetting up indent for shell type sh[K[H
+[?12l[?25h[?12;25h[49d[?25lIndentation variables are now local.[H
+[?12l[?25h[?12;25h[49;13H[?25lsetup for shell type sh[K[H
+[?12l[?25h[?12;25h[49d[?25lIndentation setup for shell type sh[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                                          [0m[39;49m[27m
+[A
+. ~umrigar/cs240/bin/student.profile[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m.profile    [0m[39;49m[30m[48;5;250m   All L1     (Shell-script[sh]) ----------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2;2H[?25l[1@.[48;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[?25l[1@ [?12l[?25h[?12;25h[?25l[1@~[?12l[?25h[?12;25h[?25l[1@u[?12l[?25h[?12;25h[?25l[1@m[?12l[?25h[?12;25h[?25l[1@r[?12l[?25h[?12;25h[?25l[1@i[?12l[?25h[?12;25h[?25l[1@g[?12l[?25h[?12;25h[?25l[1@a[?12l[?25h[?12;25h[?25l[1@r[?12l[?25h[?12;25h[?25l[1@/[?12l[?25h[?12;25h[?25l[1@c[?12l[?25h[?12;25h[?25l[1@s[?12l[?25h[?12;25h[?25l[1@2[?12l[?25h[?12;25h[?25l[1@2[?12l[?25h[?12;25h[?25l[1@0[?12l[?25h[?12;25h[?25l[1@/[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[2P[?12l[?25h[?12;25h[?25l[2P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[2P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[49d[?25lBeginning of buffer[H
+[?12l[?25h[?12;25h[49d[K[2;2H[C[C[C[C[C		[C[C[C[C[C[C		[C[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1@2[?12l[?25h[?12;25h[?25l[1@0[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/.profile...[H
+		[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/.profile[K[H
+		[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[H
+		[?12l[?25h[?12;25h[49;1H[K[H
+		[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote06:~/projects/cs220$ emacs ~/.profile[K[K[K[K[K[K[Kp[Kbashrc
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[49d[?25lSetting up indent for shell type bash[H
+[?12l[?25h[?12;25h[49d[?25lIndentation variables are now local.[K[H
+[?12l[?25h[?12;25h[49;13H[?25lsetup for shell type bash[H
+[?12l[?25h[?12;25h[49d[?25lIndentation setup for shell type bash[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                                          [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m.bashrc     [0m[39;49m[30m[48;5;250m   All L1     (Shell-script[bash]) --------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[?25l[38;5;60m.[39;49m[48;6H[30m[48;5;250m**[39;49m[2;2H[?12l[?25h[?12;25h[C[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[?25l[38;5;89m\[39;49m[?12l[?25h[?12;25h[K[K[K[C[K[49d[?25lBeginning of buffer[H
+[?12l[?25h[?12;25h[49d[K[2d[?25l[38;5;60m.[39;49m[?12l[?25h[?12;25h[C[?25l~[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25lg[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25l2[?12l[?25h[?12;25h[?25l2[?12l[?25h[?12;25h[?25l0[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25lb[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l/[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/.bashrc...[2;32H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/.bashrc[K[2;32H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[2;32H[?12l[?25h[?12;25h[49;1H[K[2;32H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote06:~/projects/cs220$ cd ~/projects/
+bhogan9@remote06:~/projects$ git clone https://github.com/bhogan9/i220a.git
+Cloning into 'i220a'...
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[Kremote: Counting objects:  50% (2/4)[Kremote: Counting objects:  75% (3/4)[Kremote: Counting objects: 100% (4/4)[Kremote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  25% (1/4)   Unpacking objects:  50% (2/4)   Unpacking objects:  75% (3/4)   Unpacking objects: 100% (4/4)   Unpacking objects: 100% (4/4), done.
+bhogan9@remote06:~/projects$ ls
+cs220  cs240  i220a  i240b
+bhogan9@remote06:~/projects$ cd i220a/
+bhogan9@remote06:~/projects/i220a$ ls
+README.md
+bhogan9@remote06:~/projects/i220a$ gir st[K[K[K[Kt status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+bhogan9@remote06:~/projects/i220a$ cd ~
+bhogan9@remote06:~$ ln -s ~.[K/projects/cs220/[K[K[K[K[K[Ki220a/? .
+bhogan9@remote06:~$ e[Kcd projects/i220a/
+bhogan9@remote06:~/projects/i220a$ ls
+README.md
+bhogan9@remote06:~/projects/i220a$ ls -a
+.  ..  .git  .gitignore  README.md
+bhogan9@remote06:~/projects/i220a$ emacs .gitigq[K[Kgnore 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                    [0m[39;49m[27m
+[A
+# Prerequisites[K
+*.d[K
+[K
+# Object files[K
+*.o[K
+*.ko[K
+*.obj[K
+*.elf[K
+[K
+# Linker output[K
+*.ilk[K
+*.map[K
+*.exp[K
+[K
+# Precompiled Headers[K
+*.gch[K
+*.pch[K
+[K
+# Libraries[K
+*.lib[K
+*.a[K
+*.la[K
+*.lo[K
+[K
+# Shared objects (inc. Windows DLLs)[K
+*.dll[K
+*.so[K
+*.so.*[K
+*.dylib[K
+[K
+# Executables[K
+*.exe[K
+*.out[K
+*.app[K
+*.i*86[K
+*.x86_64[K
+*.hex[K
+[K
+# Debug files[K
+*.dSYM/[K
+*.su[K
+*.idb[K
+*.pdb[K
+[K
+# Kernel Module Compile Results[K
+*.mod*[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m.gitignore  [0m[39;49m[30m[48;5;250m   Top L1    Git-master  (Fundamental) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[20;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[27;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[30;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m30[39;49m[31;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[32;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[33;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[34;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[35;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[36;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[37;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[38;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[39;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[40;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m40[39;49m[41;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[42;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[43;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[44;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[45;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[46;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[A[?12l[?25h[?12;25h[2d[K
+[?25l# Shared objects (inc. Windows DLLs)
+*.dll
+*.so[K
+so.*
+dylib
+[K
+# Executables
+*.exe
+*.out[K
+app
+i*86
+x86_64
+*.hex
+[K
+# Debug files[18;3HdSYM/
+*.su
+*.idb[K
+pd
+[K
+# Kernel Module Compile Results[24;3Hmod*
+*.cmd
+.tmp_versions/[K
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+
+[K
+[K
+[K
+[K
+[K
+
+[K
+[K[48;29H[30m[48;5;250mBot L47[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[27;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m50[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[30;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[31;1H[?12l[?25h[?12;25h[49d[?25lEnd of buffer[31;1H[?12l[?25h[?12;25h[49d[K[48;35H[?25l[30m[48;5;250m2[39;49m[30;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[28;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m49[39;49m[27;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[20;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[18;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m39[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[17;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m40[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[20;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[27;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m50[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[30;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[31;1H[?12l[?25h[?12;25h[49d[?25lEnd of buffer[31;1H[?12l[?25h[?12;25h[49d[K[48;6H[?25l[30m[48;5;250m**--F1  [39;49m[1m[30m[48;5;250m.gitignore  [0m[39;49m[30m[48;5;250m   Bot L54[39;49m[32;1H[?12l[?25h[?12;25h[?25l#[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25lM[?12l[?25h[?12;25h[?25lA[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h	[?25lF[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[K[?25le[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[33;1H[?12l[?25h[?12;25h[?25l*[?12l[?25h[?12;25h[?25l~[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/.gitignore...[33;3H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/.gitignore[K[33;3H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m----F1  [39;49m[1m[30m[48;5;250m.gitignore  [0m[39;49m[30m[48;5;250m   Bot L55   Git:[39;49m[33;3H[?12l[?25h[?12;25h[49;1H[K[33;3H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote06:~/projects/i220a$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bhogan9@remote06:~/projects/i220a$ git add A
+fatal: pathspec 'A' did not match any files
+bhogan9@remote06:~/projects/i220a$ git add A[Kall
+fatal: pathspec 'all' did not match any files
+bhogan9@remote06:~/projects/i220a$ git add all[K[K[K-a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+bhogan9@remote06:~/projects/i220a$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+bhogan9@remote06:~/projects/i220a$ git add .gitignore 
+bhogan9@remote06:~/projects/i220a$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .gitignore[m
+
+bhogan9@remote06:~/projects/i220a$ git commit -a -m 'Setting up gitignore'
+[master cabe72b] Setting up gitignore
+ Committer: Benjamin Hogan <bhogan9@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+bhogan9@remote06:~/projects/i220a$ git push
+Username for 'https://github.com': bhogan9
+Password for 'https://bhogan9@github.com': 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/bhogan9/i220a.git
+   5c1c0e2..cabe72b  master -> master
+bhogan9@remote06:~/projects/i220a$ ls -dl ~/cs220 ~/i220a
+ls: cannot access '/home/bhogan9/i220a': No such file or directory
+lrwxrwxrwx 1 bhogan9 bhogan9 14 Aug 27 13:27 /home/bhogan9/cs220 -> projects/cs220
+bhogan9@remote06:~/projects/i220a$ d[Kls -l ~/.ssh ~/cs220 ~/i220a
+ls: cannot access '/home/bhogan9/i220a': No such file or directory
+lrwxrwxrwx 1 bhogan9 bhogan9 14 Aug 27 13:27 /home/bhogan9/cs220 -> projects/cs220
+
+/home/bhogan9/.ssh:
+total 20
+-rw------- 1 bhogan9 bhogan9  395 Jan 23  2020 authorized_keys
+-rw------- 1 bhogan9 bhogan9 1823 Jan 23  2020 id_rsa
+-rw-r----- 1 bhogan9 bhogan9  395 Jan 23  2020 id_rsa.pub
+-rw-r--r-- 1 bhogan9 bhogan9 5756 Apr 16 22:07 known_hosts
+bhogan9@remote06:~/projects/i220a$ ls -l ~/.ssh ~/cs220 ~/i220api220ari220aoi220aji220aei220aci220ati220asi220a/i220a
+lrwxrwxrwx 1 bhogan9 bhogan9 14 Aug 27 13:27 /home/bhogan9/cs220 -> projects/cs220
+
+/home/bhogan9/projects/i220a:
+total 4
+-rw-r----- 1 bhogan9 bhogan9 7 Aug 27 13:46 README.md
+
+/home/bhogan9/.ssh:
+total 20
+-rw------- 1 bhogan9 bhogan9  395 Jan 23  2020 authorized_keys
+-rw------- 1 bhogan9 bhogan9 1823 Jan 23  2020 id_rsa
+-rw-r----- 1 bhogan9 bhogan9  395 Jan 23  2020 id_rsa.pub
+-rw-r--r-- 1 bhogan9 bhogan9 5756 Apr 16 22:07 known_hosts
+bhogan9@remote06:~/projects/i220a$ cd ~/i220[K[K[K[K[K/projects/i220a
+bhogan9@remote06:~/projects/i220a$ git check[Kl[Kkout -b lab0
+Switched to a new branch 'lab0'
+bhogan9@remote06:~/projects/i220a$ mkdir -p submit
+bhogan9@remote06:~/projects/i220a$ exit
+
+Script done on 2020-08-27 13:53:18-04:00 [COMMAND_EXIT_CODE="0"]
