@@ -1,0 +1,2857 @@
+Script started on 2020-09-01 22:12:59-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="49"]
+bhogan9@remote00:~/projects/i220a/submit/lab1$ cp -pr ~/css2[K[K220/labs/lab[Kb1/exercises/[K .
+bhogan9@remote00:~/projects/i220a/submit/lab1$ ls
+exercises  lab1.LOG
+bhogan9@remote00:~/projects/i220a/submit/lab1$ cd exercises/1-hello/
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ cd ..
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises$ ls
+1-hello  2-err	3-multifile  4-from-scratch  5-auto-dependencies  Makefile
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises$ cd 1-hello/
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ make hello
+cc     hello.c   -o hello
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ ls -l
+total 24
+-rwxr-x--- 1 bhogan9 bhogan9 16608 Sep  1 22:14 hello
+-rw-r----- 1 bhogan9 bhogan9    75 Sep  1 22:09 hello.c
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ make -p | less
+make: *** No targets specified and no makefile found.  Stop.
+[?1049h[22;0;0t[?1h=# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Sep  1 22:14:56 2020
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cd sitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkpr oject cdproject mktmpenv
+# environment
+XDG_SESSION_TYPE = tty
+# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/bhogan9/projects/i220a/submit/lab1/exercises/1-hello
+# makefile
+SHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# environment
+_ = /usr/bin/make
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# default
+:[K[KLINK.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# default
+OUTPUT_OPTION = -o $@
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile
+MAKEFILE_LIST := 
+# 'override' directive
+GNUMAKEFLAGS := 
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/14373/bus
+# default
+CC = cc
+# default
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# default
+CPP = $(CC) -E
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+KRB5CCNAME = FILE:/tmp/krb5cc_14373_XmX6YCEpE0
+# environment
+SSH_CONNECTION = 45.47.243.220 62337 128.226.114.200 22
+# environment
+PATH = /home/bhogan9/cs220/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/jav a-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+# default
+LD = ld
+# default
+TEXI2DVI = texi2dvi
+# default
+YACC = yacc
+# environment
+SSH_TTY = /dev/pts/2
+# environment
+XDG_RUNTIME_DIR = /run/user/14373
+# default
+ARFLAGS = rv
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINT = lint
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+:[K[K# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# default
+YACC.m = $(YACC) $(YFLAGS)
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# default
+AR = ar
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archive s jobserver output-sync check-symlink load
+# default
+TANGLE = tangle
+# default
+GET = get
+# automatic
+%F = $(notdir $%)
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+CTANGLE = ctangle
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# default
+LINK.C = $(LINK.cc)
+# environment
+PWD = /home/bhogan9/projects/i220a/submit/lab1/exercises/1-hello
+# default
+.LOADED := 
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XDG_SESSION_CLASS = user
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOME = /home/bhogan9
+# environment
+LD_LIBRARY_PATH = .:/home/bhogan9/cs220/lib
+# environment
+J2REDIR = /usr/lib/jvm/java-8-oracle/jre
+# environment
+:[K[KLOGNAME = bhogan9
+# environment
+J2SDKDIR = /usr/lib/jvm/java-8-oracle
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# default
+COMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SHLVL = 1
+# default
+AS = as
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# environment
+JAVA_HOME = /usr/lib/jvm/java-8-oracle
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environment
+XDG_SESSION_ID = 181662
+# environment
+USER = bhogan9
+# default
+FC = f77
+# makefile
+.DEFAULT_GOAL := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+WEAVE = weave
+# default
+MAKE_COMMAND := make
+# default
+LINK.cpp = $(LINK.cc)
+# default
+F77 = $(FC)
+# environment
+OLDPWD = /home/bhogan9/projects/i220a/submit/lab1/exercises
+# default
+.VARIABLES := 
+# default
+PC = pc
+# automatic
+*F = $(notdir $*)
+# default
+:[K[KCOMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LEX = lex
+# makefile
+MAKEFLAGS = p
+# environment
+MFLAGS = -p
+# environment
+SSH_CLIENT = 45.47.243.220 62337 22
+# environment
+MAIL = /var/mail/bhogan9
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# automatic
++F = $(notdir $+)
+# default
+M2C = m2c
+# default
+MAKEFILES := 
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+<F = $(notdir $<)
+# environment
+VIRTUALENVWRAPPER_SCRIPT = /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# default
+CXX = g++
+# default
+COFLAGS = 
+# default
+COMPILE.C = $(COMPILE.cc)
+# automatic
+^F = $(notdir $^)
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dv i .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+:[K[K# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+DERBY_HOME = /usr/lib/jvm/java-8-oracle/db
+# default
+.RECIPEPREFIX := 
+# default
+MAKEINFO = makeinfo
+# default
+MAKE_TERMERR := /dev/pts/3
+# default
+OBJC = cc
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# default
+TEX = tex
+# environment
+LANG = en_US.UTF-8
+# environment
+TERM = xterm-256color
+# default
+F77FLAGS = $(FFLAGS)
+# default
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# variable set hash-table stats:
+# Load=125/1024=12%, Rehash=0, Collisions=15/148=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# SCCS: could not be stat'd.
+# . (device 60, inode 23695159328): 5 files, 57 impossibilities.
+# RCS: could not be stat'd.
+
+# 5 files, 57 impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.out:
+
+%.a:
+
+%.ln:
+:[K[K
+%.o:
+
+%: %.o
+#  recipe to execute (built-in):
+        $(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  recipe to execute (built-in):
+        $(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  recipe to execute (built-in):
+        $(LINT.c) -C$* $<
+
+%.o: %.c
+#  recipe to execute (built-in):
+        $(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  recipe to execute (built-in):
+        $(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  recipe to execute (built-in):
+        $(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.C:
+
+%: %.C
+#  recipe to execute (built-in):
+        $(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.C
+#  recipe to execute (built-in):
+        $(COMPILE.C) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  recipe to execute (built-in):
+        $(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+:[K[K#  recipe to execute (built-in):
+        $(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  recipe to execute (built-in):
+        $(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  recipe to execute (built-in):
+        $(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  recipe to execute (built-in):
+        $(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  recipe to execute (built-in):
+        $(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.F:
+
+%: %.F
+#  recipe to execute (built-in):
+        $(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.F
+#  recipe to execute (built-in):
+        $(COMPILE.F) $(OUTPUT_OPTION) $<
+
+%.f: %.F
+#  recipe to execute (built-in):
+        $(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+%.m:
+
+%: %.m
+#  recipe to execute (built-in):
+        $(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.m
+#  recipe to execute (built-in):
+        $(COMPILE.m) $(OUTPUT_OPTION) $<
+
+%.r:
+:[K[K
+%: %.r
+#  recipe to execute (built-in):
+        $(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  recipe to execute (built-in):
+        $(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  recipe to execute (built-in):
+        $(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  recipe to execute (built-in):
+        $(YACC.y) $< 
+         $(LINT.c) -C$* y.tab.c 
+         $(RM) y.tab.c
+
+%.c: %.y
+#  recipe to execute (built-in):
+        $(YACC.y) $< 
+         mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  recipe to execute (built-in):
+        @$(RM) $*.c
+         $(LEX.l) $< > $*.c
+        $(LINT.c) -i $*.c -o $@
+         $(RM) $*.c
+
+%.c: %.l
+#  recipe to execute (built-in):
+        @$(RM) $@ 
+         $(LEX.l) $< > $@
+
+%.r: %.l
+#  recipe to execute (built-in):
+        $(LEX.l) $< > $@ 
+         mv -f lex.yy.r $@
+
+%.ym:
+
+%.m: %.ym
+:[K[K#  recipe to execute (built-in):
+        $(YACC.m) $< 
+         mv -f y.tab.c $@
+
+%.yl:
+
+%.s:
+
+%: %.s
+#  recipe to execute (built-in):
+        $(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  recipe to execute (built-in):
+        $(COMPILE.s) -o $@ $<
+
+%.S:
+
+%: %.S
+#  recipe to execute (built-in):
+        $(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.S
+#  recipe to execute (built-in):
+        $(COMPILE.S) -o $@ $<
+
+%.s: %.S
+#  recipe to execute (built-in):
+        $(PREPROCESS.S) $< > $@
+
+%.mod:
+
+%: %.mod
+#  recipe to execute (built-in):
+        $(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  recipe to execute (built-in):
+        $(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  recipe to execute (built-in):
+        $(COMPILE.def) -o $@ $<
+
+:[K[K%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  recipe to execute (built-in):
+        $(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  recipe to execute (built-in):
+        $(CTANGLE) $< - $@
+
+:[K[K%.tex: %.w
+#  recipe to execute (built-in):
+        $(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  recipe to execute (built-in):
+        $(TANGLE) $<
+
+%.tex: %.web
+#  recipe to execute (built-in):
+        $(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  recipe to execute (built-in):
+        cat $< >$@ 
+         chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  recipe to execute (built-in):
+        $(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  recipe to execute (built-in):
+        @rm -f $@ 
+         cp $< $@
+
+%.c: %.w %.ch
+#  recipe to execute (built-in):
+        $(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  recipe to execute (built-in):
+        $(CWEAVE) $^ $@
+
+%:: %,v
+#  recipe to execute (built-in):
+        $(CHECKOUT,v)
+
+:[K[K%:: RCS/%,v
+#  recipe to execute (built-in):
+        $(CHECKOUT,v)
+
+%:: RCS/%
+#  recipe to execute (built-in):
+        $(CHECKOUT,v)
+
+%:: s.%
+#  recipe to execute (built-in):
+        $(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  recipe to execute (built-in):
+        $(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 92 implicit rules, 5 (5.4%) terminal.
+
+# Files
+
+# Not a target:
+.web.p:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(TANGLE) $<
+
+# Not a target:
+.l.r:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LEX.l) $< > $@ 
+         mv -f lex.yy.r $@
+
+# Not a target:
+.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.ym:
+:[K[K#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.l:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.y:
+:[K[K#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.def.sym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.def) -o $@ $<
+
+# Not a target:
+.p.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.p:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.txinfo.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.a:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+:[K[K# Not a target:
+.yl:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        @$(RM) $*.c
+         $(LEX.l) $< > $*.c
+        $(LINT.c) -i $*.c -o $@
+         $(RM) $*.c
+
+# Not a target:
+.F.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.texi.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.w.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(CTANGLE) $< - $@
+
+# Not a target:
+.texi.dvi:
+:[K[K#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.ch:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.m.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.m) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cc:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.cc.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.def:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+:[K[K# Not a target:
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi  .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.c.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.c) $(OUTPUT_OPTION) $<
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.r.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.r:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.ym.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+:[K[K#  recipe to execute (built-in):
+        $(YACC.m) $< 
+         mv -f y.tab.c $@
+
+# Not a target:
+.y.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(YACC.y) $< 
+         $(LINT.c) -C$* y.tab.c 
+         $(RM) y.tab.c
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.elc:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        @$(RM) $@ 
+         $(LEX.l) $< > $@
+
+# Not a target:
+.out:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.C:
+:[K[K#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.r.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.S:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.w.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+:[K[K#  File has not been updated.
+#  recipe to execute (built-in):
+        $(CWEAVE) $< - $@
+
+# Not a target:
+.c.ln:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINT.c) -C$* $<
+
+# Not a target:
+.s.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.s) -o $@ $<
+
+# Not a target:
+.s:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.el:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+:[K[K.lm.m:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        @$(RM) $@ 
+         $(LEX.m) $< > $@
+
+# Not a target:
+.y.c:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(YACC.y) $< 
+         mv -f y.tab.c $@
+
+# Not a target:
+.web.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(WEAVE) $<
+
+# Not a target:
+.texinfo:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.h:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+:[K[K# Not a target:
+.tex.dvi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(TEX) $<
+
+# Not a target:
+.cpp.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.cpp:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.C.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.texi:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+:[K[K#  File has not been updated.
+
+# Not a target:
+.tex:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.sh:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        cat $< >$@ 
+         chmod a+x $@
+
+# Not a target:
+.S.s:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(PREPROCESS.S) $< > $@
+
+# Not a target:
+.mod:
+#  Builtin rule
+#  Implicit rule search has not been done.
+:[K[K#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.mod) -o $@ -e $@ $^
+
+# Not a target:
+.mod.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.mod) -o $@ $<
+
+# Not a target:
+.F.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.w:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.S.o:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(COMPILE.S) -o $@ $<
+
+# Not a target:
+.F:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+:[K[K# Not a target:
+.web:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.sym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=75/1024=7%, Rehash=0, Collisions=447/1785=25%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 482 / storage = 6402 B / avg = 13 B
+# current buf: size = 8162 B / used = 6402 B / count = 482 / avg = 13 B
+
+# strcache performance: lookups = 812 / hit rate = 40%
+# hash-table stats:
+# Load=482/8192=6%, Rehash=0, Collisions=239/812=29%
+# Finished Make data base on Tue Sep  1 22:14:56 2020
+
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[HM#  recipe to execute (built-in):
+[49;1H[K:[K[K
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K...skipping...
+
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m
+
+      Commands marked with * may be preceded by a number, [4mN[24m.
+      Notes in parentheses indicate the behavior if [4mN[24m is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           [1mMOVING[0m
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).
+  z                 *  Forward  one window (and set window to [4mN[24m).
+  w                 *  Backward one window (and set window to [4mN[24m).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).
+  ESC-)  RightArrow *  Right one half screen width (or [4mN[24m positions).
+  ESC-(  LeftArrow  *  Left  one half screen width (or [4mN[24m positions).
+  ESC-}  ^RightArrow   Right to last column displayed.
+  ESC-{  ^LeftArrow    Left  to first column.
+  F                    Forward forever; like "tail -f".
+  ESC-F                Like F but stop when search pattern is found.
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          [1mSEARCHING[0m
+
+  /[4mpattern[24m          *  Search forward for ([4mN[24m-th) matching line.
+  ?[4mpattern[24m          *  Search backward for ([4mN[24m-th) matching line.
+  n                 *  Repeat previous search (for [4mN[24m-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &[4mpattern[24m          *  Display only matching lines
+        ---------------------------------------------------
+        A search pattern may begin with one or more of:
+        ^N or !  Search for NON-matching lines.
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K        ^E or *  Search multiple files (pass thru END OF FILE).
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K[7mHELP -- Press RETURN for more, or q when done[27m[K[K[HM
+[49;1H[K[7mHELP -- Press RETURN for more, or q when done[27m[K...skipping...
+        $(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.web:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.sym:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (built-in):
+        $(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.info:
+#  Builtin rule
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=75/1024=7%, Rehash=0, Collisions=447/1785=25%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 482 / storage = 6402 B / avg = 13 B
+# current buf: size = 8162 B / used = 6402 B / count = 482 / avg = 13 B
+
+# strcache performance: lookups = 812 / hit rate = 40%
+# hash-table stats:
+# Load=482/8192=6%, Rehash=0, Collisions=239/812=29%
+# Finished Make data base on Tue Sep  1 22:14:56 2020
+
+:[K[K[?1l>[?1049l[23;0;0tbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/1-hello$ cd ../2-err/
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ ls
+Makefile
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ make
+Makefile:2: *** missing separator.  Stop.
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ emacs Makefile 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;21mall[39;49m:[K
+[48;5;205m  [39;49m              echo [38;5;89m"hello $$USER"[39;49m[K
+[K
+[K
+[38;5;21m.PHONY[39;49m:         count-bin[K
+[38;5;21mcount-bin[39;49m:[K
+                cd /usr/bin ;[K
+                ls | wc -l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lBeginning of buffer[K[H
+[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[C[?25l [48;6H[30m[48;5;250m**[39;49m[H
+
+[?12l[?25h[?12;25h[?25l [?12l[?25h[?12;25h[1;9r[5;1H[1M[1;49r[2;17H[?25lecho [38;5;89m"hello $$USER"[39;49m
+[K[9d[K[48;34H[30m[48;5;250m1[39;49m[2;5H[?12l[?25h[?12;25h[1;9r[5;1H[1L[1;49r[2;5H[K
+[?25lecho [38;5;89m"hello $$USER"[39;49m
+
+[K[48;34H[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[8@	[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/2-err/Makefile...[3;9H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/2-err/Makefile[K[3;9H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[3;9H[?12l[?25h[?12;25h[49;1H[K[3;9H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ MAKE
+bash: MAKE: command not found
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ make
+echo "hello $USER"
+hello bhogan9
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ cd[K[Kmake count-bin
+cd /usr/bin ;
+ls | wc -l
+2
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/2-err$ cd ../3-multifile/
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ ls
+main.c	Makefile  quadr.c  quadr.h  README  test.data
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make
+cc -g -Wall -std=c11   -c -o quadr.o quadr.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc  quadr.o main.o -o quadr
+/usr/bin/ld: quadr.o: in function `quadratic_roots':
+/home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/quadr.c:10: undefined reference to `sqrt'
+/usr/bin/ld: /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/quadr.c:11: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ emacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m =[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) $([38;5;130mLDFLAGS[39;49m) quadr.o main.o -o [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[C[C[C[C[C[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;11H[?12l[?25h[?12;25h[?25l-[48;6H[30m[48;5;250m**[39;49m[5;12H[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[5;14H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[5;14H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[5;14H[?12l[?25h[?12;25h[49;1H[K[5;14H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make
+cc -lm quadr.o main.o -o quadr
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ macs[K[K[K[Kemacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) $([38;5;130mLDFLAGS[39;49m) quadr.o main.o -o [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;54H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[?25l$$@[48;6H[30m[48;5;250m**[39;49m[8;53H[?12l[?25h[?12;25h[?25l([38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mL[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mD[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mF[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mL[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mA[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mG[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mS[39;49m[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[8;53H[?25l[48;5;80m([39;49m[38;5;130mLDFLAGS[39;49m)[38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[8;53H[?25l([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h			[?25l[38;5;21mLDFLAGSquadr.o [39;49m[1P[8;32H[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[?25lquadr.o [1P			[?12l[?25h[?12;25h[?25l[1P[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[8;23H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[8;23H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[8;23H[?12l[?25h[?12;25h[49;1H[K[8;23H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make
+make: 'quadr' is up to date.
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ ./quadr < test.data
+a = 2, b = 6, c = 4, root1 = -1, root2 = -2
+a = 1, b = 5, c = -2, root1 = 0.372281, root2 = -5.37228
+a = 2, b = 3, c = 4, root1 = -nan, root2 = -nan
+<stdin>:4: must have 3 doubles: bad input line 1 2+ 3
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ emacs test.data 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                    [0m[39;49m[27m
+[A
+2 6 4[K
+1 5 -2[K
+2 3 4 5[K
+1 2+ 3[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mtest.data   [0m[39;49m[30m[48;5;250m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ touchquadr.h
+bash: touchquadr.h: command not found
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ touch quadr.h
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ ls -l
+total 68
+-rw-r-----  1 bhogan9 bhogan9  1224 Sep  1 22:09 main.c
+-rw-r-----  1 bhogan9 bhogan9  8624 Sep  1 22:17 main.o
+-rw-r-----+ 1 bhogan9 bhogan9   176 Sep  1 22:20 Makefile
+-rw-r-----  1 bhogan9 bhogan9   176 Sep  1 22:18 Makefile~
+-rwxr-x---  1 bhogan9 bhogan9 21000 Sep  1 22:18 quadr
+-rw-r-----  1 bhogan9 bhogan9   270 Sep  1 22:09 quadr.c
+-rw-r-----  1 bhogan9 bhogan9   155 Sep  1 22:22 quadr.h
+-rw-r-----  1 bhogan9 bhogan9  4008 Sep  1 22:17 quadr.o
+-rw-r-----  1 bhogan9 bhogan9   129 Sep  1 22:09 README
+-rw-r-----  1 bhogan9 bhogan9    28 Sep  1 22:09 test.data
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make
+make: 'quadr' is up to date.
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ emacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[49d[?25lEnd of buffer[13;1H[?12l[?25h[?12;25h[49d[K[13d[?25ld[48;6H[30m[48;5;250m**[39;49m[13;2H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[K[K[K[K[K[K[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;55H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;7H[?12l[?25h[?12;25h[1;12r[10;1H[1L[1;49r[10;1H[K[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[1;13r[11;1H[1L[1;49r[11;1H[K[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;1H[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lp[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25l[38;5;21mdepends[39;49m:[?12l[?25h[?12;25h[?25ldepends[K[?12l[?25h[?12;25h[K[?25l[38;5;21mdepend[39;49m:[?12l[?25h[?12;25h[1;47r[12;1H[1L[1;49r[12;1H[K[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l        $[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[48;5;80m([39;49m[38;5;130mCC[39;49m)[?12l[?25h[?12;25h[?25l(	[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25lM[?12l[?25h[?12;25h[?25lM[?12l[?25h[?12;25h[C[?25l$[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mP[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mP[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mF[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mL[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mA[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mG[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mS[39;49m[?12l[?25h[?12;25h[11;20H[?25l[48;5;80m([39;49m[38;5;130mCPPFLAGS[39;49m)[?12l[?25h[?12;25h[11;20H[?25l(		[?12l[?25h[?12;25h[?25l*[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[11;34H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[11;34H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[11;34H[?12l[?25h[?12;25h[49;1H[K[11;34H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make depend
+cc -MM  *.c
+main.o: main.c quadr.h
+quadr.o: quadr.c quadr.h
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make
+make: 'quadr' is up to date.
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ emacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mdepend[39;49m:[K
+        $([38;5;130mCC[39;49m) -MM $([38;5;130mCPPFLAGS[39;49m) *.c[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[1;47r[8;1H[1L[1;49r[7;1H[K
+[?25l[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K[48;6H[30m[48;5;250m**--F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L6[39;49m[7;1H[?12l[?25h[?12;25h[1;47r[9;1H[1L[1;49r[8;1H[K
+[?25l[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K[48;34H[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[1;47r[8;1H[1M[1;49r[47;1H[K[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[K[?25lR[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[?25l_[?12l[?25h[?12;25h[?25lF[?12l[?25h[?12;25h[?25lI[?12l[?25h[?12;25h[?25lL[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h[K[K[K[K[K[K[K[K[K[1;47r[7;1H[1M[1;49r[47;1H[K[48;34H[?25l[30m[48;5;250m4[39;49m[5;14H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;14H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m1[39;49m[2;14H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[1;47r[6;1H[2L[1;49r[4;1H[K
+[K
+[?25l[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K[48;34H[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[1;47r[6;1H[1M[1;49r[5;1H[?25l[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[47;1H[K[48;34H[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h[?25lR[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[?25l_[?12l[?25h[?12;25h[?25lF[?12l[?25h[?12;25h[?25lI[?12l[?25h[?12;25h[?25lL[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h[C[?25l[38;5;130mSRC_FILES[39;49m =[?12l[?25h[?12;25h[C[49;1H[?25lAuto-saving...[3;13H[?12l[?25h[?12;25h[49;15H[?25ldone[3;13H[?12l[?25h[?12;25h[49;1H[K[3;13H[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[3;13H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[3;13H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[3;13H[?12l[?25h[?12;25h[49;1H[K[3;13H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ k[Kls
+main.c	main.o	Makefile  Makefile~  quadr  quadr.c  quadr.h  quadr.o  README  test.data
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ lsemacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[38;5;130mSRC_FILES[39;49m =[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mdepend[39;49m:[K
+        $([38;5;130mCC[39;49m) -MM $([38;5;130mCPPFLAGS[39;49m) *.c[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[3;13H[?12l[?25h[?12;25h[?25lm[48;6H[30m[48;5;250m**[39;49m[3;14H[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[C[?25lq[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[C[?25lq[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[3;35H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[3;35H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[3;35H[?12l[?25h[?12;25h[49;1H[K[3;35H[49;1H[?25lC-x[3;35H[?12l[?25h[?12;25h[49;4H[?25l-[3;35H[?12l[?25h[?12;25h[49;4H[?25l C-s[3;35H[?12l[?25h[?12;25h[49;1H[?25l(No changes need to be saved)[3;35H[?12l[?25h[?12;25h[49;1H[K[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;27H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;14H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;31H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9d[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;8H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;34H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;7H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;35H[?12l[?25h[?12;25h[48d[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;35H[?12l[?25h[?12;25h[48d[?25l[30m[48;5;250m3[39;49m[14;7H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;34H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;8H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9d[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;31H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[1;47r[9;1H[1L[1;49r[8;1H[K
+[?25l[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K[48;6H[30m[48;5;250m**--F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L7[39;49m[8;1H[?12l[?25h[?12;25h[1;47r[10;1H[1L[1;49r[9;1H[K
+[?25l[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K[48;34H[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25l[38;5;21mdist[39;49m:[?12l[?25h[?12;25h[1;47r[10;1H[1L[1;49r[10;1H[K[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l        $[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mP[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mR[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mO[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mJ[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mE[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mT[39;49m[?12l[?25h[?12;25h[9;10H[?25l[48;5;80m([39;49m[38;5;130mPROJECT[39;49m)[?12l[?25h[?12;25h[9;10H[?25l([9;19H[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[K[C[?25l.[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lg[?12l[?25h[?12;25h[?25lz[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;26H[?12l[?25h[?12;25h[C[?25l[38;5;21m.[39;49m:[?12l[?25h[?12;25h[?25l[38;5;21mt[39;49m:[?12l[?25h[?12;25h[?25l[38;5;21ma[39;49m:[?12l[?25h[?12;25h[?25l[38;5;21mr[39;49m:[?12l[?25h[?12;25h[?25l[38;5;21m.[39;49m[8@:       		[?12l[?25h[?12;25h[?25l[38;5;21mg[39;49m:[?12l[?25h[?12;25h[?25l[38;5;21mz[39;49m:[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;18H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;18H[?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[?25l:[8P[?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[?25l: [?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;26H[?12l[?25h[?12;25h[1;47r[12;1H[1L[1;49r[11;1H[K
+[?25l[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K[48;34H[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[1;47r[12;1H[1L[1;49r[12;1H[K[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[?25l$[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25lP[?12l[?25h[?12;25h[?25lR[?12l[?25h[?12;25h[?25lO[?12l[?25h[?12;25h[?25lJ[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[?25lT[?12l[?25h[?12;25h[C[?25l[48;5;80m([39;49mPROJECT)[?12l[?25h[?12;25h[C[?25l([11;11H[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lqa[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[K[K[K[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lg[?12l[?25h[?12;25h[?25lz[?12l[?25h[?12;25h[?25l[38;5;21m$(PROJECT).tar.gz[39;49m:[?12l[?25h[?12;25h	[?25l$[?12l[?25h[?12;25h[?25l[38;5;30mS[39;49m[?12l[?25h[?12;25h[?25lSR[?12l[?25h[?12;25h[?25lC[?12l[?25h[?12;25h[?25l_[?12l[?25h[?12;25h[?25lF[?12l[?25h[?12;25h[?25lI[?12l[?25h[?12;25h[?25lL[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25lS[?12l[?25h[?12;25h[49;1H[?25lNo matching parenthesis found[11;35H[?12l[?25h[?12;25h[?25l)[?12l[?25h[?12;25h[49;1H[K[11;35H[C[?25l([38;5;130mSRC_FILES[39;49m)[11;27H[?12l[?25h[?12;25h[C[C[C[C		[C[C[C[C[1;47r[13;1H[1L[1;49r[13;1H[K[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l                        t[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25lc[?12l[?25h[?12;25h[?25lf[?12l[?25h[?12;25h	[?25l$[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mP[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mR[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mO[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mJ[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mE[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mT[39;49m[?12l[?25h[?12;25h[12;34H[?25l[48;5;80m([39;49m[38;5;130mPROJECT[39;49m)[?12l[?25h[?12;25h[12;34H[?25l([38;5;130mPROJECT[39;49m).[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h	[?25l$[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mS[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mR[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130m_[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mF[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mI[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mL[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mE[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mS[39;49m[?12l[?25h[?12;25h						[?25l[48;5;80m([39;49m[38;5;130mSRC_FILES[39;49m)[?12l[?25h[?12;25h						[?25l([12;60H[?12l[?25h[?12;25h[1;47r[14;1H[1L[1;49r[14;1H[K[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l[48;5;205m        [39;49m[?12l[?25h[?12;25h[?25l                        g[?12l[?25h[?12;25h[?25lz[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[49;1H[?25lAuto-saving...[13;28H[?12l[?25h[?12;25h[49;15H[?25ldone[13;28H[?12l[?25h[?12;25h[49;1H[K[13;28H[?25lp[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25lf[?12l[?25h[?12;25h	[?25l$[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25l[38;5;130mP[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mR[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mO[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mJ[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mE[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mC[39;49m[?12l[?25h[?12;25h[?25l[38;5;130mT[39;49m[?12l[?25h[?12;25h[13;34H[?25l[48;5;80m([39;49m[38;5;130mPROJECT[39;49m)[?12l[?25h[?12;25h[13;34H[?25l([38;5;130mPROJECT[39;49m).[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[13;47H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[13;47H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[13;47H[?12l[?25h[?12;25h[49;1H[K[13;47H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make dist
+quadr.tar.gz
+make: quadr.tar.gz: Command not found
+make: *** [Makefile:8: dist] Error 127
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make distemacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[38;5;130mSRC_FILES[39;49m = main.c quadr.c quadr.h[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21mdist[39;49m:[K
+        $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[38;5;21m$(PROJECT).tar.gz[39;49m:      $([38;5;130mSRC_FILES[39;49m)[K
+                        tar -cf $([38;5;130mPROJECT[39;49m).tar $([38;5;130mSRC_FILES[39;49m)[K
+                        gzip -f $([38;5;130mPROJECT[39;49m).tar[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mdepend[39;49m:[K
+        $([38;5;130mCC[39;49m) -MM $([38;5;130mCPPFLAGS[39;49m) *.c[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2;2H[C[48;34H[?25l[30m[48;5;250m2[39;49m[3;3H[?12l[?25h[?12;25h[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[3d[?12l[?25h[?12;25h[K[48;6H[?25l[30m[48;5;250m**[39;49m[3;34H[?12l[?25h[?12;25h[K[K[K[K[K[K[C[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[3;27H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[3;27H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[3;27H[?12l[?25h[?12;25h[49;1H[K[3;27H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ emacs Makefile[5Pmake dist
+quadr.tar.gz
+make: quadr.tar.gz: Command not found
+make: *** [Makefile:8: dist] Error 127
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ make distemacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[38;5;130mSRC_FILES[39;49m = main.c quadr.c[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21mdist[39;49m:[K
+        $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[38;5;21m$(PROJECT).tar.gz[39;49m:      $([38;5;130mSRC_FILES[39;49m)[K
+                        tar -cf $([38;5;130mPROJECT[39;49m).tar $([38;5;130mSRC_FILES[39;49m)[K
+                        gzip -f $([38;5;130mPROJECT[39;49m).tar[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mdepend[39;49m:[K
+        $([38;5;130mCC[39;49m) -MM $([38;5;130mCPPFLAGS[39;49m) *.c[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[C[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[3;27H[?12l[?25h[?12;25h[C[48;6H[?25l[30m[48;5;250m**[39;49m[3;28H[?12l[?25h[?12;25h[?25lq[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l.[?12l[?25h[?12;25h[?25lh[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile...[3;35H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab1/exercises/3-multifile/Makefile[K[3;35H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[3;35H[?12l[?25h[?12;25h[49;1H[K[3;35H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ ls
+main.c	main.o	Makefile  Makefile~  quadr  quadr.c  quadr.h  quadr.o  README  test.data
+bhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ lsemacs Makefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                           [0m[39;49m[27m
+[A
+[38;5;130mPROJECT[39;49m = quadr[K
+[38;5;130mSRC_FILES[39;49m = main.c quadr.c quadr.h[K
+[K
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11[K
+[38;5;130mLDFLAGS[39;49m = -lm[K
+[K
+[38;5;21mdist[39;49m:[K
+        $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[38;5;21m$(PROJECT).tar.gz[39;49m:      $([38;5;130mSRC_FILES[39;49m)[K
+                        tar -cf $([38;5;130mPROJECT[39;49m).tar $([38;5;130mSRC_FILES[39;49m)[K
+                        gzip -f $([38;5;130mPROJECT[39;49m).tar[K
+[K
+[38;5;21m$(PROJECT)[39;49m:     quadr.o main.o[K
+                $([38;5;130mCC[39;49m) quadr.o main.o -o $([38;5;130mLDFLAGS[39;49m) [38;5;21m$[39;49m[38;5;30m@[39;49m[K
+[K
+[38;5;21mdepend[39;49m:[K
+        $([38;5;130mCC[39;49m) -MM $([38;5;130mCPPFLAGS[39;49m) *.c[K
+[K
+[38;5;21mclean[39;49m:[K
+                rm -f *.o $([38;5;130mPROJECT[39;49m) $([38;5;130mPROJECT[39;49m).tar.gz[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;60H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;37H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;29H[?12l[?25h[?12;25h[C[C		[C[C[C[C[C[C		[C[48;35H[?25l[30m[48;5;250m2[39;49m[13;42H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;42H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[11;37H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9 [39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;26H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;6H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;9H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;9H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m2[39;49m[3;9H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m1[39;49m[H
+	[?12l[?25h[?12;25h[49;1H[?25lBeginning of buffer[H
+	[?12l[?25h[?12;25h[49;1H[K[48;34H[?25l[30m[48;5;250m2[39;49m[3;9H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[49;1H[?25l(No changes need to be saved)[3;19H[?12l[?25h[?12;25h[49;1H[K[3;19H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab1/exercises/3-multifile$ exit
+
+Script done on 2020-09-01 22:39:33-04:00 [COMMAND_EXIT_CODE="0"]
