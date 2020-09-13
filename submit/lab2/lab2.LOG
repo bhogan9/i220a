@@ -1,0 +1,848 @@
+Script started on 2020-09-13 16:38:19-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="49"]
+bhogan9@remote03:~/projects/i220a/submit/lab2$ cd exercises/1-hello-args/
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ ls -l
+total 12
+-rw-r----- 1 bhogan9 bhogan9 343 Sep  9 11:21 hello.c
+-rw-r----- 1 bhogan9 bhogan9  35 Sep  9 11:21 Makefile
+-rw-r----- 1 bhogan9 bhogan9  61 Sep  9 11:21 README
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ cat README 
+Print out a line saying hello to each command-line argument.
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ ./hello
+usage: ./hello NAME...
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ ./hello bart lisa
+hello bart
+hello lisa
+hello (null)
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ gdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start basr[K[Krt lisa
+Temporary breakpoint 1 at 0x118b: file hello.c, line 13.
+Starting program: /import/linux/home1/bhogan9/projects/i220a/submit/lab2/exercises/1-hello-args/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe7c8) at hello.c:13
+13	  if (argc == 1) {
+(gdb) l
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+12	{
+13	  if (argc == 1) {
+14	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+15	    exit(1);
+16	  }
+17	  else {
+(gdb) b say_hello [K
+Breakpoint 2 at 0x555555555161: file hello.c, line 7.
+(gdb) p argc
+$1 = 3
+(gdb) p argv
+$2 = (const char **) 0x7fffffffe7c8
+(gdb) p argv[0]
+$3 = 0x7fffffffea4a "/import/linux/home1/bhogan9/projects/i220a/submit/lab2/exercises/1-hello-args/hello"
+(gdb) p argv[0][1P]1]
+$4 = 0x7fffffffea9e "bart"
+(gdb) p argv[1][1P]2]
+$5 = 0x7fffffffeaa3 "lisa"
+(gdb) p argv[2][1P]3]
+$6 = 0x0
+(gdb) n
+18	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+19	      say_hello(argv[i]);
+(gdb) p i
+$7 = 1
+(gdb) c
+Continuing.
+
+Breakpoint 2, say_hello (name=0x7fffffffea9e "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) l
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) p name
+$8 = 0x7fffffffea9e "bart"
+(gdb) backtrace
+#0  say_hello (name=0x7fffffffea9e "bart") at hello.c:7
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe7c8) at hello.c:19
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe7c8) at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) down
+#0  say_hello (name=0x7fffffffea9e "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$9 = 0x7fffffffea9e "bart"
+(gdb) c
+Continuing.
+hello bart
+
+Breakpoint 2, say_hello (name=0x7fffffffeaa3 "lisa") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$10 = 0x7fffffffeaa3 "lisa"
+(gdb) c
+Continuing.
+hello lisa
+
+Breakpoint 2, say_hello (name=0x0) at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$11 = 0x0
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe7c8) at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) p i
+$12 = 3
+(gdb) p argc
+$13 = 3
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 3688789] will be killed.
+
+Quit anyway? (y or n) y
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ emacs hello.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[K[H[?25l[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21msay_hello[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m)[K
+{[K
+  printf([38;5;89m"hello %s\n"[39;49m, name);[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i <= argc; i++) {[K
+      say_hello(argv[i]);[K
+    }[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.c     [0m[39;49m[30m[48;5;250m   All L2    Git:lab2  (C/*l Abbrev) ------------------------------------------[39;49m
+[A[3d[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[20;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[21;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m19[39;49m[20;1H[?12l[?25h[?12;25h[C[48;35H[?25l[30m[48;5;250m8[39;49m[19;2H[?12l[?25h[?12;25h[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[?25l[1P[48;6H[30m[48;5;250m**[39;49m[19;24H[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab2/exercises/1-hello-args/hello.c...[19;24H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab2/exercises/1-hello-args/hello.c[K[19;24H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[19;24H[?12l[?25h[?12;25h[49;1H[K[19;24H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ hello bart lisa
+hello: extra operand: bart
+Usage: hello [OPTION]...
+Print a friendly, customizable greeting.
+
+  -h, --help          display this help and exit
+  -v, --version       display version information and exit
+
+  -t, --traditional       use traditional greeting
+  -g, --greeting=TEXT     use TEXT as the greeting message
+
+Report bugs to: bug-hello@gnu.org
+GNU Hello home page: <http://www.gnu.org/software/hello/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ hell[K[K[K[K./hello bart lisa
+hello bart
+hello lisa
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ d[Kcd ../2
+bash: cd: ../2: No such file or directory
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/1-hello-args$ cd ../2-hello-upcase-args/
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ h[K./hello bart lisa
+Hello Bart
+Hello Lisa
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ ./hello bart lisa[C[1@'[C[C[C[C[C lisas lisai lisam lisas lisa[1P lisap lisas lisao lisam lisa[1P lisan lisa' lisa [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'lisa[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C simpson'
+Hello Bart Simpson¢U
+Hello Lisa Simpson¢U
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ gdb hwl[K[Kello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start 'bart simpsom[Kn' 'lisa simpson'
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello 'bart simpson' 'lisa simpson'
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe788) at hello.c:35
+35	  if (argc == 1) {
+(gdb) l
+30	}
+31	
+32	int
+33	main(int argc, const char *argv[])
+34	{
+35	  if (argc == 1) {
+36	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+37	    exit(1);
+38	  }
+39	  else {
+(gdb) char[K[K[K[Kp argv[0][K[K1]
+$1 = 0x7fffffffea69 "bart simpson"
+(gdb) p argv[1][1P]2]
+$2 = 0x7fffffffea76 "lisa simpson"
+(gdb) p argv[2][1P]3]
+$3 = 0x0
+(gdb) w[Kn
+40	    for (int i = 1; i < argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) i[Kn
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 3691101] will be killed.
+
+Quit anyway? (y or n) y
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ emacs hello.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<ctype.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;124m/** Upcase the initial letter of each word from in, copying the                                         [39;49m
+[A
+[38;5;124m *  results into out.  The caller is responsible to ensure that out                                     [39;49m
+[A
+[38;5;124m *  has enough space for the strlen(in) characters of in.                                               [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mupcase_words[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m [38;5;130min[39;49m[], [38;5;28mchar[39;49m [38;5;130mout[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130minWord[39;49m = 0;[K
+  [38;5;28mint[39;49m [38;5;130mn[39;49m = strlen(in);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mif[39;49m (!inWord && isalpha(in[i])) {[K
+      out[i] = toupper(in[i]);[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      out[i] = in[i];[K
+    }[K
+    inWord = isalpha(in[i]);[K
+  }[K
+}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21msay_hello[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m)[K
+{[K
+  printf([38;5;89m"Hello %s\n"[39;49m, name);[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i < argc; i++) {[K
+      [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m = argv[i];[K
+      [38;5;28mchar[39;49m [38;5;130mfriendlyName[39;49m[strlen(name)];[K
+      upcase_words(name, friendlyName);[K
+      say_hello(friendlyName);[K
+    }[K
+  }[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.c     [0m[39;49m[30m[48;5;250m   Top L1    Git:lab2  (C/*l Abbrev) ------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[20;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[27;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[30;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m30[39;49m[31;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[32;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[33;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[34;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[35;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[36;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[37;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[38;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[39;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[40;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m40[39;49m[41;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[42;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[43;1H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[?25l+];[48;6H[30m[48;5;250m**[39;49m[43;38H[?12l[?25h[?12;25h[?25l1];[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c...[43;39H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c[K[43;39H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[43;39H[?12l[?25h[?12;25h[49;1H[K[43;39H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ emacs hello.c [5Pgdb hello./hello 'bart simpson' 'lisa simpson'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pbart lisa
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ makeemacs hello.c [5Pgdb hello./hello 'bart simpson' 'lisa simpson'
+Hello Bart SimpsonBV
+Hello Lisa SimpsonBV
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ ./hello 'bart simpson' 'lisa simpson'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs hello.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[K[H[?25l[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<ctype.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;124m/** Upcase the initial letter of each word from in, copying the                                         [39;49m
+[A
+[38;5;124m *  results into out.  The caller is responsible to ensure that out                                     [39;49m
+[A
+[38;5;124m *  has enough space for the strlen(in) characters of in.                                               [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mupcase_words[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m [38;5;130min[39;49m[], [38;5;28mchar[39;49m [38;5;130mout[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130minWord[39;49m = 0;[K
+  [38;5;28mint[39;49m [38;5;130mn[39;49m = strlen(in);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mif[39;49m (!inWord && isalpha(in[i])) {[K
+      out[i] = toupper(in[i]);[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      out[i] = in[i];[K
+    }[K
+    inWord = isalpha(in[i]);[K
+  }[K
+}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21msay_hello[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m)[K
+{[K
+  printf([38;5;89m"Hello %s\n"[39;49m, name);[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i < argc; i++) {[K
+      [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m = argv[i];[K
+      [38;5;28mchar[39;49m [38;5;130mfriendlyName[39;49m[strlen(name)+1];[K
+      upcase_words(name, friendlyName);[K
+      say_hello(friendlyName);[K
+    }[K
+  }[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.c     [0m[39;49m[30m[48;5;250m   Top L2    Git:lab2  (C/*l Abbrev) ------------------------------------------[39;49m
+[A[3d[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[20;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[27;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[30;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m30[39;49m[31;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[32;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[33;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[34;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[35;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[36;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[37;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[38;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[39;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[40;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m40[39;49m[41;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[42;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[43;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[44;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[45;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[46;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[A[?12l[?25h[?12;25h[2d[?25l}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21msay_hello[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m)
+{
+  printf([38;5;89m"Hello %s\n"[39;49m, name);[K
+}[K
+[K
+[38;5;28mint[39;49m
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[14;3H  fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[15;3H  exit(1);[K[16;3H}[K
+[38;5;129melse[39;49m {[K
+[38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i < argc; i++) {[19;5H  [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m = argv[i];[20;5H  [38;5;28mchar[39;49m [38;5;130mfriendlyName[39;49m[strlen(name)+1];[21;7Hupcase_words(name, friendlyName);[22;5H  say_hello(friendlyName);[23;5H}[K
+
+  [38;5;129mreturn[39;49m 0;
+}
+[K
+[K
+[K
+[K
+[K
+
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[48;29H[30m[48;5;250mBot L47[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[27;1H[?12l[?25h[?12;25h[49d[?25lEnd of buffer[27;1H[?12l[?25h[?12;25h[49d[K[48;35H[?25l[30m[48;5;250m8[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[20;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[19;1H[?12l[?25h[?12;25h[C[48;35H[?25l[30m[48;5;250m2[39;49m[20;2H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[21;2H[?12l[?25h[?12;25h[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[48;35H[?25l[30m[48;5;250m2[39;49m[20;22H[?12l[?25h[?12;25h[C		[C[C[C[C[C[C		[C[C[C[C[C[?25l1];[K[48;6H[30m[48;5;250m**[39;49m[20;37H[?12l[?25h[?12;25h[?25l-1];[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c...[20;38H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c[K[20;38H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[20;38H[?12l[?25h[?12;25h[49;1H[K[20;38H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ .makeemacs hello.c ./hello 'bart simpson' 'lisa simpson'
+Hello Bart Simpson0V
+Hello Lisa Simpson0V
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ ./hello 'bart simpson' 'lisa simpson'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs hello.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[K[H[?25l[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<ctype.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;124m/** Upcase the initial letter of each word from in, copying the                                         [39;49m
+[A
+[38;5;124m *  results into out.  The caller is responsible to ensure that out                                     [39;49m
+[A
+[38;5;124m *  has enough space for the strlen(in) characters of in.                                               [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mupcase_words[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m [38;5;130min[39;49m[], [38;5;28mchar[39;49m [38;5;130mout[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130minWord[39;49m = 0;[K
+  [38;5;28mint[39;49m [38;5;130mn[39;49m = strlen(in);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mif[39;49m (!inWord && isalpha(in[i])) {[K
+      out[i] = toupper(in[i]);[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      out[i] = in[i];[K
+    }[K
+    inWord = isalpha(in[i]);[K
+  }[K
+}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21msay_hello[39;49m([38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m)[K
+{[K
+  printf([38;5;89m"Hello %s\n"[39;49m, name);[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i < argc; i++) {[K
+      [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mname[39;49m = argv[i];[K
+      [38;5;28mchar[39;49m [38;5;130mfriendlyName[39;49m[strlen(name)-1];[K
+      upcase_words(name, friendlyName);[K
+      say_hello(friendlyName);[K
+    }[K
+  }[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.c     [0m[39;49m[30m[48;5;250m   Top L2    Git:lab2  (C/*l Abbrev) ------------------------------------------[39;49m
+[A[3d[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[20;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[24;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[25;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[27;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[28;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[29;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[30;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m30[39;49m[31;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[32;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[33;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[34;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[35;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[36;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[37;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[38;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[39;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m9[39;49m[40;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m40[39;49m[41;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[42;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[43;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[44;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[45;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[46;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[A[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[46;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[45;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[44;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[43;41H[?12l[?25h[?12;25h[?25l1];[K[48;6H[30m[48;5;250m**[39;49m[43;37H[?12l[?25h[?12;25h[?25l+1];[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[42;34H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[41;37H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m39[39;49m[40;9H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[39;4H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[38;13H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[37;38H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[36;19H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[35;2H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[34;35H[?12l[?25h[?12;25h[48d[?25l[30m[48;5;250m2[39;49m[33;4H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[32;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[31;2H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m29[39;49m[30;30H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m8[39;49m[29;2H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m7[39;49m[28;28H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m6[39;49m[27;12H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m5[39;49m[26;1H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m4[39;49m[25;2H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m3[39;49m[24;4H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m2[39;49m[23;29H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;6H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m0[39;49m[21;22H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m19[39;49m[20;11H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m20[39;49m[21;22H[?12l[?25h[?12;25h[48;35H[?25l[30m[48;5;250m1[39;49m[22;6H[?12l[?25h[?12;25h[1;47r[23;1H[1L[1;49r[23;1H[K[48;35H[?25l[30m[48;5;250m2[39;49m[23;5H[?12l[?25h[?12;25h[?25l[38;5;28mo[39;49m
+[38;5;130minWord[39;49m[23;6H[?12l[?25h[?12;25h[?25l[38;5;28mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;28mt[39;49m[?12l[?25h[?12;25h[?25lout[[?12l[?25h[?12;25h
+[?25linWord[A[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mn][?12l[?25h[?12;25h[?25l[[23;12H[?12l[?25h[?12;25h[?25l=[?12l[?25h[?12;25h[C[?25l[1m[91m'[0m[39;49m[?12l[?25h[?12;25h[?25l\[?12l[?25h[?12;25h[?25l0[?12l[?25h[?12;25h[?25l[38;5;89m'\0'[39;49m[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c...[23;19H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab2/exercises/2-hello-upcase-args/hello.c[K[23;19H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[23;19H[?12l[?25h[?12;25h[49;1H[K[23;19H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ makeemacs hello.c ./hello 'bart simpson' 'lisa simpson'
+Hello Bart Simpson
+Hello Lisa Simpson
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ ./hello bart lisa
+Hello Bart
+Hello Lisa
+bhogan9@remote03:~/projects/i220a/submit/lab2/exercises/2-hello-upcase-args$ exit
+
+Script done on 2020-09-13 16:57:10-04:00 [COMMAND_EXIT_CODE="0"]
