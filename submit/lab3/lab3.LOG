@@ -1,0 +1,938 @@
+Script started on 2020-09-20 00:52:02-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="49"]
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls
+exercises  lab3.LOG
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cd exercises/
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ mkdir dir
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ touch t1.c T1.s v.c v1.s x.c dir/t2.c dir/T2.s1 dir/t3
+touch: cannot touch 'dir/T2.s1dir/t3': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ touch t1.c T1.s v.c v1.s x.c dir/t2.c dir/T2.s1dir/t3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch t1.c T1.s v.c v1.s x.c dir/t2.c dir/T2.s1dir/t3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ dir/t3[C
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls
+dir  t1.c  T1.s  v1.s  v.c  x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls -l
+total 0
+drwxr-x--- 2 bhogan9 bhogan9 54 Sep 20 00:55 dir
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 t1.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 T1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls -tl
+total 0
+drwxr-x--- 2 bhogan9 bhogan9 54 Sep 20 00:55 dir
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 x.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 t1.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 T1.s
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls
+dir  t1.c  T1.s  v1.s  v.c  x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls -l
+total 0
+drwxr-x--- 2 bhogan9 bhogan9 54 Sep 20 00:55 dir
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 t1.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 T1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls -tl
+total 0
+drwxr-x--- 2 bhogan9 bhogan9 54 Sep 20 00:55 dir
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v1.s
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 v.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 x.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 t1.c
+-rw-r----- 1 bhogan9 bhogan9  0 Sep 20 00:55 T1.s
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cd dir
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls -t
+T2.s1  t3  t2.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls
+t2.c  T2.s1  t3
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls -l
+total 0
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 t2.c
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 T2.s1
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 t3
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls -tl
+total 0
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 T2.s1
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 t3
+-rw-r----- 1 bhogan9 bhogan9 0 Sep 20 00:55 t2.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls -t
+T2.s1  t3  t2.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ man touch
+[?1049h[22;0;0t[?1h=TOUCH(1)                                    User Commands                                    TOUCH(1)[m
+[m
+[1mNAME[0m[m
+       touch - change file timestamps[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtouch[0m [[4mOPTION[24m]... [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Update the access and modification times of each FILE to the current time.[m
+[m
+       A FILE argument that does not exist is created empty, unless [1m-c[0m or [1m-h[0m is supplied.[m
+[m
+       A  FILE  argument string of - is handled specially and causes touch to change the times of the[m
+       file associated with standard output.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m     change only the access time[m
+[m
+       [1m-c[0m, [1m--no-create[0m[m
+              do not create any files[m
+[m
+       [1m-d[0m, [1m--date[0m=[4mSTRING[24m[m
+              parse STRING and use it instead of current time[m
+[m
+       [1m-f[0m     (ignored)[m
+[m
+       [1m-h[0m, [1m--no-dereference[0m[m
+              affect each symbolic link instead of any referenced file (useful only on  systems  that[m
+              can change the timestamps of a symlink)[m
+[m
+       [1m-m[0m     change only the modification time[m
+[m
+       [1m-r[0m, [1m--reference[0m=[4mFILE[24m[m
+              use this file's times instead of current time[m
+[m
+       [1m-t[0m STAMP[m
+              use [[CC]YY]MMDDhhmm[.ss] instead of current time[m
+[m
+       [1m--time[0m=[4mWORD[24m[m
+              change the specified time: WORD is access, atime, or use: equivalent to [1m-a[0m WORD is mod‐[m
+              ify or mtime: equivalent to [1m-m[0m[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[7m Manual page touch(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ man ls
+[?1049h[22;0;0t[?1h=LS(1)                                       User Commands                                       LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information about the FILEs (the current directory by default).  Sort entries alphabeti‐[m
+       cally if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE  for‐[m
+              mat below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+       [1m-c[0m     with  [1m-lt[0m:  sort by, and show, ctime (time of last modification of file status informa‐[m
+              tion); with [1m-l[0m: show ctime and sort by name; otherwise: sort by ctime, newest first[m
+[m
+       [1m-C[0m     list entries by columns[m
+[m
+       [1m--color[0m[=[4mWHEN[24m][m
+              colorize the output; WHEN can be 'always' (default if  omitted),  'auto',  or  'never';[m
+              more info below[m
+[m
+       [1m-d[0m, [1m--directory[0m[m
+              list directories themselves, not their contents[m
+[m
+       [1m-D[0m, [1m--dired[0m[m
+              generate output designed for Emacs' dired mode[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ ls T*
+T2.s1
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises/dir$ cd ..
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cd ..ls T*
+T1.s
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls dir/*.?
+dir/t2.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls [t-v]*.c
+t1.c  v.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls bin/*[p-s]*
+ls: cannot access 'bin/*[p-s]*': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls bin/*[p-s]*.*
+ls: cannot access 'bin/*[p-s]*.*': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls bin/*[p-s]*.*~bin/*[p-s]*.*/bin/*[p-s]*.*
+ls: cannot access '/home/bhogan9/bin/*[p-s]*.*': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls ~/bin/*[p-s]*.*[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+ls: cannot access '/home/bhogan9/bin/*': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls ~/bin/*[K
+ls: cannot access '/home/bhogan9/bin/': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls ~/bin/[K[K[K[K[K[K[K[K[Kcd ~/bin
+bash: cd: /home/bhogan9/bin: No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cd ~
+bhogan9@remote05:~$ ls
+'?'	   cs220		 Desktop     Downloads	 Music	    projects   Templates   tmp
+ Arduino   CS-240-Team-Project	 Documents   git-repos	 Pictures   Public     testing	   Videos
+bhogan9@remote05:~$ cd ..
+bhogan9@remote05:/home$ ls
+aabrey1    brose7	 ejang1		   jlin269	 mforcella	    rbadada1	     szaman5
+aaharon1   bsadhna1	 ekadiog1	   jlin322	 mfoster7	    rberlan1	     szhai2
+aalbane6   bscheue1	 elancer1	   jliu212	 mghayoumi	    rbhowmik	     szhan188
+aambilw1   bschwar9	 elanger4	   jloew	 mgogats1	    rblazej1	     szhang
+aamer	   bsendir1	 eleigh1	   jlouie2	 mgomez4	    rcasano1	     szhou55
+aandhar2   bsuzuki1	 elurye1	   jlu56	 mgovinda	    rchowda1	     szhu5
+aanveka2   bsweet2	 emaione1	   jmaiolo1	 mgreen		    rcomerf1	     tagrawa1
+aaykut1    btaylor1	 emattison	   jmcmah10	 mgrullo1	    rdalipo1	     talon1
+abalkum    bugzilla	 emergepl	   jmeguir1	 mgupta3	    rdelval1	     tameesh
+abarrie7   bwalke10	 emichau2	   jmessin2	 mhamilt7	    rdhuri1	     tbabako1
+abelmna1   bwang2	 emuja1		   jmitche6	 mhan6		    reckert	     tbarten1
+abeltre1   byan2	 engage		   jmohrma1	 mhems1		    regress	     tbartens
+abet	   byang20	 epona		   jmontgo4	 mherna72	    remadm	     tbhagoo1
+abetrev    bzee1	 epotapo1	   jmontgo5	 mhubli1	    rerinfo1	     tbonagu1
+abettest   bzhang73	 erdil		   jnettun1	 mike		    reswara1	     tbrentar
+abhagwa1   bzhao10	 eshapir9	   jocampo1	 millerti	    reu		     tbruck1
+abharan1   cadathlon	 estern7	   joommen1	 mis		    reu09	     tchan29
+abhat3	   canlin	 et		   joyedap1	 mjain8		    reustac1	     tchan30
+abixby1    capsweb	 eterrac1	   jpan33	 mjiang39	    rfujita1	     tcheng8
+abloodg1   cauchym	 etilden	   jparikh1	 mkayaalp	    rgeary1	     tchu4
+abommin1   cazukwu1	 eventu10	   jpark349	 mkhoman1	    rgirong1	     tdevadit
+aburke5    cbanvar1	 evorosh1	   jpatil2	 mkubisa1	    rgollap1	     test
+acanino1   cbartol1	 eway1		   jperrot3	 mkyea1		    rgonzal	     test5
+acarter6   cbehan1	 eyalcin1	   jphilem1	 mlannin1	    rhainin1	     tfasano1
+acass2	   cbond2	 facosta1	   jracer1	 mlatypo1	    rhossai9	     tgabrie2
+acaulfi1   cbrispo1	 faculty	   jramli1	 mlewis		    richardsond      tgilber5
+acersos1   cbrugna1	 faculty.nobackup  jraskin3	 mlin71		    rimbro1	     tgisi1
+achaud12   cchen17	 facweb		   jrosen46	 mliu56		    rjoseph3	     tgonzag1
+achaud15   cchen8	 fafram1	   jrosswog	 mlrg		    rkaur21	     tgranad2
+achaudh9   cchiauz1	 fahmed35	   jrothbe3	 mmangal1	    rkelley2	     tgrusze1
+achavan4   cchoi20	 falmato1	   jruan6	 mmcmah19	    rkhan123	     tgundel1
+achen172   ccipp1	 fantona1	   jrusso26	 mmehmed1	    rklein14	     tgurung2
+achen221   ccruz31	 fbrione1	   jryder	 mmillar3	    rkugver1	     thalai1
+acheseb1   ccui5	 fceltik1	   jsanch49	 mmille60	    rkulka22	     thoa1
+achhabr1   ccui7	 fchai1		   jscatta1	 mmuffol1	    rkyatha1	     thorowi1
+achotal1   cdai3	 femmanu1	   jschind1	 mnorton1	    rlangen1	     thung1
+aclancy1   cdaware1	 find		   jschmit2	 mobicom2016	    rlauter1	     thur1
+acmweb	   cdexter1	 fitz		   jschwa77	 molavar1	    rlevass1	     ticket
+acohen13   cdf		 fmri		   jscott59	 monalisa	    rmarvin1	     tkatz1
+acohen89   cdimegl1	 foreman	   jseiber1	 moswald1	    rmccaul1	     tkump1
+acullo1    cdonovi1	 forweb		   jshaikh1	 mozsoy		    rmccorm4	     tlandiv1
+acurrer1   cdowdle1	 fsmith6	   jsharke	 mparlaw1	    rmei6	     tli16
+adavid17   cfiutak1	 ftahmas1	   jsheeha2	 mpatel43	    rmeliti1	     tlipton1
+adesu1	   cgenet1	 fthomas3	   jshin75	 mperaza1	    rmittal1	     tliu76
+adhruv1    cgopina1	 gadu		   jsimone1	 mpinz1		    rmusale1	     tloja1
+admread    cguo9	 gaic		   jsinger9	 mplohet1	    rnakaha2	     tlucher1
+adnan	   cgupta	 gaming		   jskovro1	 mreale		    rnatara2	     tman1
+adreher1   chanusa	 garrison	   jstanle2	 mriver25	    robotics	     tmarder1
+advweb	   chao		 gbanaag1	   jstein27	 mrldata	    rosew	     tmarti12
+aeker1	   cherna19	 gbejara1	   jsteinberg	 mrosato	    rpena9	     tnoguch1
+aevans1    chess2	 gbenyis1	   jstrohm1	 mroshid1	    rpokhar1	     tpeck1
+afarrel3   chouck	 gbiyani1	   jstruck1	 mruffne1	    rquinli1	     tpmsim
+afelsen3   chuang31	 gchen21	   jsu6		 msarica1	    rraguso1	     tramos3
+afergus6   ciweb	 gcrl		   jsutton3	 mschult7	    rrausha1	     trasal1
+aferrei3   cjenkin1	 geert		   jswift3	 mschutz2	    rriley	     trecupe1
+agarcia3   cjian1	 ghlp		   jszacha1	 msha		    rsaptar2	     tredban1
+agarcia4   cjoaqui1	 ghose		   jterner1	 mshakar1	    rsaraf1	     truiz1
+agarrit1   ckshirs1	 ghyan		   jthakka1	 msheldo2	    rsaxena3	     tsolime1
+agawali1   ckugler1	 gkatchi1	   jthoma64	 msim		    rsayers1	     tsrivas1
+ageorg39   ckulkar2	 gkumar1	   jtricoz1	 mslocum1	    rshand1	     tstache1
+agermos1   clandgr1	 gliang6	   jvail1	 msulli37	    rsharpe1	     tton1
+agill10    cli22	 gliu10		   jvitale5	 msweb		    rshendl1	     ttrigue1
+agiunta4   clin18	 gliu14		   jwang36	 mtarpey1	    rsmith23	     twang61
+agjonba1   clindsa1	 globus		   jweacho1	 mtemkin2	    rsomapu1	     twellin1
+agoetz3    cliu118	 gluo1		   jweng8	 mthakka2	    rsumit	     twilli81
+agoncal2   clow1	 gmyers		   jwetzel1	 mthanga1	    rtalukd1	     twojtuk1
+agopala2   cmachaf1	 gorofin1	   jwhitak4	 mtullo1	    rtes-mc	     twrigh13
+agrace2    cmcborr1	 grad		   jwhite48	 mvallad1	    rthete1	     txu
+agreenb3   cmmiller	 grad.nobackup	   jwill128	 mvani1		    rwang4	     tzhao7
+agummal1   cmoane1	 grase		   jwolter1	 mwarfor1	    rwright3	     udeshpa1
+ahamdi1    cmontgo1	 grattih1	   jwong123	 mweb		    ryder	     uergash1
+ahavill1   cmoore2	 gredozu1	   jwong153	 mwerner7	    rzhang	     umrigar
+aheffer1   cmunro1	 grid		   jwong155	 mwilli78	    sagrawa4	     upe
+ahodges2   cnnadi1	 gridex		   jwoyevo1	 myan28		    sahsan5	     upuvvad1
+ahoriha1   cobiora2	 gridweb	   jwu6		 myuksek1	    salqaht1	     usatlas1
+ajain13    colinb	 gsivana1	   jyadav1	 mz-matlab	    sameer	     usatlas2
+ajain35    cpainte1	 gsoweb		   jyao		 nael		    samgrid	     uscms01
+ajasper    cpan16	 gsteinb1	   jyao6	 nananth1	    samiri1	     uscms02
+ajezior1   cpandit1	 gstodda1	   jyoo45	 nanohub	    samoore	     vbadagu1
+ajinete1   cpingal1	 gtan		   jyuan39	 nate		    sanku1	     vbakshi1
+ajohan78   cquelle3	 guydosh	   jzee2019	 nayan1		    santobu	     vbandew1
+ajoshi1    cquigle1	 gvalenc2	   jzhang	 naydemi2	    satoshi	     vbeauge1
+akafore1   cs350	 gwang23	   jzhao68	 naydin2	    saurabh	     vbhosal1
+akancha1   cs441-test	 gwilber1	   kagyapo1	 nayef		    sazarae1	     vcatane1
+akapur4    cs557-inst	 gwint1		   kang		 nbethan1	    sbadri1	     vchaska1
+akenjal1   csabet01_oc	 gxu15		   kartik	 nboeker1	    sbailey6	     vent-web
+akenned7   csabet02_oc	 gyerrad1	   kbahulkar	 nboyd3		    sbange1	     vhuynh3
+akenned8   csabet03_oc	 halzein1	   kbaumst2	 nburzyn1	    sbdc	     vinkolar
+akhot1	   cschnei3	 haygan1	   kchiu	 nchan14	    sbengal2	     vkumari1
+akozina2   csiegle1	 hbagdi1	   kcitlak1	 ncilsal2	    sbettad1	     vlsiweb
+akulka17   csimak1	 hbalu1		   kcollin9	 ncorvi1	    sblack3	     vmalcev1
+akumar34   cs-ipc	 hbrown10	   kdayala1	 ncurmi1	    sbohn1	     vmunish1
+akunnat1   csmit125	 hburkha1	   kdeshpa5	 ncusuma2	    sbommal1	     voddo1
+akunz3	   csperry1	 hcorett1	   kdh		 ndedios1	    sbravo1	     vragovs1
+alal2	   csticket	 hdesai1	   kdoughe2	 ndefeli2	    sbrokal1	     vsadune1
+alee884    csweb	 head		   kdublin1	 ndeshmu1	    scanavan	     vsingh2
+alee889    ctran20	 hebner1	   kenriqu1	 nfazio1	    schaska1	     vtran6
+alevenb1   ctufekc1	 hfu11		   ketheri2	 nferna11	    schinch1	     vyadav1
+aliu81	   cutler	 hgarg1		   kfang2	 NFS11		    scraver	     watadv
+aliu86	   cwetzel2	 hjia3		   kferna11	 ngarg3		    sdenman1	     wbezena1
+alongo5    cwetzel3	 hkang		   kfratto1	 ngawade1	    sdepasc1	     wcastil5
+amadnic2   cwickiz1	 hkulkar1	   kgaffne1	 ngreene5	    sdesai12	     wcornej1
+amanos1    cwolcot1	 hlauder1	   kgajwan1	 ngrosso1	    sdesai13	     wdai
+amarchi2   cwong11	 hlee199	   kgell1	 ngujar1	    sdesai14	     wdetorr1
+amathe13   cwong83	 hlojano1	   kghose	 ngupta4	    sdias1	     wduan1
+amccart9   cyang58	 hlum1		   kgiampo1	 nhofman1	    sdoddam1	     weinscgg
+amchugh2   cybersec	 hmahaja1	   kgoel1	 nilton		    sdoski1	     welu
+amcmanu4   czhang27	 hmulla1	   kgrays1	 nkim80		    sdss	     whan11
+ameya	   czhou5	 hoda		   kgurses1	 nkimura	    secarch	     whuebne1
+amillik1   dadler4	 hoeppner	   khaled	 nkommur1	    secweb	     wkenned1
+amishr11   daldric1	 hpacher1	   khanson3	 nkopetz1	    sforker1	     wliu5
+anabavi1   dallen9	 hparmar1	   kharras	 nli19		    sgallag3	     wliu68
+anand	   danzelo1	 hpham3		   khill9	 nmarman1	    sgampal1	     wmeng
+anayak2    davehall	 hqin4		   khirana1	 nmarti19	    sgcpu	     wni
+aneeman    davehallldap  hramesh1	   khsieh3	 nmascio3	    sgowdra1	     wrusso2
+aneesh	   davidl	 hrasal1	   kjayapr1	 nmishra1	    sgreenb8	     wtung2
+ang57	   dbalkan	 hribic1	   kjones47	 nmonast1	    sgrimm2	     wyang
+anikam1    dbottch1	 hroeder1	   kkasara1	 nmulier1	    shalaha1	     wyang53
+ankit	   dcerchi1	 hsloan1	   kkoka1	 npatel62	    shan	     wyong1
+apatel	   dchhabd1	 hstein6	   kkulkar3	 npatel64	    shane	     wzhao1
+apateri1   dcordei1	 huilu		   kkumawa1	 npatil5	    shanson1	     xchen269
+aperlow1   ddas1	 hvadoda1	   kkurtz	 npelleg1	    shanuma1	     xchen276
+aplotko1   ddefazi1	 hwang161	   kliu20	 npeters1	    shegde1	     xcheng12
+apoirie1   ddemicc1	 hxiao3		   klu38	 npoda1		    shuhong	     xdeng7
+aputnal1   ddesai9	 hxiao4		   kmahmou1	 nraj1		    siftekh1	     xgao1
+aquach1    ddoddag1	 hyang51	   kmanriq1	 nreisch1	    sigda	     xgarcia2
+arahma	   ddong8	 hyi2		   kmaynar2	 nrogosz1	    sikdar	     xianli
+aravind    ddossie1	 hzeng		   kmore4	 nruizto1	    simple	     xluo22
+arizzo10   devtyushkin	 hzeng8		   kmoshie1	 nsamant1	    simplepath	     xpeng
+artir	   dfan2	 hzhu1		   knadeem1	 nsane3885	    sjanasw1	     xshi1
+arubel2    dferna15	 hzou1		   knip1	 nshea1		    sjoshi14	     xu_haohang
+asahai1    dfitzge3	 ids-web	   kokoye1	 nstecyn1	    skaldat1	     xwei
+asawant2   dfletch1	 ifore1		   koneill7	 ntinen		    skalidi1	     xwu30
+asawwal1   dfrid1	 igirald1	   kong		 nuruchi1	    skbu007	     xwu9
+aschild1   dgarden1	 igomez1	   kpatter5	 nvander1	    skolhap1	     xxia9
+aschwa30   dgeorge7	 igoreli1	   kphill11	 nwallin1	    skorade1	     xyu44
+aselvan1   dgriffith1	 iliano		   kpierce5	 nzheng7	    skothap1	     xzhan211
+asen4	   dguo13	 indangered	   kpollic1	 oakgrove	    skremli1	     xzhan215
+aservet1   dharper1	 intrieri	   kramana1	 oalamut1	    skumar	     xzhang7
+asharif1   dhuang43	 iperdom1	   kruan1	 ocummin1	    skunz1	     xzhang99
+asharm14   dickman	 isarfat1	   ksaini1	 ofeyzul1	    slellis1	     yanwang
+asharm47   dima		 israat		   ksawant1	 oiffert1	    sleng1	     yaoliu
+ashimiz1   djacobs7	 ivdgl		   kstigle1	 okilic1	    slewis47	     ybai4
+ashimiz2   djagtap1	 iwobi		   ksun1	 okulkar4	    slin100	     ychandi1
+ashinde3   djhender	 jabbott3	   kthote1	 onur		    slin111	     ychen161
+asing134   djwillia	 jalbert5	   ktiao1	 oolojed1	    sliu	     yding25
+asirota3   dkim17	 jalexa10	   kusovski	 optiweb	    sliu178	     yegilme1
+astensl1   dkunkel	 jamjoom	   kvartak2	 osnetsvn	    sliu22	     yguo71
+astjohn    dlam15	 jan20		   kwadeka1	 osweb		    sloscal1	     yhan1
+astrong3   dlambro1	 jarnold5	   kwallac6	 oudawan1	    smandal5	     yhu15
+asujkov1   dli114	 jarora2	   kwan2	 oyesufu1	    smanne1	     yhu92
+asultan2   dlin88	 jascher3	   kwelche1	 pacts		    smartpark	     yingsun
+atanriv1   dlockye1	 jawayan1	   kwill113	 pbuonai1	    smasara1	     yjagda1
+ataver10   dlum1	 jbabbit1	   kwrite1	 pdes		    smestry1	     yjiang5
+ateixei1   dlundgren	 jbailey8	   kyi3		 pdeshpa2	    smircha1	     yjun1
+athaile1   dlyko1	 jbarkov1	   lander	 pdeshpa3	    smoore4	     ykucuk1
+athakur2   dmacejk1	 jbarret3	   larson	 pdexter1	    smorram1	     yli241
+atiwari3   dmaisur1	 jbednasz	   lcanale2	 pdonnel1	    smorri11	     yli435
+atom2	   dmakhka1	 jburns11	   lcoats1	 pfeng1		    smukka1	     ylin
+atweedy1   dmeisel1	 jcadett1	   ldallas1	 phao3		    snagarak1	     ylin153
+avanroi1   dmosess1	 jcen3		   ldo		 phdweb		    snimhan1	     yliu158
+avenetos1  dmu1		 jchen441	   legion	 phil		    software	     yliu401
+avinan	   doneal1	 jchen606	   legion2	 phmsvn		    soshay1	     ylu0
+aviswan3   dorbach1	 jchen610	   lenny	 pixelcode	    spalshe1	     ylyu2
+avora4	   dpaskal1	 jcipoll1	   lgrandh1	 pkandhi1	    spappal2	     ypan3
+awalley1   dpatil2	 jcoddin1	   lhsueh1	 pkapoor2	    sparra2	     ysun106
+awaring1   dpaul12	 jcope1		   lijun	 pkariya1	    sparuch1	     ytang4
+awilso16   dpetzol2	 jcurtin4	   liymn	 pkarthi1	    spatwa1	     ytao15
+aworm1	   dpham4	 jdaley2	   lkollur1	 pkaushi1	    spun1	     yteng1
+ayenugu1   dreitan1	 jdavis75	   lkrym1	 plin11		    sraghav2	     ywong14
+baltar	   dreyes12	 jdeflor1	   llasurd1	 plnu2		    srahma51	     yxu
+bamoate1   drichards1	 jderder1	   llu17	 plonkar1	    srally1	     yxu133
+barana1    drseuss	 jditkof1	   lmavare1	 pmadden	    srao12	     yyang200
+baranof1   dryan6	 jdua1		   lmickel2	 pmaino1	    sraut1	     yyang202
+barry	   dschroe1	 jdunn14	   lmurph13	 pmcgoug1	    srazak	     yzhan202
+bbane1	   dschust2	 jedouar1	   lok		 ppagar1	    srevade1	     yzhan401
+bbrea1	   dskoda1	 jeipp1		   lornawel	 pparmar2	    sriram	     yzhang25
+bbuchan1   dtapiap1	 jelkert1	   lpancoa1	 ppatel3	    srosari4	     yzhang8
+bchadha1   dtelson1	 jelwell	   lrosenb1	 ppatel95	    srupnar1	     zadorna1
+bchan53    dthakur1	 jelwell1	   lsc01	 ppatil7	    ssahabh1	     zdu
+bchaney1   dtierne2	 jeymer1	   lsearsangel	 ppawar3	    ssahani1	     zfadika
+bchen114   dtimmer1	 jfeinla1	   lsmith61	 ppriyam1	    ssanaga1	     zfrankl1
+bchoudh4   dtownle1	 jferrin1	   lsunny1	 prasanna	    ssarems1	     zguo
+bchrobot   dwalcot1	 jgalarn1	   ltaveir1	 preddir1	    ssawwan1	     zhangy
+bciarav1   dwalter2	 jgallia1	   lwisdom1	 project	    ssayyad1	     zhangying
+bdemirc1   dwang84	 jgarc111	   lyadagi1	 projects	    sscott36	     zhongfei
+bdeore1    dyang32	 jgatmai1	   lyu		 projects.nobackup  ssenkes1	     zhuang28
+bdevrie1   dyip2	 jgoldb42	   maber1	 psaha4		    ssenthil	     ziegler
+bdikmen1   dzhang46	 jgordo39	   maguila2	 psammon1	    sshah90	     zkazemi1
+beaumont   eadler1	 jgrocci2	   mallingt	 psehraw1	    ssharm53	     zli137
+besenga1   eaghaja1	 jgumien1	   maple	 psemegr1	    sshin	     zli160
+bestus1    eaktas	 jgwak1		   marsene1	 psilves1	    ssingh99	     zli191
+bfox6	   ealdreabi	 jhaller1	   marss86	 psin		    ssivaku1	     zlin2
+bharari1   eates1	 jhart3		   marss-risc-v  psinha1	    ssultan6	     zlin89
+bhogan9    ebasan1	 jhartog1	   marss-riscv	 ptanpur1	    sswetha	     zmarian1
+bkeuria1   ebecker2	 jhastie1	   marysomma1	 ptilley1	    stapadi1	     zmonks1
+bklayma1   ebenz1	 jherath1	   matlab	 puppula1	    star	     znasir1
+blackburn  eborzil1	 jhertik1	   maziz3	 pvalenta	    steflik	     znisbet1
+blee75	   ebreban1	 jhicks		   mbagonis5	 pwakodi1	    stoke1	     zqiu4
+bliebe1    echen100	 jhuyghu1	   mbellus1	 pwalke1	    studio	     zseymou1
+bliew1	   eciraco1	 jivers1	   mbradsh3	 pwang22	    studio.nobackup  zshu1
+blong	   ecodrin1	 jjacob44	   mbrunel1	 pweb		    sunyibo	     zwang252
+bmannin2   ecoolid1	 jjeanba2	   mchen12	 pwilber1	    svibhut1	     zwen7
+bmarti38   edede1	 jjjcart	   mcohen76	 pyang		    svishwa2	     zxiang4
+bmatlak1   edurney1	 jkassne1	   mcole8	 pzhao3		    swaghma1	     zzhan145
+bmatzel1   eezor1	 jle10		   mcuatla1	 qlin32		    swang130	     zzhan218
+bni2	   efergus3	 jlefer1	   mdamiat1	 qpietri1	    swang206	     zzhang27
+bpoliks    efranci7	 jlei23		   mdelgad1	 qxiong1	    sweimer1	     zzheng39
+bpreise1   egeorge8	 jleone5	   mdevend1	 qzayats1	    sweintr4	     zzhou60
+brathke1   egreene4	 jli452		   mdobies1	 qzhang61	    swu147
+brichar7   ehaddad1	 jli461		   meng		 raj		    syeung10
+brobergj   ehuang35	 jli520		   merwyn	 rambast1	    syonet1
+brood	   eintski1	 jliebe12	   mfarrel8	 ramsurat1	    sysadmin
+bhogan9@remote05:/home$ cd bin
+bash: cd: bin: No such file or directory
+bhogan9@remote05:/home$ cd ..
+bhogan9@remote05:/$ ls
+backup	home.local	lib64			nslcd.conf.linux     run   vmlinuz
+bin	home.save	libnss-ldap.conf.linux	opt		     sbin  vmlinuz.old
+boot	import		libx32			opt.local	     srv
+dev	initrd.img	lost+found		opt.old		     sys
+etc	initrd.img.old	media			pam_ldap.conf.linux  tmp
+home	lib		microchip		proc		     usr
+home1	lib32		mnt			root		     var
+bhogan9@remote05:/$ cd bin/
+bhogan9@remote05:/bin$ ls
+bash	       echo	   mktemp	   ping4		     systemd-tmpfiles
+bunzip2        ed	   more		   ping6		     systemd-tty-ask-password-agent
+busybox        egrep	   mount	   ps			     tar
+bzcat	       false	   mountpoint	   pwd			     tcsh
+bzcmp	       fgconsole   mt		   rbash		     tempfile
+bzdiff	       fgrep	   mt-gnu	   readlink		     touch
+bzegrep        findmnt	   mv		   red			     true
+bzexe	       fuser	   nano		   rm			     udevadm
+bzfgrep        fusermount  nc		   rmdir		     ulockmgr_server
+bzgrep	       getfacl	   nc.traditional  rnano		     umount
+bzip2	       grep	   netcat	   run-parts		     uname
+bzip2recover   gunzip	   netstat	   rzsh			     uncompress
+bzless	       gzexe	   networkctl	   sed			     unicode_start
+bzmore	       gzip	   nisdomainname   setfacl		     vdir
+cat	       hciconfig   ntfs-3g	   setfont		     wdctl
+chacl	       hostname    ntfs-3g.probe   setupcon		     which
+chgrp	       ip	   ntfscat	   sh			     ypdomainname
+chmod	       journalctl  ntfscluster	   sh.distrib		     zcat
+chown	       kbd_mode    ntfscmp	   sleep		     zcmp
+chvt	       keyctl	   ntfsfallocate   ss			     zdiff
+cp	       kill	   ntfsfix	   stty			     zegrep
+cpio	       kmod	   ntfsinfo	   su			     zfgrep
+csh	       ln	   ntfsls	   sync			     zforce
+dash	       loadkeys    ntfsmove	   systemctl		     zgrep
+date	       login	   ntfsrecover	   systemd		     zless
+dd	       loginctl    ntfssecaudit    systemd-ask-password      zmore
+df	       lowntfs-3g  ntfstruncate    systemd-escape	     znew
+dir	       ls	   ntfsusermap	   systemd-hwdb		     zsh
+dmesg	       lsblk	   ntfswipe	   systemd-inhibit	     zsh5
+dnsdomainname  lsmod	   openvt	   systemd-machine-id-setup
+domainname     mkdir	   pidof	   systemd-notify
+dumpkeys       mknod	   ping		   systemd-sysusers
+bhogan9@remote05:/bin$ cd *[K[K[K[Kls *[p-s]*
+bash	       egrep	   mountpoint	   openvt     sh.distrib		      true
+bunzip2        false	   nc.traditional  pidof      sleep			      ulockmgr_server
+busybox        fgconsole   netstat	   ping       ss			      uncompress
+bzcmp	       fgrep	   networkctl	   ping4      stty			      unicode_start
+bzegrep        fuser	   nisdomainname   ping6      su			      vdir
+bzfgrep        fusermount  ntfs-3g	   ps	      sync			      ypdomainname
+bzgrep	       grep	   ntfs-3g.probe   pwd	      systemctl			      zcmp
+bzip2	       gunzip	   ntfscat	   rbash      systemd			      zegrep
+bzip2recover   gzip	   ntfscluster	   readlink   systemd-ask-password	      zfgrep
+bzless	       hostname    ntfscmp	   red	      systemd-escape		      zforce
+bzmore	       ip	   ntfsfallocate   rm	      systemd-hwdb		      zgrep
+chgrp	       journalctl  ntfsfix	   rmdir      systemd-inhibit		      zless
+cp	       loadkeys    ntfsinfo	   rnano      systemd-machine-id-setup	      zmore
+cpio	       lowntfs-3g  ntfsls	   run-parts  systemd-notify		      zsh
+csh	       ls	   ntfsmove	   rzsh       systemd-sysusers		      zsh5
+dash	       lsblk	   ntfsrecover	   sed	      systemd-tmpfiles
+dir	       lsmod	   ntfssecaudit    setfacl    systemd-tty-ask-password-agent
+dmesg	       mkdir	   ntfstruncate    setfont    tar
+dnsdomainname  mktemp	   ntfsusermap	   setupcon   tcsh
+dumpkeys       more	   ntfswipe	   sh	      tempfile
+bhogan9@remote05:/bin$ ls *[p-s]*[1P[p-s]*?[p-s]*
+cp  cpio  csh  grep  ip  ls  lsblk  lsmod  openvt  ps  ss  true  ypdomainname  zsh  zsh5
+bhogan9@remote05:/bin$ cd ..
+bhogan9@remote05:/$ cd ..ls ?[p-s]*b?[p-s]*i?[p-s]*n?[p-s]*/?[p-s]*
+bin/cp	  bin/csh   bin/ip  bin/lsblk  bin/openvt  bin/ss    bin/ypdomainname  bin/zsh5
+bin/cpio  bin/grep  bin/ls  bin/lsmod  bin/ps	   bin/true  bin/zsh
+bhogan9@remote05:/$ cd[K[Kls etcd[K/*rc
+etc/bash.bashrc  etc/gnashpluginrc     etc/inputrc	 etc/Muttrc	 etc/quilt.quiltrc  etc/slsh.rc
+etc/chktexrc	 etc/gnashrc	       etc/mail.rc	 etc/nanorc	 etc/sbclrc	    etc/wgetrc
+etc/csh.cshrc	 etc/gnashthumbnailrc  etc/matplotlibrc  etc/pbuilderrc  etc/screenrc
+bhogan9@remote05:/$ ls bin/???
+bin/cat  bin/csh  bin/dir  bin/pwd  bin/red  bin/sed  bin/tar  bin/zsh
+bhogan9@remote05:/$ cd ~
+bhogan9@remote05:~$ ls
+'?'	   cs220		 Desktop     Downloads	 Music	    projects   Templates   tmp
+ Arduino   CS-240-Team-Project	 Documents   git-repos	 Pictures   Public     testing	   Videos
+bhogan9@remote05:~$ cd projects/i220a/
+bhogan9@remote05:~/projects/i220a$ ls
+README.md  submit
+bhogan9@remote05:~/projects/i220a$ cd submit/lab3/
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls
+exercises  lab3.LOG
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cd exercises/
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls >ls[K [K[K ls.LOG
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cat ls.LOG
+dir
+ls.LOG
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cat >cat.log
+test
+test1
+test2
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cat cat.log
+test
+test1
+test2
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ dir >>k[Kls.log[K[K[KLOG
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cat ls.LOG
+dir
+ls.LOG
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+cat.log  dir  ls.LOG  t1.c  T1.s  v1.s	v.c  x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ dir
+cat.log  dir  ls.LOG  t1.c  T1.s  v1.s	v.c  x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cat <ls.LOG
+dir
+ls.LOG
+t1.c
+T1.s
+v1.s
+v.c
+x.c
+cat.log  dir  ls.LOG  t1.c  T1.s  v1.s	v.c  x.c
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ wc -l
+test
+hello
+2
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ ls | wc -l
+8
+bhogan9@remote05:~/projects/i220a/submit/lab3/exercises$ cd ~/../..
+bhogan9@remote05:/$ ls
+backup	home.local	lib64			nslcd.conf.linux     run   vmlinuz
+bin	home.save	libnss-ldap.conf.linux	opt		     sbin  vmlinuz.old
+boot	import		libx32			opt.local	     srv
+dev	initrd.img	lost+found		opt.old		     sys
+etc	initrd.img.old	media			pam_ldap.conf.linux  tmp
+home	lib		microchip		proc		     usr
+home1	lib32		mnt			root		     var
+bhogan9@remote05:/$ cd ~/projects/i220a/la[K[Ksubmit/ex[K[Klab3/
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/../../bin/???? | wc -l
+ls: cannot access '/home/bhogan9/../../bin/????': No such file or directory
+0
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/../../bin/???? | wc -l[C[C[C[C[1@ 
+ls: cannot access '/home/bhogan9/../../bin/': No such file or directory
+ls: cannot access '????': No such file or directory
+0
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cd ~/../..
+bhogan9@remote05:/$ ls
+backup	home.local	lib64			nslcd.conf.linux     run   vmlinuz
+bin	home.save	libnss-ldap.conf.linux	opt		     sbin  vmlinuz.old
+boot	import		libx32			opt.local	     srv
+dev	initrd.img	lost+found		opt.old		     sys
+etc	initrd.img.old	media			pam_ldap.conf.linux  tmp
+home	lib		microchip		proc		     usr
+home1	lib32		mnt			root		     var
+bhogan9@remote05:/$ ls bin/????
+bin/bash  bin/dash  bin/grep  bin/kmod	bin/ping  bin/sync  bin/vdir  bin/znew
+bin/chvt  bin/date  bin/gzip  bin/more	bin/rzsh  bin/tcsh  bin/zcat  bin/zsh5
+bin/cpio  bin/echo  bin/kill  bin/nano	bin/stty  bin/true  bin/zcmp
+bhogan9@remote05:/$ ls bin/????[Kcd ~/../..ls ~/../../bin/ ???? | wc -l[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/projects/i220a/submit/lab3/
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cd ~/projects/i220a/submit/lab3/~/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K~/bu[K[Kb[K[Kbin/[K[K[K[K[Kls ~n[Kbin/[K[Kn/???? | wc -l
+23
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/[Knib[K[K[Kbin [K/c* > BIN-C.LOG[K[K[K[K[K[K[K[K[Kbin[Kn-log.c
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cat bin-log.c 
+/bin/cat
+/bin/chacl
+/bin/chgrp
+/bin/chmod
+/bin/chown
+/bin/chvt
+/bin/cp
+/bin/cpio
+/bin/csh
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ;[Kcat bin-log.c | wc -l
+9
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~eterrac1/[K[K[K[K[K[K[K[Kr[Ktc[Kerrac1/[K[K[K[K[K[K[Kc/
+ls: cannot access '~etc/': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~etc/[K[K[Kc
+~echen100/ ~ecodrin1/ ~ecoolid1/ 
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~ec
+~echen100/ ~ecodrin1/ ~ecoolid1/ 
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~ec[K[Kb
+~backup/    ~bbuchan1/  ~bdemirc1/  ~bharari1/  ~blee75/    ~bni2/      ~bscheue1/  ~byan2/
+~bamoate1/  ~bchadha1/  ~bdeore1/   ~bhogan9/   ~bliebe1/   ~bpreise1/  ~bschwar9/  ~byang20/
+~barana1/   ~bchan53/   ~bdevrie1/  ~bin/       ~bliew1/    ~brathke1/  ~bsendir1/  ~bzee1/
+~baranof1/  ~bchaney1/  ~bdikmen1/  ~bkeuria1/  ~bmannin2/  ~brichar7/  ~bsuzuki1/  ~bzhao10/
+~barry/     ~bchen114/  ~bestus1/   ~bklayma1/  ~bmatlak1/  ~brose7/    ~bsweet2/   
+~bbane1/    ~bciarav1/  ~bfox6/     ~blackburn/ ~bmatzel1/  ~bsadhna1/  ~bwang2/    
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~b
+~backup/    ~bbuchan1/  ~bdemirc1/  ~bharari1/  ~blee75/    ~bni2/      ~bscheue1/  ~byan2/
+~bamoate1/  ~bchadha1/  ~bdeore1/   ~bhogan9/   ~bliebe1/   ~bpreise1/  ~bschwar9/  ~byang20/
+~barana1/   ~bchan53/   ~bdevrie1/  ~bin/       ~bliew1/    ~brathke1/  ~bsendir1/  ~bzee1/
+~baranof1/  ~bchaney1/  ~bdikmen1/  ~bkeuria1/  ~bmannin2/  ~brichar7/  ~bsuzuki1/  ~bzhao10/
+~barry/     ~bchen114/  ~bestus1/   ~bklayma1/  ~bmatlak1/  ~brose7/    ~bsweet2/   
+~bbane1/    ~bciarav1/  ~bfox6/     ~blackburn/ ~bmatzel1/  ~bsadhna1/  ~bwang2/    
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~bin/
+bash	       echo	   mktemp	   ping4		     systemd-tmpfiles
+bunzip2        ed	   more		   ping6		     systemd-tty-ask-password-agent
+busybox        egrep	   mount	   ps			     tar
+bzcat	       false	   mountpoint	   pwd			     tcsh
+bzcmp	       fgconsole   mt		   rbash		     tempfile
+bzdiff	       fgrep	   mt-gnu	   readlink		     touch
+bzegrep        findmnt	   mv		   red			     true
+bzexe	       fuser	   nano		   rm			     udevadm
+bzfgrep        fusermount  nc		   rmdir		     ulockmgr_server
+bzgrep	       getfacl	   nc.traditional  rnano		     umount
+bzip2	       grep	   netcat	   run-parts		     uname
+bzip2recover   gunzip	   netstat	   rzsh			     uncompress
+bzless	       gzexe	   networkctl	   sed			     unicode_start
+bzmore	       gzip	   nisdomainname   setfacl		     vdir
+cat	       hciconfig   ntfs-3g	   setfont		     wdctl
+chacl	       hostname    ntfs-3g.probe   setupcon		     which
+chgrp	       ip	   ntfscat	   sh			     ypdomainname
+chmod	       journalctl  ntfscluster	   sh.distrib		     zcat
+chown	       kbd_mode    ntfscmp	   sleep		     zcmp
+chvt	       keyctl	   ntfsfallocate   ss			     zdiff
+cp	       kill	   ntfsfix	   stty			     zegrep
+cpio	       kmod	   ntfsinfo	   su			     zfgrep
+csh	       ln	   ntfsls	   sync			     zforce
+dash	       loadkeys    ntfsmove	   systemctl		     zgrep
+date	       login	   ntfsrecover	   systemd		     zless
+dd	       loginctl    ntfssecaudit    systemd-ask-password      zmore
+df	       lowntfs-3g  ntfstruncate    systemd-escape	     znew
+dir	       ls	   ntfsusermap	   systemd-hwdb		     zsh
+dmesg	       lsblk	   ntfswipe	   systemd-inhibit	     zsh5
+dnsdomainname  lsmod	   openvt	   systemd-machine-id-setup
+domainname     mkdir	   pidof	   systemd-notify
+dumpkeys       mknod	   ping		   systemd-sysusers
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls exercises/
+cat.log     .gitignore  t1.c        v1.s        x.c         
+dir/        ls.LOG      T1.s        v.c         
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls exercises/[K[K[K[K[K[K[K[K[K[K~/../e
+eadler1/   ebecker2/  ecodrin1/  efranci7/  ejang1/    emaione1/  epona/     eterrac1/  
+eaghaja1/  ebenz1/    ecoolid1/  egeorge8/  ekadiog1/  emattison/ epotapo1/  etilden/   
+eaktas/    eborzil1/  edede1/    egreene4/  elancer1/  emergepl/  erdil/     eventu10/  
+ealdreabi/ ebreban1/  edurney1/  ehaddad1/  elanger4/  emichau2/  eshapir9/  evorosh1/  
+eates1/    echen100/  eezor1/    ehuang35/  eleigh1/   emuja1/    estern7/   eway1/     
+ebasan1/   eciraco1/  efergus3/  eintski1/  elurye1/   engage/    et/        eyalcin1/  
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/../e
+eadler1/   ebecker2/  ecodrin1/  efranci7/  ejang1/    emaione1/  epona/     eterrac1/  
+eaghaja1/  ebenz1/    ecoolid1/  egeorge8/  ekadiog1/  emattison/ epotapo1/  etilden/   
+eaktas/    eborzil1/  edede1/    egreene4/  elancer1/  emergepl/  erdil/     eventu10/  
+ealdreabi/ ebreban1/  edurney1/  ehaddad1/  elanger4/  emichau2/  eshapir9/  evorosh1/  
+eates1/    echen100/  eezor1/    ehuang35/  eleigh1/   emuja1/    estern7/   eway1/     
+ebasan1/   eciraco1/  efergus3/  eintski1/  elurye1/   engage/    et/        eyalcin1/  
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/../etc[K
+et/       eterrac1/ etilden/  
+bhogan9@remote05:~/projects/i220a/submit/lab3$ ls ~/../etc[K[K[K../etc/
+ls: cannot access '/home/bhogan9/../../etc/': No such file or directory
+bhogan9@remote05:~/projects/i220a/submit/lab3$ cd ~/../..
+bhogan9@remote05:/$ ls
+backup	home.local	lib64			nslcd.conf.linux     run   vmlinuz
+bin	home.save	libnss-ldap.conf.linux	opt		     sbin  vmlinuz.old
+boot	import		libx32			opt.local	     srv
+dev	initrd.img	lost+found		opt.old		     sys
+etc	initrd.img.old	media			pam_ldap.conf.linux  tmp
+home	lib		microchip		proc		     usr
+home1	lib32		mnt			root		     var
+bhogan9@remote05:/$ ls /etc/*[C-/etc/*R/etc/* /etc/*[C[C[C[C[C[C | wc -l
+ls: cannot open directory '/etc/polkit-1/localauthority': Permission denied
+ls: cannot open directory '/etc/ssl/private': Permission denied
+ls: cannot open directory '/etc/systemd/system/apparmor.service.d': Permission denied
+ls: cannot open directory '/etc/systemd/system/x2goserver.service.d': Permission denied
+ls: cannot open directory '/etc/x2go/x2gosql/passwords': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/desktop': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-10': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-11': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-12': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-15': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-17': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-18': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-19': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-21': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-22': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-23': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-5': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/panel/launcher-9': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/terminal': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/xfconf/xfce-perchannel-xml': Permission denied
+ls: cannot open directory '/etc/xdg/new-xfce4/xfwm4': Permission denied
+4993
+bhogan9@remote05:/$ man tr
+[?1049h[22;0;0t[?1h=TR(1)                                       User Commands                                       TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed in the last specified SET,[m
+              with a single occurrence of that character[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs are specified as strings of characters.   Most  represent  themselves.   Interpreted  se‐[m
+       quences are:[m
+[m
+       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K       \v     vertical tab[m
+[m
+       CHAR1-CHAR2[m
+              all characters from CHAR1 to CHAR2 in ascending order[m
+[m
+       [CHAR*][m
+              in SET2, copies of CHAR until length of SET1[m
+[m
+       [CHAR*REPEAT][m
+              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[m
+       [:alnum:][m
+              all letters and digits[m
+[m
+       [:alpha:][m
+              all letters[m
+[m
+       [:blank:][m
+              all horizontal whitespace[m
+[m
+       [:cntrl:][m
+              all control characters[m
+[m
+       [:digit:][m
+              all digits[m
+[m
+       [:graph:][m
+              all printable characters, not including space[m
+[m
+       [:lower:][m
+              all lower case letters[m
+[m
+       [:print:][m
+              all printable characters, including space[m
+[m
+       [:punct:][m
+              all punctuation characters[m
+[m
+       [:space:][m
+              all horizontal or vertical whitespace[m
+[m
+       [:upper:][m
+              all upper case letters[m
+[m
+       [:xdigit:][m
+              all hexadecimal digits[m
+[m
+       [=CHAR=][m
+[7m Manual page tr(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \t     horizontal tab[m
+[49;1H[K[7m Manual page tr(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \r     return[m
+[49;1H[K[7m Manual page tr(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \n     new line[m
+[49;1H[K[7m Manual page tr(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \f     form feed[m
+[49;1H[K[7m Manual page tr(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \b     backspace[m
+[49;1H[K[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \a     audible BEL[m
+[49;1H[K[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \\     backslash[m
+[49;1H[K[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[49;1H[K[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       quences are:[m
+[49;1H[K[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       SETs are specified as strings of characters.   Most  represent  themselves.   Interpreted  se‐[m
+[49;1H[K[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              output version information and exit[m
+[49;1H[K[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--version[0m[m
+[49;1H[K[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--help[0m display this help and exit[m
+[49;1H[K[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first truncate SET1 to length of SET2[m
+[49;1H[K[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-t[0m, [1m--truncate-set1[0m[m
+[49;1H[K[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with a single occurrence of that character[m
+[49;1H[K[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              replace each sequence of a repeated character that is listed in the last specified SET,[m
+[49;1H[K[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m, [1m--squeeze-repeats[0m[m
+[49;1H[K[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              delete characters in SET1, do not translate[m
+[49;1H[K[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-d[0m, [1m--delete[0m[m
+[49;1H[K[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              use the complement of SET1[m
+[49;1H[K[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+[49;1H[K[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[49;1H[K[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[49;1H[K[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[49;1H[K[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[49;1H[K[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tr - translate or delete characters[m
+[49;1H[K[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[49;1H[K[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTR(1)                                       User Commands                                       TR(1)[m
+[49;1H[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \v     vertical tab[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       CHAR1-CHAR2[m
+[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters from CHAR1 to CHAR2 in ascending order[m
+[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*][m
+[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in SET2, copies of CHAR until length of SET1[m
+[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*REPEAT][m
+[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alnum:][m
+[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:digit:][m
+[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all digits[m
+[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:graph:][m
+[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, not including space[m
+[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              output version information and exit[m
+[49;1H[K[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--version[0m[m
+[49;1H[K[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--help[0m display this help and exit[m
+[49;1H[K[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first truncate SET1 to length of SET2[m
+[49;1H[K[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-t[0m, [1m--truncate-set1[0m[m
+[49;1H[K[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with a single occurrence of that character[m
+[49;1H[K[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              replace each sequence of a repeated character that is listed in the last specified SET,[m
+[49;1H[K[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m, [1m--squeeze-repeats[0m[m
+[49;1H[K[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              delete characters in SET1, do not translate[m
+[49;1H[K[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-d[0m, [1m--delete[0m[m
+[49;1H[K[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              use the complement of SET1[m
+[49;1H[K[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-t[0m, [1m--truncate-set1[0m[m
+[49;1H[K[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              with a single occurrence of that character[m
+[49;1H[K[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              replace each sequence of a repeated character that is listed in the last specified SET,[m
+[49;1H[K[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m, [1m--squeeze-repeats[0m[m
+[49;1H[K[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              delete characters in SET1, do not translate[m
+[49;1H[K[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-d[0m, [1m--delete[0m[m
+[49;1H[K[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              use the complement of SET1[m
+[49;1H[K[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+[49;1H[K[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[49;1H[K[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[49;1H[K[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[49;1H[K[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[49;1H[K[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tr - translate or delete characters[m
+[49;1H[K[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[49;1H[K[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[49;1H[K[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTR(1)                                       User Commands                                       TR(1)[m
+[49;1H[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tbhogan9@remote05:/$ man trls -R /etc/* | wc -l[Kcd ~/../..ls ~/../../etc/[5Pcd ~/../..ls ~/../../etc/[7Pbin/etc/cat bin-log.c | wc -l[Kls ~bin/c* > bin-log.c[2P???? | wc -lcd ~/projects/i220a/submit/lab3/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pls bin/????cd ~/projects/i220a/submit/lab3/
+bhogan9@remote05:~/projects/i220a/submit/lab3$ d[Ktr [K[K[Kls | tr [:lower:] [:upper;}[K[K;[K:]
+BIN-LOG.C
+EXERCISES
+LAB3.LOG
+bhogan9@remote05:~/projects/i220a/submit/lab3$ i[Kgit add -A
+bhogan9@remote05:~/projects/i220a/submit/lab3$ git status
+On branch lab3
+Your branch is up to date with 'origin/lab3'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   bin-log.c[m
+	[32mnew file:   exercises/T1.s[m
+	[32mnew file:   exercises/cat.log[m
+	[32mnew file:   exercises/dir/T2.s1[m
+	[32mnew file:   exercises/dir/t2.c[m
+	[32mnew file:   exercises/dir/t3[m
+	[32mnew file:   exercises/ls.LOG[m
+	[32mnew file:   exercises/t1.c[m
+	[32mnew file:   exercises/v.c[m
+	[32mnew file:   exercises/v1.s[m
+	[32mnew file:   exercises/x.c[m
+	[32mnew file:   lab3.LOG[m
+
+bhogan9@remote05:~/projects/i220a/submit/lab3$ exit
+
+Script done on 2020-09-20 01:45:57-04:00 [COMMAND_EXIT_CODE="0"]
