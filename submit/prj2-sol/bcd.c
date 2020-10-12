@@ -48,8 +48,9 @@ Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
   Binary value = 0;
+  int i = 0, rem = 0;
   
-  return 0;
+  return value;
 }
 
 /** Return BCD encoding of decimal number corresponding to string s.
