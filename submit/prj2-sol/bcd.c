@@ -16,8 +16,23 @@
 Bcd
 binary_to_bcd(Binary value, BcdError *error)
 {
-  //@TODO
-  return 0;
+  int move = 0;
+  Bcd bcd = 0;
+  Binary temp = value;
+  int counter = 0;
+  while(temp > 0){
+    counter++;
+    temp /= 10;
+  }
+  if(*error == NULL){
+    if(counter > MAX_BCD_DIGITS)
+      *error = OVERFLOW_ERR;
+  }
+  while(value > 0) {
+    bcd |= (value % 10) << (move++ << 2);
+    value /= 10;
+  }
+  return bcd;
 }
 
 /** Return binary encoding of BCD value bcd.
@@ -32,7 +47,8 @@ binary_to_bcd(Binary value, BcdError *error)
 Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
-  //@TODO
+  Binary value = 0;
+  
   return 0;
 }
 
