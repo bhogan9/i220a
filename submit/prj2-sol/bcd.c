@@ -84,11 +84,30 @@ Bcd
 str_to_bcd(const char *s, const char **p, BcdError *error)
 {
   int length = strlen(s);
-  printf("SIZE: %d\n",length);
-  if(length > MAX_BCD_DIGITS)
+  if(*error != NULL && length > MAX_BCD_DIGITS)
     *error = OVERFLOW_ERR;
+
+  int value = s[0] - '0';
+  int i = 0;
+  Bcd sum = 0;
+  int found = 0;
+  while(value != -48){
+    if(value > -1 && value < 10){
+      sum *= 10;
+      sum += value;
+    }else{
+      if(!found){
+        *p = &s[i];
+        found = 1;
+      }
+    }
+    i++;
+    value = s[i] - '0';
+  }
+  if(!found)
+    *p = &s[i];
   
-  return 0;
+  return binary_to_bcd(sum, error);
 }
 
 /** Convert bcd to a NUL-terminated string in buf[] without any
@@ -103,8 +122,21 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 int
 bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 {
-  //@TODO
-  return 0;
+  if(*error == NULL){
+    if(bufSize < BCD_BUF_SIZE){
+      *error = OVERFLOW_ERR;
+    }
+    Bcd temp = bcd;
+    while(temp > 0){
+      if((temp & 0xf) > 9){
+	*error = BAD_VALUE_ERR;
+      }
+      temp = temp >> 4;
+    }
+  }
+
+  Bcd binary = bcd_to_binary(bcd, error);
+  return sprintf(buf, "%d", binary);
 }
 
 /** Return the BCD representation of the sum of BCD int's x and y.
