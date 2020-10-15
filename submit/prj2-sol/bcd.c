@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <limits.h>
 #include <stdio.h>
+#include <string.h>
 
 /** Return BCD encoding of binary (which has normal binary representation).
  *
@@ -13,6 +14,15 @@
  *  If error is not NULL, sets *error to OVERFLOW_ERR if binary is too
  *  big for the Bcd type, otherwise *error is unchanged.
  */
+Bcd
+powers(int x, int y){
+  Bcd value = 1;
+  for(int i = 0; i < y; i++)
+    value *= x;
+  
+  return value;
+}
+
 Bcd
 binary_to_bcd(Binary value, BcdError *error)
 {
@@ -47,10 +57,19 @@ binary_to_bcd(Binary value, BcdError *error)
 Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
-  Binary value = 0;
-  int i = 0, rem = 0;
+  Bcd temp = bcd;
+  int counter = 0;
+  Bcd sum = 0;
+  while (temp > 0){
+    if((temp & 0xf) > 9){
+      *error = BAD_VALUE_ERR;
+    }    
+    sum += (temp & 0xf)*powers(10,counter);
+    counter++;
+    temp = temp >> 4;
+  }
   
-  return value;
+  return sum;
 }
 
 /** Return BCD encoding of decimal number corresponding to string s.
@@ -64,7 +83,11 @@ bcd_to_binary(Bcd bcd, BcdError *error)
 Bcd
 str_to_bcd(const char *s, const char **p, BcdError *error)
 {
-  //@TODO
+  int length = strlen(s);
+  printf("SIZE: %d\n",length);
+  if(length > MAX_BCD_DIGITS)
+    *error = OVERFLOW_ERR;
+  
   return 0;
 }
 

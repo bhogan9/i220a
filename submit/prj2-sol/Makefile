@@ -1,6 +1,6 @@
 CC = gcc
 #CC = @touch $@; echo "$@: $?;;" gcc
-CFLAGS = -g -Wall -std=c11 
+CFLAGS = -g -Wall -std=c11 -lm
 
 BCD_BASE = 2
 
