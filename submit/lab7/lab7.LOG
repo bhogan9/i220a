@@ -1618,3 +1618,371 @@ The program is not being run.
 bhogan9@remote02:~/projects/i220a/submit/lab7/exercises$ exit
 
 Script done on 2020-10-17 23:45:41-04:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2020-10-18 22:18:12-04:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="49"]
+bhogan9@remote06:~/projects/i220a/submit/lab7$ cd exercises/
+bhogan9@remote06:~/projects/i220a/submit/lab7/exercises$ gbd [K[K[Kdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) b hello()
+Function "hello()" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n'[K
+(gdb) b hello
+Breakpoint 1 at 0x1155: file hello.c, line 8.
+(gdb) r
+Starting program: /import/linux/home1/bhogan9/projects/i220a/submit/lab7/exercises/hello 
+usage: /import/linux/home1/bhogan9/projects/i220a/submit/lab7/exercises/hello NAME...
+[Inferior 1 (process 2762558) exited with code 0357]
+(gdb) rb hello
+Note: breakpoint 1 also set at pc 0x555555555155.
+Breakpoint 2 at 0x555555555155: file hello.c, line 8.
+(gdb) b hellor[Kb hello\\\\\\\\\\\\\\\\\\\\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kr joe
+Starting program: /import/linux/home1/bhogan9/projects/i220a/submit/lab7/exercises/hello joe
+
+Breakpoint 1, hello (out=0x7ffff7f8e760 <_IO_2_1_stdout_>, who=0x7fffffffeaf5 "joe") at hello.c:8
+8	  fprintf(out, "hello %s\n", who);
+(gdb) disas /m
+Dump of assembler code for function hello:
+7	{
+   0x0000555555555145 <+0>:	push   %rbp
+   0x0000555555555146 <+1>:	mov    %rsp,%rbp
+   0x0000555555555149 <+4>:	sub    $0x10,%rsp
+   0x000055555555514d <+8>:	mov    %rdi,-0x8(%rbp)
+   0x0000555555555151 <+12>:	mov    %rsi,-0x10(%rbp)
+
+8	  fprintf(out, "hello %s\n", who);
+=> 0x0000555555555155 <+16>:	mov    -0x10(%rbp),%rdx
+   0x0000555555555159 <+20>:	mov    -0x8(%rbp),%rax
+   0x000055555555515d <+24>:	lea    0xea0(%rip),%rsi        # 0x555555556004
+   0x0000555555555164 <+31>:	mov    %rax,%rdi
+   0x0000555555555167 <+34>:	mov    $0x0,%eax
+   0x000055555555516c <+39>:	callq  0x555555555030 <fprintf@plt>
+
+9	}
+   0x0000555555555171 <+44>:	nop
+   0x0000555555555172 <+45>:	leaveq 
+   0x0000555555555173 <+46>:	retq   
+
+End of assembler dump.
+(gdb) p ([K*[K(*(const char [K ***)($rbp [K)[[K){0[K[K[0]
+$1 = 0x555555555200 <__libc_csu_init> "AWI\211\327AVI\211\366AUA\211\375ATL\215%\320+"
+(gdb) p (*(const char ***)($rbp))[0]-))[0]0))[0]x))[0]2))[0]0))[0]
+Cannot access memory at address 0x1
+(gdb) p (*(const char ***)($rbp-0x20))[0][1P0))[0]10))[0]
+$2 = 0x4c45485300656f6a <error: Cannot access memory at address 0x4c45485300656f6a>
+(gdb) p (*(const char ***)($rbp-0x10))[0][K[K[K[K[K[K[K[K[K[K[K[K[Krbp-0x20))[0]\)[0][1P)[0][1P))[0][1P))[0][1P))[0][1P))[0]1))[0]7))[0]
+Cannot access memory at address 0x7fffffffeaf500
+(gdb) p (*(const char ***)($rbp-17))[0][1P))[0]6))[0]
+$3 = 0x4c45485300656f6a <error: Cannot access memory at address 0x4c45485300656f6a>
+(gdb) p (*(const char ***)($rbp-16))[0]\[K\[K[K[K[K
+$4 = (const char **) 0x7fffffffeaf5
+(gdb) p (*(const char ***)($rbp-16))[1P))[1P))8))
+$5 = (const char **) 0x7ffff7f8e760 <_IO_2_1_stdout_>
+(gdb) p (*(const char ***)($rbp-8))[1P))4))
+$6 = (const char **) 0xffffe75000007fff
+(gdb) p (*(const char ***)($rbp-4))[1P))[1P))
+$7 = (const char **) 0x7fffffffe750
+(gdb) p (*(const char ***)($rbp))[0]
+$8 = 0x555555555200 <__libc_csu_init> "AWI\211\327AVI\211\366AUA\211\375ATL\215%\320+"
+(gdb) p (*(const char ***)($rbp))[0]-))[0]4))[0]
+Cannot access memory at address 0xffffe75000007fff
+(gdb) p (*(const char ***)($rbp-4))[0][1P))[0]8))[0]
+$9 = 0xfbad2084 <error: Cannot access memory at address 0xfbad2084>
+(gdb) p $rbp
+$10 = (void *) 0x7fffffffe720
+(gdb) p $rbp[0]
+Attempt to dereference a generic pointer.
+(gdb) p $rbp[0][C[C($rbp[0]*$rbp[0]c$rbp[0]o$rbp[0][1P$rbp[0]($rbp[0][1P$rbp[0][1P$rbp[0]*$rbp[0][1P$rbp[0]($rbp[0]c$rbp[0]o$rbp[0]n$rbp[0]s$rbp[0]t$rbp[0] $rbp[0]c$rbp[0]h$rbp[0]a$rbp[0]r$rbp[0] $rbp[0]*$rbp[0]*$rbp[0]*$rbp[0])$rbp[0])$rbp[0]
+A syntax error in expression, near `)$rbp[0]'.
+(gdb) p (*(const char ***))$rbp[0][C $rbp[0]
+A syntax error in expression, near `) $rbp[0]'.
+(gdb) p (*(const char ***)) $rbp[0][C[C[C[1P$rbp[0][C[C[C[1P$rbp[0][1P)$rbp[0][C[1P[1P
+Attempt to dereference a generic pointer.
+(gdb) p (const char **)$rbp[0]*)$rbp[0][1@*
+A syntax error in expression, near `const char ***)$rbp[0]'.
+(gdb) p (*const char ***)$rbp[0][1P)$rbp[0]
+A syntax error in expression, near `const char **)$rbp[0]'.
+(gdb) p (*const char **)$rbp[0][C[1P)$rbp[0]
+A syntax error in expression, near `const char *)$rbp[0]'.
+(gdb) p (*const char *)$rbp[0][C[1P)$rbp[0]
+A syntax error in expression, near `const char )$rbp[0]'.
+(gdb) p (*const char )$rbp[0]*)$rbp[0]*)$rbp[0]*)$rbp[0][1P
+Attempt to dereference a generic pointer.
+(gdb) p (char *)0x555555555030
+$11 = 0x555555555030 <fprintf@plt> "\377%\342/"
+(gdb) p (char *)0x555555555030[C[C[C[C[C[C[C[C[C[Const char ***)$rbp[0][C[C[C[C[C[C[C[C[C[2P*const char )$rbp[0]*)$rbp[0]*)$rbp[0]*)$rbp[0][C[C[C[C[C[C[C[C[C[2Pconst char **)$rbp[0][C[C[C[C[C[C[C[C[C*(const char ***)) $rbp[0][1P$rbp[0][C[C[C[C[C[C[C[C$rbp[0][K[K(*(const char ***)($rbp-8))[0]4))[0][2P))[0][K-4))8))16))[0]7))[0][Krbp-0x20))[0][5P))[0][C[C[C[C[C[Cdisas /m[K[C[C[C[C[C[C[3Pr joedisas /m
+Dump of assembler code for function hello:
+7	{
+   0x0000555555555145 <+0>:	push   %rbp
+   0x0000555555555146 <+1>:	mov    %rsp,%rbp
+   0x0000555555555149 <+4>:	sub    $0x10,%rsp
+   0x000055555555514d <+8>:	mov    %rdi,-0x8(%rbp)
+   0x0000555555555151 <+12>:	mov    %rsi,-0x10(%rbp)
+
+8	  fprintf(out, "hello %s\n", who);
+=> 0x0000555555555155 <+16>:	mov    -0x10(%rbp),%rdx
+   0x0000555555555159 <+20>:	mov    -0x8(%rbp),%rax
+   0x000055555555515d <+24>:	lea    0xea0(%rip),%rsi        # 0x555555556004
+   0x0000555555555164 <+31>:	mov    %rax,%rdi
+   0x0000555555555167 <+34>:	mov    $0x0,%eax
+   0x000055555555516c <+39>:	callq  0x555555555030 <fprintf@plt>
+
+9	}
+   0x0000555555555171 <+44>:	nop
+   0x0000555555555172 <+45>:	leaveq 
+   0x0000555555555173 <+46>:	retq   
+
+End of assembler dump.
+(gdb) p $rdx
+$12 = 140737488349941
+(gdb) p $rdx[C[K[Ks[Kbp
+$13 = (void *) 0x7fffffffe720
+(gdb) p $rbp[K[Kax
+$14 = 140737353672544
+(gdb) p $rax]]][K[K[K[K[K[K[K(*(const char***)($rax))[0]
+Cannot access memory at address 0xfbad2084
+(gdb) p (*(const char***)($rax))[0][K[K[K
+$15 = (const char **) 0xfbad2084
+(gdb) p (*(const char***)($rax))[1P))[1P))[1P))d))x))
+Cannot access memory at address 0xffffffffffffeaf5
+(gdb) p (*(const char***)($dx))[1P))[1P))r))d))x))
+$16 = (const char **) 0x4c45485300656f6a
+(gdb) p (char *)0x555555556004
+$17 = 0x555555556004 "hello %s\n"
+(gdb) p (char *)0x555555556004[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K*(const char**[K[K &&&[K[K[K***))[K ($rbp)-)8)
+A syntax error in expression, near `'.
+(gdb) p (*(const char ***) ($rbp-8))
+$18 = (const char **) 0x7ffff7f8e760 <_IO_2_1_stdout_>
+(gdb) p (*(const char ***) ($rbp-8))[1P))1))0))
+$19 = (const char **) 0x7ffff7f8e7600000
+(gdb) p (*(const char ***) ($rbp-10))[1P8))10))[1P))[1P))[1P))[1P))[1P))[1P))e))a))x))
+Cannot access memory at address 0xfffffffff7f8e760
+(gdb) p (*(const char ***) ($eax))[0]
+Cannot access memory at address 0xfffffffff7f8e760
+(gdb) p (*(const char ***) ($eax))[0][1P]4]
+Cannot access memory at address 0xfffffffff7f8e760
+(gdb) p (*(const char ***) ($eax))[4][1P))[4][1P))[4][1P))[4]r))[4]b))[4]p))[4]
+$20 = 0x200040000 <error: Cannot access memory at address 0x200040000>
+(gdb) p (*(const char ***) ($rbp))[4][K[K[K
+$21 = (const char **) 0x7fffffffe750
+(gdb) p (*(const char ***) ($rbp))[C[C[C[C[C[C[C[C[C[C[C[C
+$22 = (const char **) 0x7fffffffe750
+(gdb) p (*(const char ***) ($rbp))[4]eax))[4]0][Krbp-10))[1P8))[K[C[C[C[C[C[C[C[C[C[5Pchar *)0x555555556004[K[K[K[K[K[K[K[K[K[K[K[K[Kx7fffffffe750][K
+$23 = 0x7fffffffe750 ""
+(gdb) p (char *)0x7fffffffe750fe750
+$24 = 0x7ffffffffe750 <error: Cannot access memory at address 0x7ffffffffe750>
+(gdb) p (char *)0x7ffffffffe750[1Pe750[C[C[C[C[C[C[C[C[C*(const char ***) ($rbp))[4]eax))[4]0][Krbp-10))[1P8))[K[C[C[C[C[C[C[C[C[C[5Pchar *)0x555555556004[C[C[C[C[C[C[C[C[C*(const char***)($rdx))[C[C[C[C[C[C[C[C[C[2Pchar *)0x555555556004
+$25 = 0x555555556004 "hello %s\n"
+(gdb) p (char *)0x555555556004\\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K)%rdx
+A syntax error in expression, near `%rdx'.
+(gdb) p (char *)%rdx[K[K[K[K[K[K[K[K[K[K[K[K%rdx
+A syntax error in expression, near `%rdx'.
+(gdb) p %rdx[C[1Prdx$rdx
+$26 = 140737488349941
+(gdb) p $rdx%rdx(char *)%rdx[C[C[C[C[C[C[C[C[8P%rdx$rdx[Kp (const ch[K[K[K[K[K[K[Khar *) $rdx
+$27 = 0x7fffffffeaf5 "joe"
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 2762733] will be killed.
+
+Quit anyway? (y or n) y
+bhogan9@remote06:~/projects/i220a/submit/lab7/exercises$ gd[Kdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) b mian[K[K[K[K[K[Kstart joe
+Temporary breakpoint 1 at 0x1183: file hello.c, line 16.
+Starting program: /import/linux/home1/bhogan9/projects/i220a/submit/lab7/exercises/hello joe
+
+Temporary breakpoint 1, main (argc=2, argv=0x7fffffffe838) at hello.c:16
+16	  if (argc == 1) {
+(gdb) disass /n[Km
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+20	  for (int i = 1; i < argc; i++) {
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+--Type <RET> for more, q to quit, c to continue without paging--c
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) b *00005555555551ee[C[C[C[C[C[C[C[C[C[C[C[C
+Invalid number "00005555555551ee".
+(gdb) b *00005555555551ee[C[C[C[C05555555551ee[C[C[C[C[C[C[C[C[C[Cx00005555555551ee[C[C[C[C[C[C[C[C[C[C[C
+Breakpoint 2 at 0x5555555551ee: file hello.c, line 20.
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00005555555551ee in main (argc=2, argv=0x7fffffffe838) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) i
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info guile -- Prefix command for Guile info displays
+info handle -- What debugger does when program gets various signals
+info inferiors -- Print a list of inferiors being managed
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+info source -- Information about the current source file
+info sources -- Source files in the program
+info stack -- Backtrace of the stack
+info static-tracepoint-markers -- List target static tracepoints markers
+info symbol -- Describe what symbol is at location ADDR
+--Type <RET> for more, q to quit, c to continue without paging--c
+info target -- Names of targets and files being debugged
+info tasks -- Provide information about all known Ada tasks
+info terminal -- Print inferior's saved terminal status
+info threads -- Display currently known threads
+info tracepoints -- Status of specified tracepoints (all tracepoints if no argument)
+info tvariables -- Status of trace state variables and their values
+info type-printers -- GDB command to list all registered type-printers
+info types -- All type names
+info unwinder -- GDB command to list unwinders
+info variables -- All global and static variable names
+info vector -- Print the status of the vector unit
+info vtbl -- Show the virtual function table for a C++ object
+info warranty -- Various kinds of warranty you do not have
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+info win -- List of all displayed windows
+info xmethod -- GDB command to list registered xmethod matchers
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) p i
+$1 = 1
+(gdb) c
+Continuing.
+hello joe
+
+Breakpoint 2, 0x00005555555551ee in main (argc=2, argv=0x7fffffffe838) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) p $eax
+$2 = 2
+(gdb) e[Kset $eax = $eax - 1
+(gdb) c
+Continuing.
+hello (null)
+
+Breakpoint 2, 0x00005555555551ee in main (argc=2, argv=0x7fffffffe838) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 2772619] will be killed.
+
+Quit anyway? (y or n) y
+bhogan9@remote06:~/projects/i220a/submit/lab7/exercises$ exit
+
+Script done on 2020-10-18 22:57:49-04:00 [COMMAND_EXIT_CODE="0"]
