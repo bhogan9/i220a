@@ -1,11 +1,11 @@
-#Currently get_cpuid(int *eax, int *ebx, int *ecx, int *edx).
-#Modify to get_cpuid(int cpuid_op, int *eax, int *ebx, int *ecx, int *edx).	
+#get_cpuid(int *eaxP, int *ebxP, int *ecxP, int *edxP).
+#rdi = eaxP, rsi = ebxP, rdx = edxP, rcx = ecxP
 	.text
 	.globl get_cpuid
 get_cpuid:
 	pushq   %rcx
 	pushq   %rdx
-	xorl 	%eax, %eax	#setup cpuid opcode to 0
+	
 	cpuid
 	#largest param in %eax
 	#12-char manufacturer string in ebx, edx, ecx.

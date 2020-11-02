@@ -5,7 +5,7 @@
 get_cpuid:
 	pushq   %rcx
 	pushq   %rdx
-	xorl 	%eax, %eax	#setup cpuid opcode to 0
+	addl 	0x1, %eax	#setup cpuid opcode to 0
 	cpuid
 	#largest param in %eax
 	#12-char manufacturer string in ebx, edx, ecx.
