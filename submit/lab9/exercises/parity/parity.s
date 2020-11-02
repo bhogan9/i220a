@@ -7,5 +7,5 @@ get_parity:
 	xorl	%eax, %eax
 	ret
 even_parity:
-	mov %rax, 1
+	movl $1, %eax
 	ret
