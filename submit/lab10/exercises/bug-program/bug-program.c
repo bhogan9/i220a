@@ -21,7 +21,7 @@ add_key_value(struct KeyValue *keyValues, const char *k, int v)
   struct KeyValue *kv = malloc(sizeof(struct KeyValue *));
 
   //allocate storage for string pointed to by k
-  char *s = malloc(strlen(k));
+  char *s = malloc(strlen(k)+1);
 
   if (kv == NULL || s == NULL) { //check if allocations succeeded
     fprintf(stderr, "malloc failure: %s\n", strerror(errno));
@@ -51,12 +51,13 @@ free_key_values(struct KeyValue *keyValues)
 static struct KeyValue *
 make_key_values(void) {
   const char *keys[] = {
-    "twas", "brillig", "and", "the", "slithy", "toves",
+    /**"twas", "brillig", "and", "the", "slithy", "toves",
     "did", "gyre", "and", "gimble", "in", "the", "wabe",
     "all", "mimsy", "were", "the", "borogoves",
-    "and", "the", "mome", "raths", "outgrabe",
+    "and", "the", "mome", "raths", "outgrabe",*/"twas"
   };
-  struct KeyValue *p = NULL;
+  //struct KeyValue *p = NULL;
+  struct KeyValue *p = malloc(sizeof(struct KeyValue *));
   for (int i = 0; i < sizeof(keys)/sizeof(keys[0]); i++) {
     p = add_key_value(p, keys[i], i);
   }
