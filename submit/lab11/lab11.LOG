@@ -1,0 +1,1712 @@
+Script started on 2020-11-13 14:47:09-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="49"]
+bhogan9@remote00:~/projects/i220a/submit/lab11$ cd exercises/
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ ls
+coverage  int-search  matmul-cache  parity
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time ls ~/cs220l[K/labs/lab11/exercises/'[K
+coverage  int-search  matmul-cache  parity
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time sleep 5
+
+real	0m5.004s
+user	0m0.001s
+sys	0m0.001s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time wc -l `find /etc -type f 2>/dev/null [K` 2>/ dev/null | tail
+      21 /etc/xattr.conf
+      23 /etc/sysfs.conf
+      25 /etc/e2scrub.conf
+       0 /etc/netgroup
+      98 /etc/rsyslog-haproxy.conf
+      92 /etc/rsyslog-normal.conf
+       1 /etc/login.warn
+      45 /etc/ethertypes
+      14 /etc/xinetd.conf
+  254458 total
+
+real	0m1.468s
+user	0m0.032s
+sys	0m0.313s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+      21 /etc/xattr.conf
+      23 /etc/sysfs.conf
+      25 /etc/e2scrub.conf
+       0 /etc/netgroup
+      98 /etc/rsyslog-haproxy.conf
+      92 /etc/rsyslog-normal.conf
+       1 /etc/login.warn
+      45 /etc/ethertypes
+      14 /etc/xinetd.conf
+  254458 total
+
+real	0m0.841s
+user	0m0.029s
+sys	0m0.181s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time ls
+coverage  int-search  matmul-cache  parity
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.002s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ time echo 'hello world'
+hello world
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises$ cd parity/
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ ls
+main.c	Makefile  parity-c.c  parity-s.c
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ emacs main.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;60m#define[39;49m [38;5;130mDEBUG_OPT[39;49m  [38;5;89m"-d"[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m);[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mnTests[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc == 1 || argc > 3 ||[K
+      (argc == 3 && strcmp(argv[1], DEBUG_OPT) != 0) ||[K
+      ((nTests = atoi(argv[argc - 1])) <= 0)) {[K
+    fprintf(stderr, [38;5;89m"usage: %s [%s] NUM_TESTS\n"[39;49m, argv[0], DEBUG_OPT);[K
+    exit(1);[K
+  }[K
+  printf([38;5;89m"%d\n"[39;49m, parity_tests(nTests, argc == 3));[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;34H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;34H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ emacs parity-c.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m)[K
+{[K
+  [38;5;28mint[39;49m [38;5;130msum[39;49m = 0;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nTests; i++) {[K
+    [38;5;28mint[39;49m [38;5;130mvalue[39;49m = rand() & (doDebug ? 0xFF : ~0);[K
+    [38;5;124m//open code count-1s routine                                                                        [39;49m
+[A
+    [38;5;28mint[39;49m [38;5;130mv[39;49m = value;[K
+    [38;5;28mint[39;49m [38;5;130mnOnes[39;49m = 0;[K
+    [38;5;129mwhile[39;49m (v != 0) {[K
+      v &= (v - 1);[K
+      nOnes++;[K
+    }[K
+    [38;5;28mint[39;49m [38;5;130misEvenParity[39;49m = (nOnes & 1) == 0;[K
+    [38;5;129mif[39;49m (doDebug) {[K
+      fprintf(stderr, [38;5;89m"%x: %d\n"[39;49m, value, isEvenParity);[K
+    }[K
+    sum += isEvenParity;[K
+  }[K
+  [38;5;129mreturn[39;49m sum;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mparity-c.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ emacs parity-s.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m)[K
+{[K
+  [38;5;28mint[39;49m [38;5;130msum[39;49m = 0;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nTests; i++) {[K
+    [38;5;28mint[39;49m [38;5;130mvalue[39;49m = rand() & (doDebug ? 0xFF : ~0);[K
+    [38;5;28mint[39;49m [38;5;130misEvenParity[39;49m = 0;[K
+    [38;5;129m__asm__[39;49m([38;5;89m"testl %1, %1; jpo 1f; movl $1, %0; 1:"[39;49m:[K
+            [38;5;89m"=r"[39;49m(isEvenParity):[38;5;89m"r"[39;49m(value),[38;5;89m"0"[39;49m(isEvenParity));[K
+    [38;5;129mif[39;49m (doDebug) {[K
+      fprintf(stderr, [38;5;89m"%x: %d\n"[39;49m, value, isEvenParity);[K
+    }[K
+    sum += isEvenParity;[K
+  }[K
+  [38;5;129mreturn[39;49m sum;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mparity-s.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ make
+cc -g -Wall -std=c11 -O1   -c -o parity-c.o parity-c.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc   parity-c.o main.o   -o parity-c
+cc -g -Wall -std=c11 -O1   -c -o parity-s.o parity-s.c
+cc   parity-s.o main.o   -o parity-s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ ls
+main.c	main.o	Makefile  parity-c  parity-c.c	parity-c.o  parity-s  parity-s.c  parity-s.o
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ ,[K./parity-c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ ./parity-s -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ time ./parity-c 10
+3
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ time ./parity-c 10[1P 10s 10
+3
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ time ./parity-s 100000000
+49997794
+
+real	0m1.669s
+user	0m1.668s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ time ./parity-s 100000000[C[1P 100000000c 100000000
+50003700
+
+real	0m3.462s
+user	0m3.455s
+sys	0m0.004s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/parity$ cd ../matmul-cache/
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ emacs main.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#define[39;49m [38;5;130m_XOPEN_SOURCE[39;49m 1[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<errno.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21minitMatrix[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130mmatrix[39;49m[][n])[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      matrix[i][j] = lrand48();[K
+    }[K
+  }[K
+}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mout_matrix[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n])[K
+{[K
+  [38;5;28mFILE[39;49m *[38;5;130mout[39;49m = stdout;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      fprintf(out, [38;5;89m"%8g "[39;49m, a[i][j]);[K
+    }[K
+    fprintf(out, [38;5;89m"\n"[39;49m);[K
+  }[K
+}[K
+[K
+[38;5;129menum[39;49m { [38;5;130mMAX_TEST_MATRIX_SIZE[39;49m = 6 };[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mmatrixSize[39;49m = -1;[K
+  [38;5;28mint[39;49m [38;5;130mnumTests[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc != 3 || (matrixSize = atoi(argv[1])) <= 0 ||[K
+      (numTests = atoi(argv[2])) <= 0) {[K
+    fprintf(stderr, [38;5;89m"usage: %s MATRIX_SIZE N_TRIALS\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;28mint[39;49m [38;5;130mn[39;49m = matrixSize;[K
+  [38;5;28mdouble[39;49m (*[38;5;130ma[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;28mdouble[39;49m (*[38;5;130mb[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   Top L1     (C/*l Abbrev) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[49d[?25lC-c C-v is undefined[H
+[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ emacs simple-matmul.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_multiply[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mb[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mc[39;49m[][n])[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      c[i][j] = 0;[K
+      [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mk[39;49m = 0; k < n; k++) {[K
+        c[i][j] += a[i][k]*b[k][j];[K
+      }[K
+    }[K
+  }[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250msimple-matmul.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lEnd of buffer[K[H
+[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ emacs transpose-matmul.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<errno.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;124m/** Fill in matrix t[n][n] as the transpose of matrix a[n][n].  That is,                                [39;49m
+[A
+[38;5;124m *  for all i, j set t[i][j] to a[j][i].                                                                [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_transpose[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mt[39;49m[][n])[K
+{[K
+  [38;5;124m//@TODO add your code here                                                                            [39;49m
+[A
+}[K
+[K
+[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_multiply[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mb[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mc[39;49m[][n])[K
+{[K
+  [38;5;28mdouble[39;49m (*[38;5;130mtmp[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;129mif[39;49m (!tmp) {[K
+    fprintf(stderr, [38;5;89m"could not malloc transpose matrix: %s\n"[39;49m,[K
+            strerror(errno));[K
+    exit(1);[K
+  }[K
+  matrix_transpose(n, b, tmp);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      c[i][j] = 0;[K
+      [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mk[39;49m = 0; k < n; k++) {[K
+        c[i][j] += a[i][k]*tmp[j][k];[K
+      }[K
+    }[K
+  }[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mtranspose-matmul.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ---------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;40H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[48;40H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[48;41H[?25l[30m[48;5;250m4[39;49m[15;29H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[48;6H[30m[48;5;250m**[39;49m[15;28H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l/[K[?12l[?25h[?12;25h[K[C[C[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mi[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25l0[?12l[?25h[?12;25h[?25l>[?12l[?25h[?12;25h[K[?25l;[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h[C[?25ln[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h	[?25li[?12l[?25h[?12;25h[K	[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[15;6H[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; ++i)[?12l[?25h[?12;25h[15;6H[?25l([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; ++i){[?12l[?25h[?12;25h[1;38r[16;1H[1L[1;49r[16;1H[K[48;41H[?25l[30m[48;5;250m5[39;49m[16;5H[?12l[?25h[?12;25h[1;39r[17;1H[1L[1;49r[17;1H[K[48;41H[?25l[30m[48;5;250m6[39;49m[17;5H[?12l[?25h[?12;25h[15;29H[?25l[48;5;80m{[39;49m[17;3H}[?12l[?25h[?12;25h[15;29H[?25l{[48;41H[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[16;5H[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mi[39;49m[?12l[?25h[?12;25h[C[K[C[?25l[38;5;130mj[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h	[?25l0[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25lj[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h	[?25ln[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25lj[?12l[?25h[?12;25h	[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; ++j)[?12l[?25h[?12;25h	[?25l([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; ++j){[?12l[?25h[?12;25h[1;40r[17;1H[1L[1;49r[17;1H[K[48;41H[?25l[30m[48;5;250m6[39;49m[17;7H[?12l[?25h[?12;25h[1;41r[18;1H[1L[1;49r[18;1H[K[48;41H[?25l[30m[48;5;250m7[39;49m[18;7H[?12l[?25h[?12;25h[16;31H[?25l[48;5;80m{[39;49m[18;5H}[?12l[?25h[?12;25h[16;31H[?25l{[48;41H[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h	[?25lp[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[K[K	[?25lt[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25lj[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mj][?12l[?25h[?12;25h[?25l[j]i[?12l[?25h[?12;25h[49;1H[?25lMismatched parentheses[17;12H[?12l[?25h[?12;25h[?25l][?12l[?25h[?12;25h[49;1H[K[17;12H[K[K[?25l[[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h[?25l[	[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h	[?25la[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h[?25l[i][[?12l[?25h[?12;25h[?25lj[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mj][?12l[?25h[?12;25h[?25l[	[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c...[17;25H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c[K[17;25H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[17;25H[?12l[?25h[?12;25h[49;1H[K[17;25H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ ./simple-matmul \[K4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ ./m[Kr[Ktranspose-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ time ./simple-matmul 1500 1
+
+real	0m14.143s
+user	0m14.116s
+sys	0m0.024s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ time ./transpose-matmul 1500 1
+
+real	0m12.729s
+user	0m12.663s
+sys	0m0.060s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ for s in `seq 1000 500 2500`; \
+> do \
+> echo -n "*** Size $s: S[Ksimple'[K"; time ./simple-matmul $s 1 ; echo ; \
+> echo -n "**** Size[K[K[K[K[K[K Size $s: transpose"; time .t[K/transpose-matmul $s 1;[K ; echo ; \
+> done
+*** Size 1000: simple
+real	0m3.809s
+user	0m3.794s
+sys	0m0.012s
+
+*** Size 1000: transpose
+real	0m3.740s
+user	0m3.726s
+sys	0m0.012s
+
+*** Size 1500: simple
+real	0m14.085s
+user	0m14.058s
+sys	0m0.024s
+
+*** Size 1500: transpose
+real	0m12.737s
+user	0m12.666s
+sys	0m0.068s
+
+*** Size 2000: simple
+real	0m38.377s
+user	0m38.270s
+sys	0m0.100s
+
+*** Size 2000: transpose
+real	0m30.258s
+user	0m30.141s
+sys	0m0.112s
+
+*** Size 2500: simple
+real	1m13.759s
+user	1m13.652s
+sys	0m0.092s
+
+*** Size 2500: transpose
+real	0m59.155s
+user	0m59.057s
+sys	0m0.089s
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/matmul-cache$ cd ../int-search/
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ ls
+binary-search.c  int_compare.c	int_compare.h  linear-search.c	main.c	Makefile
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ emacs main.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"int_compare.h"[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<assert.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m [38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m);[K
+[K
+[K
+[38;5;124m/** Perform nTests searches for all elements in a[].                                                    [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mdo_search[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130mnTests[39;49m)[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mt[39;49m = 0; t < nTests; t++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++) {[K
+      [38;5;28mint[39;49m [38;5;130mfoundIndex[39;49m = search_for_element(a, nElements, a[i]);[K
+      assert(foundIndex == i);[K
+      [38;5;28mint[39;49m [38;5;130mfoundIndex1[39;49m = search_for_element(a, nElements, a[i] + 1);[K
+      assert(foundIndex1 < 0 || foundIndex1 == i + 1);[K
+    }[K
+  }[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mnTests[39;49m = -1;[K
+  [38;5;28mint[39;49m [38;5;130mnElements[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc != 3 || (nElements = atoi(argv[1])) <= 0 ||[K
+      (nTests = atoi(argv[2])) <= 0) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NUM_ELEMENTS NUM_TESTS\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;28mint[39;49m [38;5;130ma[39;49m[nElements];[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++) {[K
+    a[i] = rand();[K
+  }[K
+  qsort(a, nElements, [38;5;129msizeof[39;49m([38;5;28mint[39;49m), int_compare);[K
+  do_search(a, nElements, nTests);[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[2d[49d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ emacs linear-search.c 
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[48d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ---------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[49;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[49;59H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[49;58H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[49;60H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[49;57H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[49;77H[?25ldone[H
+[?12l[?25h[?12;25h[49;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[49;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[49;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;61H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[49;96H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[49;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[49;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[49;75H[?25ldone[H
+[?12l[?25h[?12;25h[49;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[49;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[49;64H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[49;65H[?25ldone[H
+[?12l[?25h[?12;25h[49;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[49;54H[?25ldone[H
+[?12l[?25h[?12;25h[49;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[49;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[49d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) ----------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[49d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                  [0m[39;49m[27m
+[A
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m)[K
+{[K
+  [38;5;124m//@TODO add your code here to meet above spec.                                                        [39;49m
+[A
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mlinear-search.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) ------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[49d[K[48;37H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m5[39;49m[6;49H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[48;6H[30m[48;5;250m**[39;49m[6;48H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l/[K[?12l[?25h[?12;25h[K[6;3H[49;1H[?25lAuto-saving...[6;3H[?12l[?25h[?12;25h[49;15H[?25ldone[6;3H[?12l[?25h[?12;25h[49;1H[K[6;3H[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[C[K[K[?25lin[K[?12l[?25h[?12;25h[K[K[C[?25l([?12l[?25h[?12;25h[K[C[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mi[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25l0[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h[C[?25ln[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h	[?25li[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[6;6H[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++)[?12l[?25h[?12;25h[6;6H[?25l([6;37H[?12l[?25h[?12;25h[48d[?25l[30m[48;5;250m4[39;49m[5;2H[?12l[?25h[?12;25h
+[K
+[?25l  [38;5;129mfor[39;49m([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++)
+}[48;37H[30m[48;5;250m5[39;49m[6;3H[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;21mf[39;49m[?12l[?25h[?12;25h[?25l[38;5;21mo[39;49m[?12l[?25h[?12;25h[?25l[38;5;21mu[39;49m[?12l[?25h[?12;25h[?25l[38;5;21mn[39;49m[?12l[?25h[?12;25h[?25l[38;5;21md[39;49m[?12l[?25h[?12;25h[C[6;7H[?25l[38;5;130mfound[39;49m =[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25l1[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[K[?25l;[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m6[39;49m[7;18H[?12l[?25h[?12;25h[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[48d[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[C[48;37H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[49d[?25lEnd of buffer[9;1H[?12l[?25h[?12;25h[49d[K[48;37H[?25l[30m[48;5;250m7[39;49m[8;2H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m6[39;49m[7;37H[?12l[?25h[?12;25h[C[?25l{[?12l[?25h[?12;25h
+[K
+[?25l}[48;37H[30m[48;5;250m7[39;49m[8;5H[?12l[?25h[?12;25h
+[K
+[?25l}[48;37H[30m[48;5;250m8[39;49m[9;5H[?12l[?25h[?12;25h[7;37H[?25l[48;5;80m{[39;49m[9;3H}[?12l[?25h[?12;25h[7;37H[?25l{[48;37H[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[8;5H[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[K[?25l[38;5;129mif[39;49m[?12l[?25h[?12;25h	[?25l([?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[K[?25la[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h	[?25l[[8;13H[?12l[?25h[?12;25h[?25l=[?12l[?25h[?12;25h[?25l=[?12l[?25h[?12;25h	[?25le[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[8;7H[?25l[48;5;80m([39;49ma[i] == element)[?12l[?25h[?12;25h[8;7H[?25l(			[?12l[?25h[?12;25h[?25l{[?12l[?25h[?12;25h
+[K
+[2@
+[?25l}[48;37H[30m[48;5;250m8[39;49m[9;7H[?12l[?25h[?12;25h
+[K
+[2@
+[?25l}[48;37H[30m[48;5;250m9[39;49m[10;7H[?12l[?25h[?12;25h[8;24H[?25l[48;5;80m{[39;49m[10;5H}[?12l[?25h[?12;25h[8;24H[?25l{[48;37H[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h	[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h
+[K[11;3H[2@
+[2@
+[?25l}[48;37H[30m[48;5;250m9[39;49m[10;7H[?12l[?25h[?12;25h[10;5H[?25l}
+[2P
+[2P
+[K[48;37H[30m[48;5;250m8[39;49m[9;17H[?12l[?25h[?12;25h[K[K[C[K[C[K[K[K[K[K	[48;37H[?25l[30m[48;5;250m9[39;49m[10;6H[?12l[?25h[?12;25h[K[10;5H[C[C[?25l}
+[2P
+[K[48;37H[30m[48;5;250m8[39;49m[9;7H[?12l[?25h[?12;25h[9;3H[?25l}
+[2P
+[K[48;37H[30m[48;5;250m7[39;49m[8;25H[?12l[?25h[?12;25h[K[48;37H[?25l[30m[48;5;250m8[39;49m[9;4H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m7[39;49m[8;24H[?12l[?25h[?12;25h
+[K
+[2@
+[?25l}[48;37H[30m[48;5;250m8[39;49m[9;7H[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l[38;5;129mreturn[39;49m[?12l[?25h[?12;25h[C[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25ld[?12l[?25h[?12;25h[K[K[K[K[K[C[?25li[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[49;1H[?25lAuto-saving...[9;16H[?12l[?25h[?12;25h[49;15H[?25ldone[9;16H[?12l[?25h[?12;25h[49;1H[K[48;37H[?25l[30m[48;5;250m9[39;49m[10;4H[?12l[?25h[?12;25h
+[K
+[?25l}[48;37H[30m[48;5;250m10[39;49m[11;3H[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l[38;5;129mreturn[39;49m[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25l1[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m9 [39;49m[10;4H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m8[39;49m[9;13H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m7[39;49m[8;13H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m6[39;49m[7;13H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m5[39;49m[6;13H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m4[39;49m[5;2H[?12l[?25h[?12;25h[48;37H[?25l[30m[48;5;250m5[39;49m[6;13H[?12l[?25h[?12;25h[C[C		[C[K[K[K[C[6;7H[?25l[38;5;21mfound[39;49m[K[C[?12l[?25h[?12;25h[K[K[K[K[K[C[?25lin[K[?12l[?25h[?12;25h[K[K[6;3H[1;12r[6;1H[1M[1;49r[12;1H[K[48;37H[?25l[30m[48;5;250m4[39;49m[5;2H[?12l[?25h[?12;25h[49;1H[?25lSaving file /home/bhogan9/projects/i220a/submit/lab11/exercises/int-search/linear-search.c...[5;2H[?12l[?25h[?12;25h[49;1H[?25lWrote /home/bhogan9/projects/i220a/submit/lab11/exercises/int-search/linear-search.c[K[5;2H[?12l[?25h[?12;25h[48;6H[?25l[30m[48;5;250m--[39;49m[5;2H[?12l[?25h[?12;25h[49;1H[K[5;2H[49;1H[?25l(No changes need to be saved)[5;2H[?12l[?25h[?12;25h[49;1H[K[5;2H[49;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o int_compare.o int_compare.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+cc -g -Wall -std=c11 -O1   -c -o binary-search.o binary-search.c
+cc   binary-search.o main.o int_compare.o   -o binary-search
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ .[K./ll[Kinear-search 100 1
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ time ./linear-search 2000 2000
+
+real	0m7.720s
+user	0m7.715s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ time ./binary-search 2000 2000
+
+real	0m0.468s
+user	0m0.466s
+sys	0m0.000s
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/int-search$ cd ../coverage/
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ls
+coverage.c  Makefile
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ make
+cc -g -Wall -std=c11 -fprofile-arcs -ftest-coverage    coverage.c   -o coverage
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ./coverage 200 2000[K0 2999
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ls
+coverage  coverage.c  coverage.gcda  coverage.gcno  Makefile
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov v[Kcoverage.gcdA[Ka
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ cat coverage.c.c[Kgcov 
+        -:    0:Source:coverage.c
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int v[] = {
+        -:    4:  211,  333, 319, 411, 911, 1001,
+        -:    5:};
+        -:    6:
+    #####:    7:static int compute(int a, int b, int c) {
+    #####:    8:  int s = v[2];
+    #####:    9:  if (v[0] < a && a < v[1]) {
+    #####:   10:    if (b < v[2]) { 
+    #####:   11:      s += v[2];
+    #####:   12:      if (c < v[3]) {
+    #####:   13:	s += v[4];
+        -:   14:      }
+        -:   15:      else {
+    #####:   16:	s += v[3];
+        -:   17:      }
+        -:   18:    }
+        -:   19:    else {
+    #####:   20:      s += v[1];
+    #####:   21:      if (c < v[1]) {
+    #####:   22:	s += v[4];
+        -:   23:      }
+        -:   24:      else {
+    #####:   25:	s += v[2];
+        -:   26:      }
+        -:   27:    }
+        -:   28:  }
+        -:   29:  else {
+    #####:   30:    if (b < v[3]) {
+    #####:   31:      if (c < v[4]) {
+    #####:   32:	s += v[5];
+        -:   33:      }
+        -:   34:      else {
+    #####:   35:	s += v[1];
+        -:   36:      }
+        -:   37:    }
+        -:   38:    else {
+    #####:   39:      if (c < v[2]) {
+    #####:   40:	s += v[1];
+        -:   41:      }
+        -:   42:      else {
+    #####:   43:	s += v[3];
+        -:   44:      }
+        -:   45:    }
+        -:   46:  }
+    #####:   47:  return s;
+        -:   48:}
+        -:   49:
+        -:   50:int 
+        1:   51:main()
+        -:   52:{
+        -:   53:  int a, b, c;
+        1:   54:  while (scanf("%d %d %d", &a, &b, &c) == 3) {
+    #####:   55:    printf("compute(%d, %d, %d) = %d\n", a, b, c, compute(a, b, c));
+        -:   56:  }
+        1:   57:  return 0;
+        -:   58:}
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ cat coverage.c.gcov [2Pgcov coverage.gcdals[K./coverage 200 2000 2999make[K./coverage 200 2000 2999
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ./coverage 200 2000 2999[4Pcat coverage.c.gcov [2Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda./coverage 200 2000 2999[4Pcat coverage.c.gcov [2Pgcov coverage.gcdacat coverage.c.gcov 
+        -:    0:Source:coverage.c
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int v[] = {
+        -:    4:  211,  333, 319, 411, 911, 1001,
+        -:    5:};
+        -:    6:
+    #####:    7:static int compute(int a, int b, int c) {
+    #####:    8:  int s = v[2];
+    #####:    9:  if (v[0] < a && a < v[1]) {
+    #####:   10:    if (b < v[2]) { 
+    #####:   11:      s += v[2];
+    #####:   12:      if (c < v[3]) {
+    #####:   13:	s += v[4];
+        -:   14:      }
+        -:   15:      else {
+    #####:   16:	s += v[3];
+        -:   17:      }
+        -:   18:    }
+        -:   19:    else {
+    #####:   20:      s += v[1];
+    #####:   21:      if (c < v[1]) {
+    #####:   22:	s += v[4];
+        -:   23:      }
+        -:   24:      else {
+    #####:   25:	s += v[2];
+        -:   26:      }
+        -:   27:    }
+        -:   28:  }
+        -:   29:  else {
+    #####:   30:    if (b < v[3]) {
+    #####:   31:      if (c < v[4]) {
+    #####:   32:	s += v[5];
+        -:   33:      }
+        -:   34:      else {
+    #####:   35:	s += v[1];
+        -:   36:      }
+        -:   37:    }
+        -:   38:    else {
+    #####:   39:      if (c < v[2]) {
+    #####:   40:	s += v[1];
+        -:   41:      }
+        -:   42:      else {
+    #####:   43:	s += v[3];
+        -:   44:      }
+        -:   45:    }
+        -:   46:  }
+    #####:   47:  return s;
+        -:   48:}
+        -:   49:
+        -:   50:int 
+        2:   51:main()
+        -:   52:{
+        -:   53:  int a, b, c;
+        2:   54:  while (scanf("%d %d %d", &a, &b, &c) == 3) {
+    #####:   55:    printf("compute(%d, %d, %d) = %d\n", a, b, c, compute(a, b, c));
+        -:   56:  }
+        2:   57:  return 0;
+        -:   58:}
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ [Kbhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ cat coverage.c.gcov [2Pgcov coverage.gcda./coverage 200 2000 2999[1@0
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ./coverage 2000 2000 2999[5Pcat coverage.c.gcov [2Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda./coverage 2000 2000 2999[5Pcat coverage.c.gcov [2Pgcov coverage.gcda./coverage 200 2000 2999[4Pcat coverage.c.gcov [2Pgcov coverage.gcdals[K./coverage 200 2000 2999make[K[2Plscd ../coverage/ls[Kmake./coverage 200 2000 2999ls[Kgcov coverage.gcdacat coverage.c.gcov ./coverage 200 2000 2999[6Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda./coverage 2000 2000 2999[7Pgcov coverage.gcda[Kgcov coverage.gcda./coverage 2000 2000 2999[5Pcat coverage.c.gcov 
+        -:    0:Source:coverage.c
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:3
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int v[] = {
+        -:    4:  211,  333, 319, 411, 911, 1001,
+        -:    5:};
+        -:    6:
+    #####:    7:static int compute(int a, int b, int c) {
+    #####:    8:  int s = v[2];
+    #####:    9:  if (v[0] < a && a < v[1]) {
+    #####:   10:    if (b < v[2]) { 
+    #####:   11:      s += v[2];
+    #####:   12:      if (c < v[3]) {
+    #####:   13:	s += v[4];
+        -:   14:      }
+        -:   15:      else {
+    #####:   16:	s += v[3];
+        -:   17:      }
+        -:   18:    }
+        -:   19:    else {
+    #####:   20:      s += v[1];
+    #####:   21:      if (c < v[1]) {
+    #####:   22:	s += v[4];
+        -:   23:      }
+        -:   24:      else {
+    #####:   25:	s += v[2];
+        -:   26:      }
+        -:   27:    }
+        -:   28:  }
+        -:   29:  else {
+    #####:   30:    if (b < v[3]) {
+    #####:   31:      if (c < v[4]) {
+    #####:   32:	s += v[5];
+        -:   33:      }
+        -:   34:      else {
+    #####:   35:	s += v[1];
+        -:   36:      }
+        -:   37:    }
+        -:   38:    else {
+    #####:   39:      if (c < v[2]) {
+    #####:   40:	s += v[1];
+        -:   41:      }
+        -:   42:      else {
+    #####:   43:	s += v[3];
+        -:   44:      }
+        -:   45:    }
+        -:   46:  }
+    #####:   47:  return s;
+        -:   48:}
+        -:   49:
+        -:   50:int 
+        3:   51:main()
+        -:   52:{
+        -:   53:  int a, b, c;
+        3:   54:  while (scanf("%d %d %d", &a, &b, &c) == 3) {
+    #####:   55:    printf("compute(%d, %d, %d) = %d\n", a, b, c, compute(a, b, c));
+        -:   56:  }
+        3:   57:  return 0;
+        -:   58:}
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ./coverage [K
+200
+2000
+2999
+compute(200, 2000, 2999) = 730
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ ./coveragecat coverage.c.gcov [2Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:45.83% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda[8P./coveragecat coverage.c.gcov 
+        -:    0:Source:coverage.c
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int v[] = {
+        -:    4:  211,  333, 319, 411, 911, 1001,
+        -:    5:};
+        -:    6:
+        1:    7:static int compute(int a, int b, int c) {
+        1:    8:  int s = v[2];
+       1*:    9:  if (v[0] < a && a < v[1]) {
+    #####:   10:    if (b < v[2]) { 
+    #####:   11:      s += v[2];
+    #####:   12:      if (c < v[3]) {
+    #####:   13:	s += v[4];
+        -:   14:      }
+        -:   15:      else {
+    #####:   16:	s += v[3];
+        -:   17:      }
+        -:   18:    }
+        -:   19:    else {
+    #####:   20:      s += v[1];
+    #####:   21:      if (c < v[1]) {
+    #####:   22:	s += v[4];
+        -:   23:      }
+        -:   24:      else {
+    #####:   25:	s += v[2];
+        -:   26:      }
+        -:   27:    }
+        -:   28:  }
+        -:   29:  else {
+        1:   30:    if (b < v[3]) {
+    #####:   31:      if (c < v[4]) {
+    #####:   32:	s += v[5];
+        -:   33:      }
+        -:   34:      else {
+    #####:   35:	s += v[1];
+        -:   36:      }
+        -:   37:    }
+        -:   38:    else {
+        1:   39:      if (c < v[2]) {
+    #####:   40:	s += v[1];
+        -:   41:      }
+        -:   42:      else {
+        1:   43:	s += v[3];
+        -:   44:      }
+        -:   45:    }
+        -:   46:  }
+        1:   47:  return s;
+        -:   48:}
+        -:   49:
+        -:   50:int 
+        4:   51:main()
+        -:   52:{
+        -:   53:  int a, b, c;
+        5:   54:  while (scanf("%d %d %d", &a, &b, &c) == 3) {
+        1:   55:    printf("compute(%d, %d, %d) = %d\n", a, b, c, compute(a, b, c));
+        -:   56:  }
+        4:   57:  return 0;
+        -:   58:}
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ cat coverage.c.gcov [2Pgcov coverage.gcda[8P./coveragecat coverage.c.gcov [10P./coverage
+2000 2001 2999          
+20001  1
+2999
+compute(2000, 2001, 2999) = 730
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ em[K[K./coveragecat coverage.c.gcov [2Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:45.83% of 24
+Creating 'coverage.c.gcov'
+
+bhogan9@remote00:~/projects/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda[8P./coveragecat coverage.c.gcov 
+        -:    0:Source:coverage.c
+        -:    0:Graph:coverage.gcno
+        -:    0:Data:coverage.gcda
+        -:    0:Runs:5
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+        -:    3:static int v[] = {
+        -:    4:  211,  333, 319, 411, 911, 1001,
+        -:    5:};
+        -:    6:
+        2:    7:static int compute(int a, int b, int c) {
+        2:    8:  int s = v[2];
+        2:    9:  if (v[0] < a && a < v[1]) {
+    #####:   10:    if (b < v[2]) { 
+    #####:   11:      s += v[2];
+    #####:   12:      if (c < v[3]) {
+    #####:   13:	s += v[4];
+        -:   14:      }
+        -:   15:      else {
+    #####:   16:	s += v[3];
+        -:   17:      }
+        -:   18:    }
+        -:   19:    else {
+    #####:   20:      s += v[1];
+    #####:   21:      if (c < v[1]) {
+    #####:   22:	s += v[4];
+        -:   23:      }
+        -:   24:      else {
+    #####:   25:	s += v[2];
+        -:   26:      }
+        -:   27:    }
+        -:
