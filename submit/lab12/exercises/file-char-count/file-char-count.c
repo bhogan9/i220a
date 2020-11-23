@@ -13,7 +13,7 @@ main(int argc, const char *argv[])
     fprintf(stderr, "usage: %s FILE_NAME\n", argv[0]);
     exit(1);
   }
-  const char *fName = argv[1];
+  char *fName = argv[1];
   FILE *in = fopen(fName, "r");
   if (!in) {
     fprintf(stderr, "cannot read %s: %s\n", fName, strerror(errno));
@@ -22,6 +22,8 @@ main(int argc, const char *argv[])
   int c;
   int count = 0;
   while ((c = fgetc(in)) != EOF) count++;
+  free(in);
+  free(fName);
   printf("%d\n", count);
   return 0;
 }

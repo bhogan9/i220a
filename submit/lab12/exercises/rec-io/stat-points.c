@@ -11,7 +11,7 @@
 static void
 readPoints(const char *inName, DynArray *points)
 {
-  FILE *in = fopen(inName, "r");
+  FILE *in = fopen(inName, "rb");
   if (!in) {
     fprintf(stderr, "cannot read %s: %s\n", inName, strerror(errno));
     exit(1);
@@ -64,13 +64,22 @@ statPoints(DynArray *points, FILE *out)
 int
 main(int argc, const char *argv[])
 {
-  if (argc != 2) {
+  if (argc < 2) {
     fprintf(stderr, "usage: %s BINARY_POINTS_FILE\n", argv[0]);
     exit(1);
   }
   DynArray *points = newDynArray(sizeof(Point2));
   readPoints(argv[1], points);
-  statPoints(points, stdout);
+  if(argc == 2)
+    statPoints(points, stdout);
+  else{
+    const char *outName = argv[2];
+    FILE *out = fopen(outName, "w");
+    if(!out) {
+      fprintf(stderr, "cannot write %s: %s\n", outName, strerror(errno));
+    }
+    statPoints(points, out);
+  }
   freeDynArray(points);
   return 0;
 }
